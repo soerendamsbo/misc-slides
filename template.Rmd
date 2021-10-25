@@ -1,0 +1,41 @@
+---
+title: "Title"
+subtitle: |
+  | Subtitle
+  | [.white[Link to slides: url]](url)
+author: Søren Damsbo-Svendsen<br>[.white[sdas@ifs.ku.dk]](mailto:sdas@ifs.ku.dk)
+institute: Department of Political Science<br>University of Copenhagen
+date: "`r format(Sys.time(), '%d %b %Y')`"
+output:
+  xaringan::moon_reader:
+    css: "template.css"
+    self_contained: true
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countincrementalSlides: false
+---
+
+```{r, include=F}
+
+pacman::p_load(tidyverse, 
+               knitr, 
+               lubridate, 
+               kableExtra,
+               xaringan,
+               xaringanExtra)
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      fig.align = "center", 
+                      fig.height=12,
+                      cache = TRUE)
+
+Sys.setlocale(locale = "da_DK.UTF-8")
+
+xaringanExtra::use_tile_view()
+
+```
+
+# First header
+
