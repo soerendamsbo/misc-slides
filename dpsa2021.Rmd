@@ -8,14 +8,12 @@ institute: Department of Political Science<br>University of Copenhagen
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
   xaringan::moon_reader:
-    #css: "template.css"
     css: ["default", "template.css"]
     self_contained: true
-    nature:
+    nature: 
       ratio: '16:9'
-      highlightStyle: github
       highlightLines: true
-      countincrementalSlides: true
+      countincrementalSlides: false
 ---
 
 ```{r, include=F}
@@ -41,23 +39,22 @@ xaringanExtra::use_tile_view()
 
 # Turnout and weather
 
-**RQ: Does bad weather on Election Day cause voters to stay home and not turn out for election?**
+<br>**RQ: Does bad weather on Election Day cause voters to stay home and not turn out for election?**<br>
 
+--
 <br>
---
-
-> "It's __a myth that the weather matters for turnout__. If the weather is bad, maybe a few voters stay home. But today's weather is probably of little importance.".right[*Jørgen Elklit, Ritzau, 2005, translated from Danish*]
+> "It's __a myth that the weather matters for turnout__. If the weather is bad, maybe a few voters stay home. But today's weather is probably of little importance.".right[*Jørgen Elklit, Ritzau, 2005 (translated)*]
 
 --
-
-> "There are lots of things that affect turnout, but the weather does not seem to be one of them. In the Danish context, we have tried and tried to show that when it rains, people will stay at home. But __the Danes turn out no matter if it rains__ or snows".right[*Kasper M. Hansen, DR Nyheder, 2015, translated from Danish*]
+<br>
+> "There are lots of things that affect turnout, but the weather does not seem to be one of them. In the Danish context, we have tried and tried to show that when it rains, people will stay at home. But __the Danes turn out no matter if it rains__ or snows".right[*Kasper M. Hansen, DR Nyheder, 2015 (translated)*]
 
 ---
 
 # Why is this important?
 
 --
-
+<br>
 - Frequent references in the media in Denmark and other countries &rarr; calls for systematic analysis
 
 --
@@ -115,7 +112,7 @@ xaringanExtra::use_tile_view()
 ---
 
 # Theoretical background
-
+<br>
 - Cost of voting 
 
 --
@@ -163,9 +160,7 @@ The figure shows descriptive turnout rates by voter age on Election Day binned i
 ---
 
 # Data
-
---
-
+<br>
 - Validated voter records for all* eligible Danish voters at municipal elections of 2013 and 2017
 
 .footnote[*Excluding ~1% and ~9% in non-participating municipalities, ~3% early voting, and elderly voters above age 80.]
@@ -189,8 +184,8 @@ include_graphics("media/weather-stations.png")
 ---
 
 # Estimation
-
-- OLS regression of in-person turnout (1/0) on (Election Day) rainfall, sunshine, and temperature
+<br>
+- __OLS regression__ of in-person turnout (1/0) on (Election Day) rainfall, sunshine, and temperature
 
 --
 
@@ -240,12 +235,11 @@ include_graphics("media/interaction_age3_panel.png")
 class: center, middle
 
 # Thank you for your attention!
-
 <br>
-```{r pic, out.width='45%'}
+```{r pic, out.width='50%'}
 include_graphics("media/rain-election.png")
 ```
-<span style="color:grey;font-size:8pt;">Edward Linsmier—Getty Images 2014, time.com/3554884/2014-election-weather-forecast</span>
+<span style="color:grey;font-size:9pt;">Edward Linsmier—Getty Images 2014, time.com/3554884/2014-election-weather-forecast</span>
 
 
 
