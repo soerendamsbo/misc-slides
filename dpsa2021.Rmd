@@ -15,7 +15,7 @@ output:
       ratio: '16:9'
       highlightStyle: github
       highlightLines: true
-      countincrementalSlides: false
+      countincrementalSlides: true
 ---
 
 ```{r, include=F}
@@ -36,24 +36,21 @@ knitr::opts_chunk$set(echo = FALSE,
 Sys.setlocale(locale = "da_DK.UTF-8")
 
 xaringanExtra::use_tile_view()
-xaringanExtra::use_panelset()
+
 ```
 
 # Turnout and weather
 
 **RQ: Does bad weather on Election Day cause voters to stay home and not turn out for election?**
 
+<br>
 --
 
-> "*It's __a myth that the weather matters for turnout__. If the weather is bad, maybe a few voters stay home. But today's weather is probably of little importance.*".right[Jørgen Elklit, Ritzau, 15 Nov 2005]
-
---
-
-> "*As it seems, one can expect that the effect of the weather at Danish parliamentary Elections is lower than in US presidential elections, as the political interest is greater. It simply __takes more to make voters stay home__.*".right[Yosef Bhatti, Videnskab.dk, 31 Jan 2011] 
+> "It's __a myth that the weather matters for turnout__. If the weather is bad, maybe a few voters stay home. But today's weather is probably of little importance.".right[*Jørgen Elklit, Ritzau, 2005, translated from Danish*]
 
 --
 
-> "*There are lots of things that affect turnout, but the weather does not seem to be one of them. In the Danish context, we have tried and tried to show that when it rains, people will stay at home. But __the Danes turn out no matter if it rains__ or snows*".right[Kasper M. Hansen, DR Nyheder, 18 Jun 2015]
+> "There are lots of things that affect turnout, but the weather does not seem to be one of them. In the Danish context, we have tried and tried to show that when it rains, people will stay at home. But __the Danes turn out no matter if it rains__ or snows".right[*Kasper M. Hansen, DR Nyheder, 2015, translated from Danish*]
 
 ---
 
@@ -85,11 +82,11 @@ xaringanExtra::use_panelset()
 
 --
 
-- We show that existing research (30 studies) is highly mixed in terms of design and results
+- We show that existing research is highly mixed in terms of design and results
 
 --
 
-- We provide better evidence to the matter through several methodological advantages:
+- We provide better evidence to the matter through several __methodological advantages__:
 
   - Validated individual-level data (handful of previous studies) 
   
@@ -101,7 +98,7 @@ xaringanExtra::use_panelset()
 
 ## Key results
 
-- Rainfall ("bad weather") decreases probability of voting (1.1 pp per cm rain) 
+- Rainfall ("bad weather") reduces probability of voting (1.1 pp per cm rain) 
 
 --
 
@@ -109,7 +106,7 @@ xaringanExtra::use_panelset()
 
 --
 
-- The rainfall effect grows as rainfall levels increase (is non-linear)
+- The rainfall effect grows as rainfall levels increase (i.e., is not linear)
   
 --
 
@@ -119,17 +116,19 @@ xaringanExtra::use_panelset()
 
 # Theoretical background
 
-- Cost of voting...
+- Cost of voting 
+
+--
 
 - Potential mood effects
 
 --
 
-- Meta-analysis reveals mixed results and heterogeneous designs
+- Meta-analysis of 30 studies: Mixed results from heterogeneous designs
 
 --
 
-- Average effect of rainfall: -0.76 percentage points per cm of rain
+- Average effect of __rainfall__: -0.76 percentage points per cm of rain
 
 ---
 
@@ -145,6 +144,9 @@ xaringanExtra::use_panelset()
 
 - We focus on **young voters** in their (early) twenties who generally have (1) left their childhood home and (2) not yet established a solid voting habit
 
+???
+
+Fowler, A. (2015) Regular voters, marginal voters and the election effects of turnout. *The European Political Science Association* 3(2): 205-219.
 
 ---
 
@@ -174,11 +176,11 @@ The figure shows descriptive turnout rates by voter age on Election Day binned i
 
 --
 
-- Home coordinates enables us to calculate individual weather exposure based on validated DMI data
+- Home coordinates &rarr; __individual weather exposure__ from validated DMI data
 
 ---
 
-# Weather observations from 166 DMI weather stations
+# Individual weather exposure from DMI weather stations
 
 ```{r stations}
 include_graphics("media/weather-stations.png")
@@ -186,42 +188,23 @@ include_graphics("media/weather-stations.png")
 
 ---
 
-# Weather observations from 166 DMI weather stations
-
-.pull-left[
-_Example_
-```{r stationsexample}
-include_graphics("media/weather-stations-example.png")
-```
-]
-
-.pull-right[
-
-- Accumulated rainfall, avg. sunshine, and avg. temperature aggregated for each weather station from hourly values on Election Day
-
-- Individual weather exposure: Inverse distance weighted average from three nearest weather stations
-
-- $Local\ weather_v = \frac{\sum_{i}^{3} (\frac{Observation_i}{Distance_i})}{\sum_{i}^{3} (\frac{1}{Distance_i})}$
-
-]
-
----
-
 # Estimation
 
-- OLS regression of in-person turnout (1/0) on Election Day rainfall, sunshine, and temperature
+- OLS regression of in-person turnout (1/0) on (Election Day) rainfall, sunshine, and temperature
 
 --
 
 - Two strategies: 
 
   - (1) **pooled model**: Municipality and election fixed effects assuming as-if randomness of weather exposure
+
+--
   
   - (2) **panel model**: Municipality, election, and __voter__ fixed effects eliminating bias from invariant factors
 
 --
 
-- Additional controls: (individual) age, gender, (municipal) population size, share of non-Western immigrants, and closeness of the election
+- Additional __controls__: (individual) age, gender, (municipal) population size, share of non-Western immigrants, and closeness of the election
 
 ---
 
