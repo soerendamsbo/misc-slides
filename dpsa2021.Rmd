@@ -85,7 +85,9 @@ xaringanExtra::use_tile_view()
 
 --
 
-- We provide better evidence to the matter through several __methodological advantages__:
+- We provide better evidence to the matter through several __methodological advantages__
+
+--
 
   - Validated **individual-level data** [handful of previous studies]
   
@@ -152,7 +154,7 @@ include_graphics("media/turnout_by_age.png")
 ]
 .pull-right[
 <br><br><br>
-.center['The rollercoaster ride of turnout and age' (descriptive turnout by age)]
+.center['The rollercoaster ride of turnout and age' (descriptive turnout by age at KV13-KV17)]
 ]
 
 ???
