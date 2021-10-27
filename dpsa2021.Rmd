@@ -55,7 +55,7 @@ xaringanExtra::use_tile_view()
 
 --
 <br>
-- Frequent references in the **media** in Denmark and other countries &rarr; calls for systematic analysis
+- Frequent references in the **media**
 
 --
 
@@ -104,10 +104,6 @@ xaringanExtra::use_tile_view()
 --
 
 - Sunshine ("**nice weather**") increases it
-
---
-
-- The rainfall effect grows with rainfall levels (i.e., is **not linear**)
   
 --
 
@@ -125,21 +121,17 @@ xaringanExtra::use_tile_view()
 
 --
 
-- __Meta-analysis__ of 30 studies: Mixed results from heterogeneous designs
-
---
-
-- Average effect of __rainfall__: -0.76 percentage points per cm of rain
+- __Meta-analysis__ of 30 studies: Average effect -0.76 percentage points per cm of rainfall
 
 ---
 
 # Marginal voters
 
-- If the weather disproportionately reduces turnout in marginal voter groups, it **can be a major issue** for democratic representation
+- "*those whose decisions to turn out are sensitive to exogenous factors*" (Fowler 2015: 205)
 
 --
 
-- __Marginal voters:__ "*those whose decisions to turn out are sensitive to exogenous factors*" (Fowler 2015: 205)
+- If the weather disproportionately reduces turnout in marginal voter groups, it **can be a major issue** for democratic representation
 
 --
 
@@ -173,11 +165,15 @@ The figure shows descriptive turnout rates by voter age on Election Day binned i
 
 --
 
-- 4,459,145 eligible __in-person voters__ (age 18-80) &rarr; ~73% eligible at both elections
+- 4,459,145 eligible __in-person voters__ (age 18-80)
 
 --
 
 - Home coordinates &rarr; __individual weather exposure__ from validated DMI data __&darr;__
+
+???
+
+~73% eligible at both elections
 
 ---
 
@@ -185,7 +181,7 @@ The figure shows descriptive turnout rates by voter age on Election Day binned i
 
 - Validated __voter records__ for all* eligible Danish voters at municipal elections of 2013 and 2017
 
-- 4,459,145 eligible __in-person voters__ (age 18-80) &rarr; ~73% eligible at both elections
+- 4,459,145 eligible __in-person voters__ (age 18-80)
 
 - Home coordinates &rarr; __individual weather exposure__ from validated DMI data __&darr;__
 
@@ -193,21 +189,25 @@ The figure shows descriptive turnout rates by voter age on Election Day binned i
 include_graphics("media/weather-stations.png")
 ```
 
+???
+
+~73% eligible at both elections
+
 ---
 
 # Estimation
 <br>
-- __OLS regression__ of in-person turnout (1/0) on (Election Day) rainfall, sunshine, and temperature
+- __OLS regression__ of turnout (1/0) on rainfall, sunshine, and temperature with FEs
 
 --
 
 - Two strategies: 
 
-  - (1) **pooled model**: Municipality and election fixed effects assuming as-if randomness of weather exposure
+  - (1) **pooled model**: Municipality and election fixed effects
 
 --
   
-  - (2) **panel model**: Municipality, election, and __voter__ fixed effects eliminating bias from invariant factors
+  - (2) **panel model**: Municipality, election, and __voter fixed effects__
 
 --
 
@@ -217,15 +217,15 @@ include_graphics("media/weather-stations.png")
 
 # Results
 
-- **Rainfall** *does* decrease probability of voting (turnout)
+- **Rainfall** *does* decrease probability of voting (i.e., turnout)
 
 --
 
-- Our best estimate is __-1.1 pp per cm of rainfall__ (avg. in literature: -0.76 pp per cm)
+- Our best estimate is __-1.1 pp per cm of rainfall__ (avg: -0.76 pp per cm)
 
 --
 
-- Rainfall effect is __non-linear__: Increases with rainfall level
+- The rainfall effect grows with rainfall levels (i.e., is **non-linear**)
 
 --
 
@@ -233,13 +233,11 @@ include_graphics("media/weather-stations.png")
 
 --
 
-- __&darr;__ Very strong weather effects on **marginal voters**, i.e., young voters in their twenties __&darr;__ 
+- Very strong weather effects on __young (marginal) voters &darr;__ 
 
 ```{r interaction, out.height='65%', out.width='65%'}
 include_graphics("media/interaction_age3_panel.png")
 ```
-
-
 
 ---
 class: center, middle
@@ -250,8 +248,6 @@ class: center, middle
 include_graphics("media/rain-election.png")
 ```
 <span style="color:grey;font-size:9pt;">Edward Linsmier—Getty Images 2014, time.com/3554884/2014-election-weather-forecast</span>
-
-
 
 ---
 
