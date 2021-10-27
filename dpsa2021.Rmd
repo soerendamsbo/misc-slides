@@ -5,7 +5,7 @@ author:
 - Søren Damsbo-Svendsen<br>sdas<!------>@ifs.ku.dk
 - Kasper Møller Hansen<br>kmh<!------>@ifs.ku.dk
 institute: Department of Political Science<br>University of Copenhagen
-date: "`r format(Sys.time(), '%d %B %Y')`"
+date: "28 October 2021"
 output:
   xaringan::moon_reader:
     css: ["default", "template.css"]
@@ -43,11 +43,11 @@ xaringanExtra::use_tile_view()
 
 --
 <br>
-> "It's __a myth that the weather matters for turnout__. If the weather is bad, maybe a few voters stay home. But today's weather is probably of little importance.".right[*Jørgen Elklit, Ritzau, 2005 (translated)*]
-
+> "It's __*a myth* that the weather matters for turnout__. If the weather is bad, maybe a few voters stay home. But today's weather is probably of little importance.".right[*Jørgen Elklit, 2005, Ritzau* (translated)]
+<br>
 --
 <br>
-> "There are lots of things that affect turnout, but the weather does not seem to be one of them. In the Danish context, we have tried and tried to show that when it rains, people will stay at home. But __the Danes turn out no matter if it rains__ or snows".right[*Kasper M. Hansen, DR Nyheder, 2015 (translated)*]
+> "There are lots of things that affect turnout, but the weather does not seem to be one of them. In the Danish context, we have tried and tried to show that when it rains, people will stay at home. But the __Danes turn out no matter if it rains__ or snows".right[*Kasper M. Hansen, 2015, DR Nyheder* (translated)]
 
 ---
 
@@ -55,23 +55,25 @@ xaringanExtra::use_tile_view()
 
 --
 <br>
-- Frequent references in the media in Denmark and other countries &rarr; calls for systematic analysis
+- Frequent references in the **media** in Denmark and other countries &rarr; calls for systematic analysis
 
 --
 
-- Electoral turnout is a key indicator of health and legitimacy of democracy 
+- Electoral turnout is a key __indicator of health and legitimacy__ of democracy 
 
 --
 
-- Small weather effects are not necessarily important per se if they affect all citizens the same<br>&rarr; small overall reduction in turnout
+- Small weather effects are not necessarily important *per se*
+  - if they affect all citizens the same
+  - &rarr; small overall reduction in turnout
 
 --
 
-- (However, global climate change will make extreme and unpleasant Election day weather more likely, so it should not be dismissed completely)
+- (However, global **climate change** will make unpleasant Election day weather more likely, so it should not be dismissed)
 
 --
 
-- Much more important: If **marginal voter groups** are more susceptible to bad weather in their decision to go voting, the weather can induce inequalities in the democratic representation   
+- Much more important: If **marginal voter groups** are more susceptible, the weather can induce **inequalities** in  democratic representation   
 
 ---
 
@@ -79,17 +81,17 @@ xaringanExtra::use_tile_view()
 
 --
 
-- We show that existing research is highly mixed in terms of design and results
+- We show that **existing research is highly mixed** in terms of design and results
 
 --
 
 - We provide better evidence to the matter through several __methodological advantages__:
 
-  - Validated individual-level data (handful of previous studies) 
+  - Validated **individual-level data** [handful of previous studies]
   
-  - (Almost) complete electorate (first study)
+  - (Almost) **complete electorate** (with huge N) [first study]
   
-  - Panel data with repeated measurements (first study)
+  - **Panel data** with repeated measurements [first study]
 
 --
 
@@ -117,7 +119,7 @@ xaringanExtra::use_tile_view()
 
 --
 
-- Potential __mood__ effects
+- Also potential __mood__ effects
 
 --
 
@@ -130,54 +132,62 @@ xaringanExtra::use_tile_view()
 ---
 
 # Marginal voters
-<br>
-- If the weather disproportionately reduces turnout in marginal voter groups, it can be a major issue for democratic representation
+
+- If the weather disproportionately reduces turnout in marginal voter groups, it **can be a major issue** for democratic representation
 
 --
 
-- __Marginal voters__ are "*those whose decisions to turn out are sensitive to exogenous factors*" (Fowler 2015: 205)
+- __Marginal voters:__ "*those whose decisions to turn out are sensitive to exogenous factors*" (Fowler 2015: 205)
 
 --
 
-- We focus on **young voters** in their (early) twenties who generally have (1) left their childhood home and (2) not yet established a solid voting habit
+- We focus on **young voters** in their (early) twenties who have (1) left their childhood home and (2) not yet established a solid voting habit
+
+--
+
+.pull-left[
+```{r turnout}
+include_graphics("media/turnout_by_age.png")
+```
+]
+.pull-right[
+<br><br><br>
+.center['The rollercoaster ride of turnout and age' (descriptive turnout by age)]
+]
 
 ???
 
 Fowler, A. (2015) Regular voters, marginal voters and the election effects of turnout. *The European Political Science Association* 3(2): 205-219.
-
----
-
-# Marginal voters
-
-```{r turnout, fig.cap = "The rollercoaster ride of turnout and age", out.width='80%'}
-include_graphics("media/turnout_by_age.png")
-```
-
-???
 
 The figure shows descriptive turnout rates by voter age on Election Day binned in years (18-80) and pooled across the 2013 and 2017 elections. N=7,855,649.
 
 ---
 
 # Data
-<br>
+
 - Validated __voter records__ for all* eligible Danish voters at municipal elections of 2013 and 2017
 
 .footnote[*Excluding ~1% and ~9% in non-participating municipalities, ~3% early voting, and elderly voters above age 80.]
 
 --
 
-- __4,459,145 eligible in-person voters__ (age 18-80) &rarr; ~73% eligible at both elections
+- 4,459,145 eligible __in-person voters__ (age 18-80) &rarr; ~73% eligible at both elections
 
 --
 
-- Home coordinates &rarr; __individual weather exposure__ from validated DMI data
+- Home coordinates &rarr; __individual weather exposure__ from validated DMI data __&darr;__
 
 ---
 
-# Individual weather exposure from DMI weather stations
+# Data
 
-```{r stations}
+- Validated __voter records__ for all* eligible Danish voters at municipal elections of 2013 and 2017
+
+- 4,459,145 eligible __in-person voters__ (age 18-80) &rarr; ~73% eligible at both elections
+
+- Home coordinates &rarr; __individual weather exposure__ from validated DMI data __&darr;__
+
+```{r stations, fig.cap='Individual weather exposure from 166 DMI weather stations'}
 include_graphics("media/weather-stations.png")
 ```
 
@@ -209,7 +219,7 @@ include_graphics("media/weather-stations.png")
 
 --
 
-- Our best estimate is __-1.1 pp per cm__ of rainfall (avg. in literature: -0.76 pp per cm)
+- Our best estimate is __-1.1 pp per cm of rainfall__ (avg. in literature: -0.76 pp per cm)
 
 --
 
@@ -221,9 +231,7 @@ include_graphics("media/weather-stations.png")
 
 --
 
-- Very strong weather effects on **marginal voters**, i.e., young voters in their twenties __&rarr;__ 
-
---
+- __&darr;__ Very strong weather effects on **marginal voters**, i.e., young voters in their twenties __&darr;__ 
 
 ```{r interaction, out.height='65%', out.width='65%'}
 include_graphics("media/interaction_age3_panel.png")
