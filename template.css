@@ -143,15 +143,15 @@ a, a > code {
 .title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
   color: var(--title-slide-text-color);
   a, a > code { 
-  color: var(--white);
+  color: var(--title-slide-text-color);
   text-decoration: none; }
 }
 
 .title-slide {
-  line-height: 200%;
+  line-height: 150%;
   background-color: var(--title-slide-background-color);
   a, a > code {
-    color: var(--white);
+    color: var(--title-slide-text-color);
     text-decoration: none;
 }
 
