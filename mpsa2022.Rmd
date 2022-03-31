@@ -69,10 +69,11 @@ style_mono_accent(
 
 layout: true
 
-# Weather and electoral turnout
+<br><br>
 
 .pull-left[
-```{r, out.width="75%"}
+<br>
+```{r, out.width="55%"}
 include_graphics("media/election-rainout_frontpage.png")
 ```
 ]
@@ -283,7 +284,7 @@ We revisit the question of how Election Day weather affects turnout with<br><br>
 
 --
 
-- **rainfall** *does* reduce turnout 
+- __<font color='#6295CD'>rainfall</font>__ *does* reduce turnout 
     
     - effect comparable to avg in existing literature 
     
@@ -299,20 +300,23 @@ class: center, middle
 background-color: #ECECF2
 ---
 
-# Thanks for the attention!
+# Thanks for the attention
 <br>
-```{r pic, out.width='50%'}
+```{r, out.width='50%'}
 include_graphics("media/rain-election.png")
 ```
 <span style="color:grey;font-size:9pt;">Edward Linsmier—Getty Images 2014, time.com/3554884/2014-election-weather-forecast</span>
 
 ---
 <br>
-```{r interaction_large_pool}
+```{r}
 include_graphics("media/interaction_pool.png")
 ```
 ---
-<br>
-```{r regtable, out.width='65%'}
+```{r, out.width='80%'}
 include_graphics("media/weather-turnout-table.png")
+```
+---
+```{r, out.width='53%'}
+include_graphics("media/election-rainout_meta.png")
 ```
