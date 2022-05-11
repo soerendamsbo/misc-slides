@@ -119,7 +119,7 @@ class: middle
 
 # Overview
 
-1. PhD project outline
+1. PhD project background
 
 2. .grey[The Local Warming Effect]
 
@@ -131,16 +131,13 @@ class: middle
 
 ---
 
-# PhD project outline
+# PhD project background
 
-- As the global climate warms, we will all encounter weather events that are, or could be, "caused by" climate change
-
-    - heatwaves, drought, floods, cloudburst, storm surge
+- As the global climate warms, we will all encounter weather events that are, or could be, "caused by" climate change: **heatwaves, drought, floods, cloudburst, storm surge**
 
 --
 
-- **Personal weather experiences** contain information that may be relevant for climate attitudes and behavior
-    - &rarr; political effects of weather events
+- **Personal weather experiences** contain information relevant to climate attitudes and behavior
 
 --
 
@@ -151,6 +148,8 @@ class: middle
 - But **personal experience with climate change** may be important, e.g., because the issue is so **abstract**
 
 --
+
+***
 
 ## What if the two "information sources" interact?
 
@@ -171,7 +170,7 @@ class: middle
 
 # Overview
 
-1. .grey[PhD project outline]
+1. .grey[PhD project background]
 
 2. The Local Warming Effect
 
@@ -187,9 +186,10 @@ class: middle
 # The Local Warming Effect
 
 .pull-left[
-```{r, fig.cap="https://doi.org/10.1080/01402382.2020.1792731"}
+```{r}
 include_graphics("media/damsbopaper.png")
 ```
+https://doi.org/10.1080/01402382.2020.1792731
 ]
 
 --
@@ -291,7 +291,7 @@ include_graphics("media/damsboplot.png")
 
 # Interpretation
 
-- Weather experiences as "cheap", readily available information
+- Weather experiences as "cheap", readily available information (about climate change)
 
 - **Cognitive heuristic:** shortcut to figure out, recall, be equipped to "guess" what's up and down with global warming
 
@@ -354,7 +354,7 @@ class: middle
 
 # Overview
 
-1. .grey[PhD project outline]
+1. .grey[PhD project background]
 
 2. .grey[The Local Warming Effect]
 
@@ -372,7 +372,7 @@ class: middle
 
 --
 
-- *Does information, e.g., in the media, moderate effects of weather experience?*
+> Does information, e.g., in the media, moderate effects of weather experience?
 
 --
 
@@ -380,11 +380,7 @@ class: middle
 
 --
 
-- Attempted **solution:** Experimentally manipulate information while observing *and* manipulating experience
-
---
-
-- Idea: manipulate and observe heat-related __experiences__ and manipulate contextual __information__
+- **Idea:** experimentally manipulate *and* observe heat-related __experiences__ and manipulate contextual __information__
 
 --
 
@@ -514,7 +510,7 @@ __Information__
 
 --
 
-- __Hypothesis 4 (H4):__ The effect of recent exposure to warmer-than-usual temperatures--"the local warming effect"--on climate awareness, opinions, and behavior is larger when combined with information on the climate-weather link
+- __Hypothesis 4 (H4):__ The effect of recent exposure to warmer-than-usual temperatures - "the local warming effect" - on climate awareness, opinions, and behavior is larger when combined with information on the climate-weather link
 
 ---
 layout: true
@@ -574,7 +570,7 @@ include_graphics("media/h3.png")
 
 ---
 
-> __H4:__ The effect of recent exposure to warmer-than-usual temperatures  - "the local warming effect" - on climate awareness, opinions, and behavior is larger when combined with information on the climate-weather link
+> __H4:__ The effect of recent exposure to warmer-than-usual temperatures - "the local warming effect" - on climate awareness, opinions, and behavior is larger when combined with information on the climate-weather link
 
 ```{r, out.width="60%"}
 include_graphics("media/h4.png")
@@ -620,6 +616,8 @@ include_graphics("media/h5.png")
 
 --
 
+***
+
 .center[__&rarr; Overall, no evidence of anticipated interaction between experience and information__]
 
 ---
@@ -647,7 +645,7 @@ class: middle
 
 # Overview
 
-1. .grey[PhD project outline]
+1. .grey[PhD project background]
 
 2. .grey[The Local Warming Effect]
 
@@ -661,15 +659,15 @@ class: middle
 
 # Conclusion
 
-- Personal experience with extreme weather *can* affect perceptions, awareness, opinions towards climate change
+- __Personal experience__ with extreme weather *can* affect perceptions, awareness, opinions towards climate change
 
 --
 
-- So can (mediated, narrative) information
+- So can (mediated, narrative) __information__
 
 --
 
-- But (still) no clear evidence of interactions between information/media narratives and personal experience
+- But (still) __no clear evidence of interactions__ between information/media narratives and personal experience
 
 --
 
@@ -687,6 +685,10 @@ class: middle
 class: title-slide, middle, center
 
 # Thank you!
+
+## [sdas@ifs.ku.dk](mailto:sdas@ifs.ku.dk)
+
+## [soerendamsbo.github.io](https://soerendamsbo.github.io)
 
 ???
 
@@ -732,7 +734,7 @@ The rapid rise of the climate issue in 2019<br>*(Damsbo-Svendsen, forthcoming in
 
 - __Media coverage__ measured as daily *climate keywords* on *dr.dk/nyheder*
 
-- __Public salience__ measured as daily % MIP based on weekly repeated survey  
+- __Public salience__ measured as daily %MIP based on weekly repeated survey  
 
 - Most pronounced for already climate-concerned citizens: **young people, leftist voters, women, people in urban communities**
 ]
