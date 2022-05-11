@@ -189,13 +189,13 @@ class: middle
 ```{r}
 include_graphics("media/damsbopaper.png")
 ```
-https://doi.org/10.1080/01402382.2020.1792731
+[doi.org/10.1080/01402382.2020.1792731](https://doi.org/10.1080/01402382.2020.1792731)
 ]
 
 --
 
 .pull-right[
-RQ: __How does unusual *temperatures* affect Europeans' *opinions* towards climate change?__
+__RQ: How do unusual *temperatures* affect Europeans' *opinions* towards climate change?__
 
 - Direct **experiences** with the weather
 
@@ -218,7 +218,7 @@ RQ: __How does unusual *temperatures* affect Europeans' *opinions* towards clima
 
 - _Dependent_ variable: **climate opinion index** (0-100, based on 6 questions)
 
-- _Independent_ variable: **Temperature** over the past 7 days compared with "normal" in last 30 years
+- _Independent_ variable: **temperature** over the past 7 days compared with "normal" in last 30 years
 
 - Temperatures [observered at country-level](https://www.ecad.eu/) matched with respondents in each country
 
@@ -384,7 +384,7 @@ class: middle
 
 --
 
-- Preregistered **survey experiment** w/ 3024 nat.rep. respondents (Mar-Apr 2022)
+- Preregistered **survey experiment** w/ 3024 nat.rep. respondents (Mar-Apr 2022, Denmark)
 
 --
 
@@ -425,7 +425,9 @@ Now, we will present you with some scientific facts about how climate change cre
 
 - New figures show that the temperature in Denmark has already risen by 2.3 degrees Celsius since the 1800s. The main reason is human emissions of greenhouse gases.
 
-- __A warmer climate creates a new normal for the weather, where heat waves, droughts, cloudbursts, and storm floods will be more extreme, more frequent and more prolonged.__ Every individual summer can be anything from cool to extremely hot. However, climate change has made the most extreme and __dangerous heat waves 50 times more likely__ compared to the period 1951-1980.
+- __A warmer climate creates a new normal for the weather, where heat waves, droughts, cloudbursts, and storm floods will be more extreme, more frequent and more prolonged.__ 
+
+- Individual summers can be anything from cool to extremely hot. However, climate change has made the most extreme and __dangerous heat waves 50 times more likely__ compared to the period 1951-1980.
 
 - Warmer summers can have __health consequences__ for you and your loved ones, for example in the form of headaches, dizziness, rapid heart rate and breathing, drowsiness, and impaired consciousness
 
