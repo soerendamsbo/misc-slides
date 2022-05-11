@@ -99,14 +99,12 @@ background-size: cover
 include_graphics("media/guardian-climate.png")
 ```
 
-
 ---
 
 .right[.grey[Screenshot of https://cnn.it/3L5I1ml]]
 ```{r, out.width="80%"}
 include_graphics("media/cnn-climate.png")
 ```
-
 
 ---
 class: middle
