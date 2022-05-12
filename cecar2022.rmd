@@ -133,19 +133,21 @@ class: middle
 
 # PhD project background
 
-- As the global climate warms, we will all encounter weather events that are, or could be, "caused by" climate change: **heatwaves, drought, floods, cloudburst, storm surge**
+- The canonical source of **political information** is (mass) **media and elite discourse**
+
+    - &rarr; key driver of opinion formation
 
 --
 
-- **Personal weather experiences** contain information relevant to climate attitudes and behavior
+- **Personal weather experiences** also contain information relevant to climate attitudes and behavior
 
 --
 
-- The canonical source of **political information** &mdash; and key driver of opinion formation &mdash; is the (mass) **media and elite discourse**
+- As the global climate warms, we will all encounter weather events that are "caused by" climate change: **heatwaves, drought, floods, cloudburst, storm surge**
 
 --
 
-- But **personal experience with climate change** may be important, e.g., because the issue is so **abstract**
+- **Personal experience** is important, e.g., because the issue is so **abstract** &rarr; makes it relatable, corporal
 
 --
 
@@ -155,15 +157,15 @@ class: middle
 
 --
 
-- Weather experiences are not always interpreted as related to climate change
+- Weather experiences are not always easily interpreted as climate-related
 
 --
 
-- **The media** may make the climate-weather link salient (and increasingly do), which **activates or politicizes weather experiences**
+- **The media** can make the climate-weather link salient (and increasingly do), which **activates or politicizes weather experiences**
     
 --
 
-- This new (!) idea is central to the project
+- This __new idea__ is central to the project
 
 ---
 class: middle
@@ -197,13 +199,11 @@ include_graphics("media/damsbopaper.png")
 .pull-right[
 __RQ: How do unusual *temperatures* affect Europeans' *opinions* towards climate change?__
 
-- Direct **experiences** with the weather
-
-- Independent of media coverage and elite discourse (?)
-
-- Recent weather experiences as a heuristic
+- Direct **experiences** with the weather, independent of elite discourse (?)
 
 - **The local warming effect** is when "deviations in the day’s temperature affect individuals’ global warming beliefs"
+
+- Recent weather experiences as a **heuristic**
 
 - Inspired by Egan & Mullin (2012) and others in the US
 ]
@@ -271,9 +271,9 @@ rnaturalearth::ne_countries(continent = "Europe") %>%
 .pull-left[
 - Regression analysis of **relationship between temperatures and opinions**
 
-- Identifying assumption: **as-if random** allocation of temperature
-
 - **&rarr; Result: clear positive association**
+
+- Identifying assumption: **as-if random** allocation of temperature
 
 - Experiences with unusually hot weather _causes strengthened climate opinions_
 
@@ -301,11 +301,11 @@ include_graphics("media/damsboplot.png")
 
 --
 
-- Updating climate attitudes towards scientific consensus (*great*), but based on fleeting experiences that scientists regard as poor evidence (*not great*)
+- Can be rational to respond to local environment, direct experiences and make use of available 'information'
 
 --
 
-- Can be rationel to respond to local environment, direct experiences and make use of available 'information'
+- Updating climate attitudes towards scientific consensus (*great*), but based on fleeting experiences that scientists regard as poor evidence (*not great*)
 
 --
 
@@ -315,11 +315,11 @@ include_graphics("media/damsboplot.png")
 
 # Results (2)
 
-*Who* is affected by the weather? Who rely on the weather heuristic?
+*Who* is affected by the weather? Who relies on the weather heuristic?
 
 --
 
-- Two potential moderators: **education** (political awareness, sophistication) and **partisanship** (motive)
+- Two potential moderators: **education** (political awareness, sophistication) and **partisanship** (motivation)
 
 --
 
@@ -337,7 +337,7 @@ Is it exclusively a **direct effect of personal experience?**
 
 - The **media (elites)** could play the role of framing/articulating weather experiences as politically relevant
 
-    - connecting weather experiences to climate change 
+    - connect weather and climate change &mdash; and provide "indirect experiences"
 
     - &rarr; the effect would be __larger for people with higher news consumption__
 
@@ -347,7 +347,7 @@ Is it exclusively a **direct effect of personal experience?**
 include_graphics("media/figure3_interaction_news.jpg")
 ```
 
-- __&rarr; Result: suggestive evidence, but no: news exposure makes no difference__
+.center[__&rarr; Result: suggestive evidence, but no: news exposure makes no difference__]
 
 ---
 class: middle
@@ -380,7 +380,7 @@ class: middle
 
 --
 
-- **Idea:** experimentally manipulate *and* observe heat-related __experiences__ and manipulate contextual __information__
+- **Idea:** observe *and* experimentally manipulate __heat-related experiences__ &mdash; and manipulate contextual __information__
 
 --
 
@@ -388,7 +388,7 @@ class: middle
 
 --
 
-- Collaboration w/ [Tobias Heide-Jørgensen](https://politicalscience.ku.dk/staff/phd/?pure=en/persons/436278)
+    - Collaboration w/ [Tobias Heide-Jørgensen](https://politicalscience.ku.dk/staff/phd/?pure=en/persons/436278)
 
 --
 
@@ -508,11 +508,17 @@ __Information__
 
 --
 
-- __Hypothesis 3 (H3):__ The recall effect (H1) is strengthened when learning about the climate-weather link
+    - "Warmer summers can have __health consequences__ for you and your loved ones, for example [...]"
+    
+--
+
+## Interactions
+
+- __Hypothesis 3 (H3):__ The __recall effect (H1)__ is strengthened when learning about the climate-weather link
 
 --
 
-- __Hypothesis 4 (H4):__ The effect of recent exposure to warmer-than-usual temperatures - "the local warming effect" - on climate awareness, opinions, and behavior is larger when combined with information on the climate-weather link
+- __Hypothesis 4 (H4):__ The effect of recent exposure to warmer-than-usual temperatures - __"the local warming effect"__ - on climate awareness, opinions, and behavior is larger when combined with information on the climate-weather link
 
 ---
 layout: true
@@ -625,6 +631,7 @@ include_graphics("media/h5.png")
 ---
 layout: false
 class: middle
+background-color: lightgrey
 
 # Why did it not work as hypothesized?
 
@@ -661,7 +668,7 @@ class: middle
 
 # Conclusion
 
-- __Personal experience__ with extreme weather *can* affect perceptions, awareness, opinions towards climate change
+- __Personal experience__ with extreme weather *can* affect awareness, opinions towards climate change
 
 --
 
@@ -677,11 +684,9 @@ class: middle
 
 --
 
-- Maybe it's only direct experience (*and* information effects); maybe there's no moderation or amplification of weather effects
+    - maybe there simply is no moderation or amplification of direct weather effects
 
---
-
-- Perhaps, the two are distinct (competing) information types?
+    - perhaps, the two are very distinct (competing) information types?
 
 ---
 class: title-slide, middle, center
