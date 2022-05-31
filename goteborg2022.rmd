@@ -3,7 +3,7 @@ title: Electoral benefits for pro-climate parties and<br>candidates in the wake 
 subtitle: Workshop presentation<br>[soerendamsbo.github.io/<br>misc-slides/goteborg2022.html](https://soerendamsbo.github.io/misc-slides/goteborg2022.html)<br>Göteborg
 author: Søren Damsbo-Svendsen<br>[soerendamsbo.github.io](https://soerendamsbo.github.io)<br>PhD fellow
 institute: Department of Political Science<br>University of Copenhagen
-date: "`r format(Sys.Date(), '%d %B %Y',  )`"
+date: "June 2022"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -21,12 +21,14 @@ pacman::p_load(tidyverse,
                lubridate, 
                kableExtra,
                xaringan,
-               xaringanExtra)
+               xaringanExtra,
+               namedropR)
+
+# bib_path <- "/Users/soren/Work/Papers/flooding-pplaces/references.bib"
 
 knitr::opts_chunk$set(echo = FALSE, 
                       fig.align = "center", 
-                      cache = TRUE,
-                      out.height="95%"
+                      cache = TRUE
 )
 
 Sys.setlocale(locale = "da_DK.UTF-8")
@@ -79,41 +81,235 @@ background-size: cover
 .right[.grey[Image by Jeanne and John Bollerup-Jensen]]
 
 ---
-```{r}
+class: middle
+
+```{r, out.width="70%"}
 include_graphics("media/flooding_map_total.png")
 ```
 
 ---
-```{r}
+
+# A rarely harmful extreme weather event in Denmark
+
+- 2013 __storm surge__ after 'Bodil' 
+
+--
+
+- Detailed, case-level **storm surge insurance data** (Storm Council)
+
+--
+
+- Measured at the level of __1,386 polling districts__
+
+--
+
+- 3 treatment definitions (dummies):
+
+    1. **Rehousing:** 1+ cases of rehoused residents   
+    2. **Damage:** storm surge damage (DKK) above avg. in affected areas
+    3. **Flooding:** 1+ one storm surge case
+    
+- Matched with **main outcome:** _district vote share for pro-climate parties_ (1994-2019)
+
+--
+
+- __Difference-in-differences (DID)__ design
+
+--
+
+***
+
+> __RQ: How does an extreme, costly flood event affect electoral support for pro-climate parties and candidates?__
+
+---
+
+# Theory
+
+- Ample evidence that __weather experiences can affect climate change perceptions and attitudes__
+
+--
+
+- But limited evidence that weather experiences affect actual __behavior__, environmental or political
+
+--
+
+- Several studies exist but are framed differently:
+
+    - as __natural disasters and electoral behavior__
+    
+    - __retrospective voting:__ rewarding or punishing incumbents based on performance
+    
+    - still mixed results: sometimes punishment, sometimes reward
+    
+--
+    
+- What if it's more about **policy:** 
+
+    - voters changing preferences towards climate adaptation (and mitigation) and/or parties and candidates adopting climate policies
+
+    - some evidence, e.g., "a sizeable effect for pro-climate voting after experiencing a flood" (Baccini & Leemann, 2021)
+    
+???
+
+Baccini, L., & Leemann, L. (2021). Do natural disasters help the environment? How voters respond and what that means. Political Science Research and Methods, 9(3), 468–484. https://doi.org/10.1017/psrm.2020.25
+
+---
+
+# Parallel trends: outcome evolution
+
+```{r, out.width="90%"}
 include_graphics("media/parallel_trends_plot_main.png")
 ```
 
----
-```{r}
-include_graphics("media/balance_density.png")
-```
+???
 
----
 ```{r}
 include_graphics("media/parallel_trends_plot_all.png")
 ```
 
 ---
+
+# Parallel trends: pre-treatment balance
+
+```{r, out.width="50%"}
+include_graphics("media/balance_density.png")
+```
+
+---
+
+# Results: DID estimates
+
 ```{r}
 include_graphics("media/did_estimates_2x2.png")
 ```
 
----
+???
+
 ```{r}
+include_graphics("media/did_estimates_intensity.png")
+```
+
+---
+
+# Results: event study plots (placebo)
+
+```{r, out.width="85%"}
 include_graphics("media/did_estimates_eventstudy.png")
 ```
 
 ---
-```{r}
+class: middle
+
+# Part II: support for pro-climate candidates
+
+---
+# Part II: support for pro-climate candidates
+
+## Candidate data from 2017 local elections
+
+--
+
+- (1) *Outcome:* **being elected (binary)** in 2017, 2013 (and 2009)
+
+--
+
+- (2) Running in a **treated municipality (binary)** w/ 10+ rehousing cases
+
+--
+
+- (3) Running on a **pro-climate platform (binary)** w/ climate as key issue or high climate score
+
+***
+
+--
+
+## DIDID
+
+> RQ: Are climate candidates rewarded more (punished less) by flooding in affected areas?
+
+--
+
+_Triple differences:_<br>
+
+.center[&rarr; we should expect **a positive difference in DID estimates** for pro-climate vs. non-climate candidates]
+
+---
+
+# Results: DIDID estimate
+
+```{r, out.width="75%"}
 include_graphics("media/did_estimates_2x2_candidates_table.png")
 ```
 
 ---
-```{r}
+
+# Results: DIDID estimate
+
+<br>
+
+.pull-left[
+```{r, out.width="75%"}
+include_graphics("media/did_estimates_2x2_candidates_table.png")
+```
+]
+
+.pull-right[
+- &rarr; approx. 6 percentage points difference (DIDID)
+
+- pro-climate candidates benefit in post-flooding elections
+
+- not yet clear if the voters change preferences or candidates change policy 
+
+    - (both would be interesting and could happen simultanously)
+]
+
+---
+
+# Results: DIDID placebo
+
+```{r, out.width="90%"}
 include_graphics("media/did_estimates_2x2_candidates.png")
 ```
+
+---
+
+# Conclusion
+
+- __RQ: Do pro-climate parties and candidates benefit electorally after extreme flooding?__
+
+--
+
+- __Case:__ Denmark, 2013 storm surge 'Bodil' and surrounding elections
+
+--
+
+- Detailed __data__ on flooding damages and vote shares for parties and candidates
+
+--
+
+- __DID design__
+
+--
+
+- __Results:__
+
+    - Pro-climate (left-green) parties gain at least 1.5 pp
+    
+    - Pro-climate candidates have their election chances increased 6 pp vs. non-climate candidates
+
+--
+<br>
+Still plenty of additional analysis and interpretation to do ...
+
+---
+class: title-slide, middle, center
+
+# Thank you!
+
+&rarr; sdas@ifs.ku.dk
+
+```{r, out.width="45%"}
+include_graphics("media/banksy.jpg")
+```
+
+.grey[Banksy (image by Zak Hussein<br>/ PA Images via Getty Images)]
