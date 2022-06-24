@@ -91,27 +91,34 @@ include_graphics("media/flooding_map_total.png")
 
 # A rarely harmful extreme weather event in Denmark
 
-- 2013 __storm surge__ after 'Bodil' 
+- 2013 __storm surge__ after the winter storm 'Bodil'
 
 --
 
-- Detailed, case-level **storm surge insurance data** (Danish Storm Council)
+- Flooding measured with detailed, case-level **storm surge insurance data** (Danish Storm Council)
 
 --
 
-- Flooding measured at the level of __1,386 polling districts__
+- Aggregated at level of __1,386 polling districts__
 
 --
 
 - 3 treatment definitions (dummies):
 
     1. **Rehousing:** 1+ cases of rehoused residents   
-    2. **Damage:** storm surge damage (DKK) above avg. in affected areas
+    2. **Damage:** storm surge damage (DKK) above average
     3. **Flooding:** 1+ storm surge cases
 
 --
 
-- Matched with **main outcome:** _district vote share for pro-climate parties_ (1994-2019)
+- Flooding matched with **main outcome:** _district vote share for pro-climate parties_ (DK, 1994-2019)
+
+--
+
+    - ... and, later, the __secondary outcome__: _election chances for pro-climate candidates_
+
+--
+
 
 --
 
@@ -121,7 +128,7 @@ include_graphics("media/flooding_map_total.png")
 
 ***
 
-> __RQ: How does an extreme, costly flood event affect electoral support for pro-climate parties and candidates?__
+> __RQ: How does an extremely costly flood event affect voting for pro-climate parties and candidates?__
 
 ???
 
@@ -141,27 +148,34 @@ include_graphics("media/proclimate_candidates_kv2017.png")
 
 --
 
-- Several studies exist, but they are framed in a different way:
+- Several studies exist, but they are framed quite differently:
 
 --
 
-    - __natural disasters__ &rarr; __electoral behavior__
+    - __natural disasters &rarr; retrospective voting__ 
     
-    - __retrospective voting:__ rewarding or punishing incumbents based on how they handled the event
+    - i.e., rewarding or punishing incumbents based on how they handled the disaster (or blindly)
     
-    - still __mixed results:__ sometimes punishment, sometimes reward
+    - __still mixed results:__ sometimes punishment, sometimes reward
     
 --
     
-- What if it's more about **policy:** 
+- How about **policy?** 
 
-    - voters updating preferences on climate adaptation and mitigation<br>(and/or parties and candidates adopting pro-climate policies to attract voters)
+    - more sophisticated voter behavior: updated __voter preferences__ on climate adaptation and mitigation
+    
+    - and/or policy or strategy shifts among parties and candidates
 
-    - some evidence: e.g., "a sizeable effect for pro-climate voting after experiencing a flood" (Baccini & Leemann, 2021)
+    - e.g., "a sizeable effect for pro-climate voting after experiencing a flood" (Baccini & Leemann, 2021)
     
 ???
 
 Baccini, L., & Leemann, L. (2021). Do natural disasters help the environment? How voters respond and what that means. Political Science Research and Methods, 9(3), 468–484. https://doi.org/10.1017/psrm.2020.25
+
+---
+class: middle
+
+# Part I: support for pro-climate parties in parliamentary elections
 
 ---
 
@@ -210,15 +224,15 @@ include_graphics("media/did_estimates_eventstudy.png")
 ---
 class: middle
 
-# Part II: support for pro-climate candidates
+# Part II: support for pro-climate candidates in local elections
 
 ---
 
-# Part II: candidate data from 2017 local elections
+# Part II: support for pro-climate candidates
 
---
-
-Comprehensive __candidate survey__ w/ policy responses from __73% of *all local election candidates*__
+Data: comprehensive __candidate survey__ of 2017 local election candidates (N=9,554)
+    
+- w/ policy responses from 73% of candidates
 
 --
 
@@ -232,7 +246,7 @@ Comprehensive __candidate survey__ w/ policy responses from __73% of *all local 
 
 --
 
-- (3) Running on a **pro-climate platform (binary)** w/ climate as key issue or high climate score
+- (3) Running on a **pro-climate platform (binary)** w/ climate as key issue or high climate score (~32%)
 
 ***
 
@@ -241,6 +255,8 @@ Comprehensive __candidate survey__ w/ policy responses from __73% of *all local 
 > __RQ: Are pro-climate candidates rewarded more (punished less) by flooding in affected areas?__
 
 --
+
+<br>
 
 _Triple differences (DIDID):_<br>
 
@@ -260,6 +276,12 @@ include_graphics("media/proclimate_candidates_kv2017.png")
 include_graphics("media/did_estimates_2x2_candidates_table.png")
 ```
 
+???
+
+- $Treatment\:group \times Post$ (-0.048\*\*\*): electoral punishment of -4.8 percentage points for non-climate candidates because of the flood (small reward for pro-climate)
+- $Climate \:candidate \times Post$ (-0.008): no change over time in election chances of *non-climate candidates in non-flooded areas*
+- $Treatment\:group \times Climate \:candidate$ (0.017): election chances of pro-climate candidates in flooded areas were the same as other candidates' *before the flood*
+
 ---
 
 # Results: DIDID estimate
@@ -275,9 +297,9 @@ include_graphics("media/did_estimates_2x2_candidates_table.png")
 .pull-right[
 - &rarr; approx. __6 percentage points__ difference (DIDID)
 
-- pro-climate candidates are rewarded in post-flooding elections (long after the event)
+- __pro-climate candidates are rewarded in post-flooding elections__ (long after the event)
 
-- not clear if the voters change preferences or candidates change policy
+- not clear if voters change preferences or candidates (parties) change policy or strategy
 ]
 
 ---
@@ -290,17 +312,17 @@ include_graphics("media/did_estimates_2x2_candidates.png")
 
 <br>
 
-- also no DIDID for other candidate features: __incumbency__ and __pro-welfare platform__
+- also no effect (DIDID) for other candidate features, e.g., __incumbency__ and __pro-welfare platform__
 
 ---
 
 # Conclusion
 
-> __RQ: How does an extreme, costly flood event affect electoral support for pro-climate parties and candidates?__
+> __RQ: How does an extremely costly flood event affect voting for pro-climate parties and candidates?__
 
 --
 
-- __Case:__ 2013 storm surge 'Bodil' and surrounding elections in Denmark
+- __Case:__ 2013 storm surge and surrounding Danish elections
 
 --
 
@@ -314,17 +336,17 @@ include_graphics("media/did_estimates_2x2_candidates.png")
 
 - __Results:__
 
-    - Pro-climate (left-green) parties gain at least 1.5 pp
+    - Pro-climate __parties__ (left-green) gain at least 1.5 pp
     
-    - Pro-climate candidates see their election chances increase by 6 pp vs. non-climate candidates
+    - Pro-climate __candidates__ see their election chances increase by 6 pp vs. non-climate candidates
 
 --
 
-- The importance of __policy__ and the __long-lasting effects__ suggest that flood-stricken __voters' behavior is quite sophisticated__ 
+- Importance of __policy__ and the __long-lasting effects__ suggest quite __sophisticated voting behavior__ (not *only* retrospective voting)
 
 --
 <br><br>
-Still plenty of black boxes and additional analysis and interpretation to do...
+Still plenty of black boxes, analysis and interpretation to do...
 
 ---
 class: title-slide, middle, center
