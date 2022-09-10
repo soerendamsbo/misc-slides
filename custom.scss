@@ -1,0 +1,20 @@
+/*-- scss:defaults --*/
+
+.center{
+    text-align: center;
+}
+
+.grey{
+	color: gray;
+}
+
+$red: #C80000;
+
+h1 {
+  color: $red;
+}
+
+$body-bg:                   red !default;
+
+/*-- scss:rules --*/
+

@@ -1,0 +1,284 @@
+---
+title: Voting for pro-climate parties and candidates in response to extreme flooding experience
+subtitle: APSA presentation
+author: |
+  | Søren Damsbo-Svendsen
+  | [soerendamsbo.github.io](https://soerendamsbo.github.io)
+  | University of Copenhagen
+date: September 2022
+format: 
+  revealjs:
+    theme: rladies.scss
+    incremental: true   
+    #smaller: true
+    overview: true
+    slide-number: true
+    preview-links: auto
+    title-slide-attributes: 
+      data-background-color: "#8b2325"
+    #self-contained: true
+    chalkboard: true
+    slide-level: 2
+    width: 1200
+    height: 750
+    margin: 0.1
+execute:
+  echo: false
+  cache: true
+---
+
+`r pacman::p_load(tidyverse, knitr, lubridate, kableExtra)`
+
+## Extreme weather experience and behavior
+
+:::: {.columns}
+::: {.column width="70%"}
+
+::: {.incremental}
+- Ample evidence that __extreme weather experiences can affect climate change perceptions and attitudes__
+
+- But limited evidence that weather experiences affect __actual behavior__ &mdash; environmental or political
+
+- e.g., "a sizeable effect for pro-climate voting after experiencing a flood" (Baccini & Leemann, 2021)
+:::
+
+
+:::
+::: {.column width="30%"}
+> _RQ: How does climate-related extreme weather experience affect pro-climate voting?_
+
+:::
+::::
+
+# A severe northern European storm surge in December 2013 {background-color="#8b2325"} 
+
+## {background-image="media/xavermap.png"} 
+
+::: {.absolute right=0 top=730}
+:::
+
+## {background-image="media/lynæs.jpg"} 
+
+::: {.absolute right=0 top=730}
+:::
+
+## {background-image="media/xaver-hamburg.jpg"} 
+
+::: {.absolute right=0 top=730}
+:::
+
+## {background-image="media/standard_Stormen-Bodil.jpg"} 
+
+::: {.absolute right=0 top=730}
+:::
+
+## {background-image="media/bodil.png"}
+
+::: {.absolute right=0 top=730}
+Image by Jeanne and John Bollerup-Jensen
+:::
+
+## The 2013 storm surge in Denmark
+
+```{r}
+#| fig-align: center
+include_graphics("media/flooding_map_timeline.png")
+```
+
+- A rarely harmful and costly weather event &rarr; "Hurricane Sandy-equivalent"
+- **Data** from the Danish Storm Council public insurance scheme
+- Local flooding measured with detailed and complete **storm surge insurance cases**
+
+# Study I: how the vote share of pro-climate parties increases after the flood
+
+## Study I: pro-climate parties
+
+- Level of analysis: __1,386 polling districts__
+
+- Three binary treatment definitions:
+
+    1. Storm surge damages (USD) above average (_damages_)
+    2. 1+ cases of rehoused residents (_rehousing_ cases)
+    3. 1+ storm surge cases (total _flooding_ cases)
+
+- Flooding matched with **main outcome:** _district vote share for pro-climate parties_ (DK, 1994-2019)
+
+- Difference-in-differences (DID) design
+
+::: {.notes}
+```{r}
+#| fig-align: center
+include_graphics("media/proclimate_candidates_kv2017.png")
+```
+:::
+
+## Study I: pretreatment balance
+
+```{r}
+#| fig-align: center
+include_graphics("media/balance_density.png")
+```
+
+## Study I: parallel trends
+
+```{r}
+#| fig-align: center
+include_graphics("media/parallel_trends_plot.png")
+```
+
+## Study I: main DID results
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_2x2_2011.png")
+```
+
+## Study I: main DID results - flooding intensity
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_intensity_2011.png")
+```
+
+## Study I: event study plots - placebo tests
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_eventstudy.png")
+```
+
+## Study I: alternative baseline
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_2x2.png")
+```
+
+## Study I: propensity-score matching 
+
+::: {.nonincremental}
+- Abadie (2005)
+- ln(polling district area), ln(distance to the water), ln(historical average turnout), academic education (%), primary education (%), ln(median income), ln(total wealth), single-family homes (%)
+- __DID estimate (damages):__ 2.06 (bootstrapped 95% CI: [1.11, 3.02])
+- No placebo effects
+:::
+
+# Study II: how voters reward pro-climate candidates with higher election chances after the flood
+
+## Study II: pro-climate candidates
+
+- Data: comprehensive __candidate survey__ of 2017 local election candidates (N=9,554)
+
+- w/ policy responses from 73% of candidates
+
+- *Key variables:*
+
+1. *Outcome:* **being elected (binary)** in 2017, 2013 (and 2009)
+
+2. Running in a **treated municipality (binary)** w/ high economic damage
+
+3. Running on a **pro-climate platform (binary)** w/ climate as key issue or high climate score (~32%)
+
+. . .
+
+__RQ: Do pro-climate candidates benefit in flooded areas?__
+
+_Triple differences (DIDID):_
+
+&rarr; we should expect **a positive difference in DID estimates** for pro-climate vs. non-climate candidates
+
+## Study II: pro-climate candidates
+
+```{r}
+#| fig-align: center
+include_graphics("media/proclimate_candidates_kv2017.png")
+```
+
+## Study II: main DIDID results
+
+```{r}
+#| fig-align: center
+#| out-width: 65%
+include_graphics("media/didid.png")
+```
+
+::: {.notes}
+- $Treatment\:group \times Post$: electoral punishment of -4.0 pp for non-climate candidates because of the flood (small reward for pro-climate)
+- $Climate \:candidate \times Post$: no change over time (1 pp) in election chances of *non-climate candidates in non-flooded areas*
+- $Treatment\:group \times Climate \:candidate$: election chances of _pro-climate candidates in flooded areas_ were only slightly higher *before the flood* (2.3 pp)
+:::
+
+---
+
+## Study II: main DIDID results
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="43%"}
+```{r}
+include_graphics("media/didid.png")
+```
+:::
+
+::: {.column width="55%"}
+
+- __All parties:__ approx. 5.5 %-points
+
+- __Pro-climate parties:__ approx. 11.2 %-points
+
+- &rarr; _pro-climate candidates are rewarded in post-flooding elections_
+
+:::
+::::
+
+---
+
+## Study II: DIDID placebo test
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_2x2_candidates.png")
+```
+
+
+- DIDID effects from most flooding intensities
+- No placebo DIDID effects
+- Also no DIDID for other candidate features: incumbency and pro-welfare
+
+## Conclusion
+
+> __RQ: How does climate-related extreme weather experience affect pro-climate voting?__
+
+. . .
+
+- __Case:__ 2013 storm surge and surrounding Danish elections
+
+- Detailed insurance **data** on local flooding
+
+. . .
+
+```{r}
+#| fig-align: center
+include_graphics("media/twostudies.png")
+```
+
+## Conclusion
+
+> __RQ: How does climate-related extreme weather experience affect pro-climate voting?__
+
+- Pro-climate __parties__ (left-green bloc) gain at least 1.5 pp in flooded areas
+
+- Pro-climate __candidates__ see their election chances increase by 6 pp vs. non-climate candidates
+
+- Importance of __policy__ and the __long-lasting effects__ suggest quite __sophisticated voting behavior__ (not *only* retrospective voting)
+
+## Thank you! {.center}
+
+&rarr; sdas@ifs.ku.dk
+
+::: {.column .grey width="50%"}
+![](media/banksy.jpg)
+Banksy (image by Zak Hussein, PA Images via Getty Images)
+:::
