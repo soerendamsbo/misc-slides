@@ -211,27 +211,37 @@ include_graphics("media/did_estimates_2x2.png")
 
 - Data: __candidate survey__ w/ climate-related policy responses from 73% of candidates
 
-- __Pro-climate candidate (binary):__ climate as key priority or climate score above $\frac{4}{5}$
+- __Pro-climate candidate (binary):__ climate as key priority or climate score above 4/5
 
 - Treatment: __high economic damage__ in municipality where candidate is running
 
 - Triple differences (DIDID) design
 
-## Study II: pro-climate candidates (%)
+## Study II: pro-climate candidates
 
-```{r}
-#| fig-align: center
-include_graphics("media/proclimate_candidates_kv2017.png")
-```
+<br>
 
-## Study II: key expectation
+:::: {.columns}
+::: {.column width="40%"}
 
-::: {.absolute top=200 left=250 width=700}
+### Key expectations
 1. If voters engage in pro-climate voting,
 2. __the gap in election chances__ of pro-climate candidates versus non-climate candidates
 3. __should increase__ in heavily flooded communities (because of the flood)
 4. __&rarr; positive DIDID__
+
 :::
+::: {.column width="5%"}
+:::
+::: {.column width="55%"}
+
+    Pro-climate candidates within each party (%)
+```{r}
+include_graphics("media/proclimate_candidates_kv2017.png")
+```
+
+:::
+::::
 
 ## Study II: DIDID results
 
@@ -336,7 +346,7 @@ include_graphics("media/twostudies.png")
 
 ## Thank you! {.center background-color="#8b2325"}
 
-::: {.column width="75%"}
+::: {width="65%"}
 {{< fa envelope >}} &rarr; sdas@ifs.ku.dk 
 ```{r}
 include_graphics("media/lighthouse.jpg")
