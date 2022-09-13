@@ -17,6 +17,7 @@ format:
       data-background-color: "#8b2325"
     self-contained: true
     chalkboard: false
+    fragments: true
     slide-level: 2
     width: 1200
     height: 750
@@ -28,7 +29,7 @@ execute:
 
 `r pacman::p_load(tidyverse, knitr, lubridate, kableExtra)`
 
-## Theory: extreme weather experience &rarr; behavior
+## Theory: extreme weather experience &rarr; behavior {transition="slide-in none-out" background-transition="slide-in none-out"}
 
 :::: {.columns}
 ::: {.column width="30%"}
@@ -38,11 +39,12 @@ execute:
 ::: {.column width="70%"}
 ::: {.incremental}
 - Ample evidence that extreme weather experiences affects __climate change perceptions and attitudes__
-- But limited evidence that weather experiences affect __actual behavior:__
+- But limited evidence that weather experiences affect _actual behavior:_
     - __environmental behavior:__ it does *not* increase private energy saving, recycling, etc. (e.g. Rüttenauer 2021)
     - __information/communication behavior:__ it *can* increase Twitter climate discussion, community dicussion, and web searches (e.g. Boudet et al. 2019; Osberghaus & Demski 2019; Sisco et al. 2017)
-- How about more collective, political behavior? 
-    - __Pro-climate voting!__
+- How about more collective, _political behavior?_ 
+    - **Pro-climate voting!**
+
 :::
 :::
 ::::
@@ -55,17 +57,19 @@ execute:
 
 :::
 ::: {.column width="70%"}
+
+__Pro-climate voting:__
+
 ::: {.incremental}
-- __Pro-climate voting:__
-    - "_a sizeable effect for pro-climate voting_ [20 %-points] _after experiencing a flood_" (Baccini & Leemann 2021)
-    - Californian wildfires increase support for costly, pro-environment policies by 5-6 %-points (Hazlett & Mildenberger 2020)
-    - Studies of retrospective voting sometimes show benefits for relatively pro-climate parties (e.g. Gasper & Reeves 2011; Bechtel & Hainmueller 2011)
-    - Some null findings (e.g. Hilbig & Riaz, 2022; Melville-Rea 2022) 
+- _"a sizeable effect for pro-climate voting_ [20 %-points] _after experiencing a flood"_ (Baccini & Leemann 2021)
+- Californian wildfires increase support for costly, pro-environment policies by 5-6 %-points (Hazlett & Mildenberger 2020)
+- Studies of retrospective voting sometimes show benefits for relatively pro-climate parties (e.g. Gasper & Reeves 2011; Bechtel & Hainmueller 2011)
+- Some null findings (e.g. Hilbig & Riaz, 2022; Melville-Rea 2022) 
 :::
 :::
 ::::
 
-# Severe northern European storm surge in December 2013 {background-color="#8b2325"} 
+# Severe northern European storm surge in December 2013 {background-color="#8b2325"}
 
 ## {background-image="media/xavermap.png"} 
 
@@ -112,7 +116,7 @@ include_graphics("media/flooding_map_timeline.png")
 - **Data:** detailed and complete geocoded **storm surge insurance cases** from the Danish Storm Council
 - N = 2,924
 
-# Study I: how the vote share of pro-climate parties increases after the flood {background-color="#8b2325"}
+# Study I: how the vote share of pro-climate parties increases after the flood {background-color="#8b2325" transition="slide" background-transition="slide"}
 
 ## Study I: voting for pro-climate parties
 
@@ -162,14 +166,14 @@ include_graphics("media/did_estimates_2x2_2011.png")
 include_graphics("media/did_estimates_intensity_2011.png")
 ```
 
-## Study I: DID results - event study plots
+## Study I: DID robustness - event study plots
 
 ```{r}
 #| fig-align: center
 include_graphics("media/did_estimates_eventstudy.png")
 ```
 
-## Study I: alternative baseline
+## Study I: DID robustness - alternative baseline
 
 <br>
 
@@ -182,7 +186,7 @@ include_graphics("media/did_estimates_2x2.png")
 
 &rarr; _flooding effect of at least 1.5 %-points_
 
-## Study I: propensity-score matching 
+## Study I: DID robustness - propensity-score matching 
 
 <br>
 
@@ -197,7 +201,7 @@ include_graphics("media/did_estimates_2x2.png")
 
 &rarr; _flooding effect robust to covariate matching_
 
-# Study II: how voters reward pro-climate candidates with higher election chances after the flood {background-color="#8b2325"} 
+# Study II: how voters reward pro-climate candidates with higher election chances after the flood {background-color="#8b2325" transition="slide" background-transition="slide"} 
 
 ## Study II: voting for pro-climate candidates
 
@@ -298,7 +302,7 @@ include_graphics("media/did_estimates_2x2_candidates.png")
 - No DIDID effects in __placebo test__
 - And also __no DIDID for other candidate features:__ _incumbent_ and _pro-welfare_
 
-# Conclusion {background-color="#8b2325"} 
+# Conclusion {background-color="#8b2325" transition="slide" background-transition="slide"}
 
 ## Conclusion 1/2
 
@@ -344,7 +348,7 @@ include_graphics("media/twostudies.png")
 :::
 ::::
 
-## Thank you! {.center background-color="#8b2325"}
+## Thank you! {.center background-color="#8b2325" transition="fade" background-transition="fade"}
 
 ::: {width="65%"}
 {{< fa envelope >}} &rarr; sdas@ifs.ku.dk 

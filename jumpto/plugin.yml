@@ -1,0 +1,2 @@
+name: RevealJumpTo
+script: [jumpto.js]
