@@ -7,7 +7,7 @@ author: |
   | [soerendamsbo.github.io](https://soerendamsbo.github.io)
 format: 
   revealjs:
-    theme: rladies.scss
+    theme: sd-revealjs-theme.scss
     incremental: true   
     #smaller: true
     overview: true
@@ -15,8 +15,8 @@ format:
     preview-links: auto
     title-slide-attributes: 
       data-background-color: "#8b2325"
-    #self-contained: true
-    chalkboard: true
+    self-contained: true
+    chalkboard: false
     slide-level: 2
     width: 1200
     height: 750
