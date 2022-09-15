@@ -15,7 +15,7 @@ format:
     preview-links: auto
     title-slide-attributes: 
       data-background-color: "#8b2325"
-    self-contained: true
+    self-contained: false
     chalkboard: false
     fragments: true
     slide-level: 2
