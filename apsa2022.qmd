@@ -63,7 +63,7 @@ __Pro-climate voting:__
 ::: {.incremental}
 - _"a sizeable effect for pro-climate voting_ [20 %-points] _after experiencing a flood"_ (Baccini & Leemann 2021)
 - Californian wildfires increase support for costly, pro-environment policies by 5-6 %-points (Hazlett & Mildenberger 2020)
-- Studies of retrospective voting sometimes show benefits for relatively pro-climate parties (e.g. Gasper & Reeves 2011; Bechtel & Hainmueller 2011)
+- Studies of __retrospective voting and natural disasters__ sometimes show electoral rewards for (relatively) pro-climate parties (e.g. Gasper & Reeves 2011; Bechtel & Hainmueller 2011)
 - Some null findings (e.g. Hilbig & Riaz, 2022; Melville-Rea 2022) 
 :::
 :::
@@ -141,12 +141,16 @@ include_graphics("media/flooding_map_timeline.png")
 include_graphics("media/balance_density.png")
 ```
 
+&rarr; _flooded and unflooded areas are fairly well-balanced on most covariates_
+
 ## Study I: parallel trends
 
 ```{r}
 #| fig-align: center
 include_graphics("media/parallel_trends_plot.png")
 ```
+
+&rarr; _generally, parallel pretrends (with some imbalances); 2015 (post) stands out!_
 
 ## Study I: DID results - main
 
@@ -157,34 +161,7 @@ include_graphics("media/parallel_trends_plot.png")
 include_graphics("media/did_estimates_2x2_2011.png")
 ```
 
-## Study I: DID results - flooding intensity
-
-<br>
-
-```{r}
-#| fig-align: center
-include_graphics("media/did_estimates_intensity_2011.png")
-```
-
-## Study I: DID robustness - event study plots
-
-```{r}
-#| fig-align: center
-include_graphics("media/did_estimates_eventstudy.png")
-```
-
-## Study I: DID robustness - alternative baseline
-
-<br>
-
-```{r}
-#| fig-align: center
-include_graphics("media/did_estimates_2x2.png")
-```
-
-<br>
-
-&rarr; _flooding effect of at least 1.5 %-points_
+&rarr; _flooding effect on pro-climate voting approx. 2-4 %-points_
 
 ## Study I: DID robustness - propensity-score matching 
 
@@ -200,6 +177,17 @@ include_graphics("media/did_estimates_2x2.png")
 <br>
 
 &rarr; _flooding effect robust to covariate matching_
+
+## Study I: DID results - flooding intensity
+
+<br>
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_intensity_2011.png")
+```
+
+&rarr; _flooding effect tends to grow with flooding **intensity**__
 
 # Study II: how voters reward pro-climate candidates with higher election chances after the flood {background-color="#8b2325" transition="slide" background-transition="slide"} 
 
@@ -357,3 +345,25 @@ include_graphics("media/lighthouse.jpg")
 ```
 {{< fa camera >}} Marco Faria
 :::
+
+# Supplementary material {visibility="uncounted"}
+
+## Study I: DID robustness - event study plots {visibility="uncounted"}
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_eventstudy.png")
+```
+
+&rarr; _some **imbalances**; 2011 appears to be the odd election_
+
+## Study I: DID robustness - alternative baseline {visibility="uncounted"}
+
+<br>
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_2x2.png")
+```
+
+&rarr; _with alternative baseline (2007) still flooding effect of at least 1.5 %-points_
