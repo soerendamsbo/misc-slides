@@ -472,3 +472,84 @@ class: middle
 - Thinking consciously about experiences (= poor evidence) eliminates effects?
 
 - Low statistical power...?
+
+---
+class: middle, center
+
+# Appendix
+
+---
+layout: true
+
+# Raw results without covariates and multiple imputation
+
+---
+---
+
+## 1
+
+```{r, out.width="85%"}
+include_graphics("media/h1-h2_raw.png")
+```
+
+---
+
+## 2
+
+```{r, out.width="75%"}
+include_graphics("media/h3_raw.png")
+```
+
+---
+
+## 3
+
+```{r, out.width="75%"}
+include_graphics("media/h4_raw.png")
+```
+
+---
+
+## 4
+
+```{r, out.width="50%"}
+include_graphics("media/h5_raw.png")
+```
+
+---
+layout: true
+
+# Alternative MI-algorithm: mice instead of Amelia
+
+---
+---
+
+## 1
+
+```{r, out.width="85%"}
+include_graphics("media/h1-h2_mice.png")
+```
+
+---
+
+## 2 
+
+```{r, out.width="75%"}
+include_graphics("media/h3_mice.png")
+```
+
+---
+
+## 3
+
+```{r, out.width="75%"}
+include_graphics("media/h4_mice.png")
+```
+
+---
+
+## 4
+
+```{r, out.width="50%"}
+include_graphics("media/h5_mice.png")
+```
