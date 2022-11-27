@@ -1,6 +1,6 @@
 ---
 title: Voting for pro-climate parties and candidates in response to extreme flooding experience
-date: "20220922"
+date: "20221202"
 date-format: long
 author: |
   | Søren Damsbo-Svendsen
@@ -30,27 +30,7 @@ execute:
 
 `r pacman::p_load(tidyverse, knitr, lubridate, kableExtra)`
 
-## My project
-
-<br>
-
-- 3-year PhD project at Department of Political Science, University of Copenhagen (currently visiting Peter) 
-- Project about influence of __extreme weather experience__ on __climate attitudes__ and __political behavior__
-- __Personal experience__ as a source of information, __media(ted) climate information__ as another, plus possible _interactions_
-- Project has __four papers__ (and a few side projects)
-
-## Four papers
-
-<br>
-
-1. __Abnormally warm temperatures__ (also) make Europeans more climate-aware or pro-climate
-2. __Mass media climate coverage__ was the most plausible driver of the surge in attention to the climate issue in Europe around 2019
-3. __Poor Election Day weather__ depresses turnout, especially among "marginal voters" (e.g., young), but nice weather increases it
-4. Working paper about __flooding experience and pro-climate voting__ that I will present today
-
-# Working paper:<br>Voting for pro-climate parties and candidates in response to extreme flooding experience
-
-## Theory: extreme weather experience &rarr; behavior {transition="slide-in none-out" background-transition="slide-in none-out"}
+# Theory: extreme weather experience &rarr; behavior {transition="slide-in none-out" background-transition="slide-in none-out"}
 
 :::: {.columns}
 ::: {.column width="30%"}
