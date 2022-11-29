@@ -29,7 +29,14 @@ execute:
 
 `r pacman::p_load(tidyverse, knitr, lubridate, kableExtra)`
 
-# Background {transition="slide-in none-out" background-transition="slide-in none-out"}
+# {background-image="media/lynæs.jpg"}
+
+<br><br><br><br><br><br><br><br><br><br>
+<p align="right" style="color: #8b2325; font-size: 120px; text-shadow: 2px 2px 1px black;">Background</p>
+
+::: {.absolute left=0 top=730}
+{{< fa camera >}} Lynæs Bådelaug
+:::
 
 ## Background: extreme weather experience &rarr; behavior {transition="slide-in none-out" background-transition="slide-in none-out"}
 
@@ -83,12 +90,6 @@ __Northern Europe on<br>December 5 2013__
 {{< fa camera >}} European Environment Agency
 :::
 
-## {background-image="media/lynæs.jpg"} 
-
-::: {.absolute left=0 top=730}
-{{< fa camera >}} Lynæs Bådelaug
-:::
-
 ## {background-image="media/xaver-hamburg.jpg"} 
 
 ::: {.absolute left=0 top=730}
@@ -115,7 +116,7 @@ __Northern Europe on<br>December 5 2013__
 ```{r}
 #| fig-align: center
 #| out-width: 80%
-include_graphics("media/flooding-pplaces_media/flooding_map_timeline2.png")
+knitr::include_graphics("media/flooding-pplaces_media/flooding_map_timeline2.png")
 ```
 
 :::
