@@ -73,7 +73,7 @@ execute:
 __Pro-climate voting:__
 
 ::: {.incremental}
-- _"a sizeable effect for pro-climate voting_ [20 %-points] _after experiencing a flood"_ (Baccini & Leemann 2021)
+- _"a sizeable effect for **pro-climate voting**_ [20 %-points] _after experiencing a flood"_ (Baccini & Leemann 2021)
 - Californian wildfires increase support for costly, pro-environment policies by 5-6 %-points (Hazlett & Mildenberger 2020)
 - Studies of __retrospective voting and natural disasters__ sometimes show electoral rewards for (relatively) pro-climate parties (e.g. Gasper & Reeves 2011; Bechtel & Hainmueller 2011)
 - Some null findings (e.g. Hilbig & Riaz, 2022; Melville-Rea 2022) 
@@ -115,34 +115,37 @@ __Northern Europe on<br>December 5 2013__
 
 :::: {.columns}
 ::: {.column width="50%"}
-
-```{r}
-#| fig-align: center
-#| out-width: 80%
-knitr::include_graphics("media/flooding-pplaces_media/flooding_map_timeline2.png")
-```
-
-:::
-::: {.column width="50%"}
 ::: {.incremental}
 
-## Storm surge in Denmark, December 2013
+### The storm surge in Denmark
+
+<br><br>
 
 - A rarely harmful and costly weather event &rarr; "Hurricane Sandy-equivalent"
 - **Data:** detailed and complete geocoded **storm surge insurance cases** from the Danish Storm Council
 - N = 2,924
+- Two **empirical studies** of its electoral effects **&rarr;**
 
 :::
+:::
+::: {.column width="50%"}
+
+```{r}
+#| fig-align: center
+#| out-width: 81%
+knitr::include_graphics("media/flooding-pplaces_media/flooding_map_timeline2.png")
+```
+
 :::
 ::::
 
-# Study I: how the vote share of pro-climate parties increases after the flood {background-color="#8b2325" transition="slide" background-transition="slide"}
+# Study I: the vote share of pro-climate parties increases after the flood {background-color="#8b2325" transition="slide" background-transition="slide"}
 
 ## Study I: voting for pro-climate parties
 
 - Level of analysis: __1,386 polling districts__
 
-- Context: Danish parliamentary elections 1998-2019 (focus on 2011-2015)
+- Context: Danish parliamentary elections 1998-2019 (focus: 2011-2015)
 
 - Outcome: __district vote share for pro-climate parties__ 
     - left-green bloc w/ strong _issue ownership_
@@ -163,7 +166,7 @@ include_graphics("media/flooding-pplaces_media/parallel_trends_plot.png")
 
 &rarr; _generally, parallel pretrends (with some imbalances) --- 2015 (Post) stands out!_
 
-## Study I: DID main result 
+## Study I: DID main results
 
 <br>
 
@@ -174,25 +177,25 @@ include_graphics("media/flooding-pplaces_media/did_estimates_2x2_2011.png")
 
 <br>
 
-&rarr; _flooding effect on pro-climate voting approx. 2-4 %-points_
+&rarr; _flooding effect on pro-climate vote share: approx. 2-4 %-points_
 
-## Study I: DID robustness - propensity-score matching 
+## Study I: DID robustness
 
 <br>
 
 ::: {.nonincremental}
-- Following Abadie (2005)
-- **Matching on relatively unbalanced covariates** (possible confounders):
+- Using Abadie's propensity-score matching (2005)
+- **Matching on unbalanced covariates** (possible confounders):
     - ln(polling district area), ln(distance to the water), ln(historical average turnout), academic education (%), primary education (%), ln(median income), ln(total wealth), single-family homes (%)
-- __DID estimate (damages):__ 2.06 (bootstrapped 95% CI: [1.11, 3.02])
-- No placebo effects
+- __DID estimate (damages): 2.06 %-points__ [CI: 1.11-3.02]
+- And no placebo effects &check; 
 :::
 
 <br>
 
 &rarr; _flooding effect robust to covariate matching_
 
-## Study I: DID results - flooding intensity
+## Study I: flooding intensity
 
 <br>
 
@@ -201,9 +204,9 @@ include_graphics("media/flooding-pplaces_media/did_estimates_2x2_2011.png")
 include_graphics("media/flooding-pplaces_media/did_estimates_intensity_2011.png")
 ```
 
-&rarr; _flooding effect tends to grow with flooding **intensity**_
+&rarr; _flooding effect tends to grow with **flooding intensity**_
 
-# Study II: how voters reward pro-climate candidates with higher election chances after the flood {background-color="#8b2325" transition="slide" background-transition="slide"} 
+# Study II: voters reward pro-climate candidates after the flood {background-color="#8b2325" transition="slide" background-transition="slide"} 
 
 ## Study II: voting for pro-climate candidates
 
@@ -211,13 +214,13 @@ include_graphics("media/flooding-pplaces_media/did_estimates_intensity_2011.png"
 
 - Level of analysis: __9,554 election candidates__
 
-- Context: Danish local elections 2009-2017 (focus on 2013-2017)
+- Context: Danish local elections 2009-2017 (focus: 2013-2017)
 
 - Outcome: __elected or not__ (binary)
 
 - Data: __candidate survey__ w/ climate-related policy responses from 73% of candidates
 
-- __Pro-climate candidate (binary):__ climate as key priority or climate score above 4/5
+- __Pro-climate candidate (binary):__ climate as priority issue or climate score above 4/5
 
 - Treatment: __high economic damage__ in municipality where candidate is running
 
@@ -228,10 +231,10 @@ include_graphics("media/flooding-pplaces_media/did_estimates_intensity_2011.png"
 <br>
 
 :::: {.columns}
-::: {.column width="55%"}
+::: {.column .center width="55%"}
 
-Pro-climate candidates within each party (%)
 ```{r}
+#| fig-cap: "Pro-climate candidates within each party (%)"
 include_graphics("media/flooding-pplaces_media/proclimate_candidatesA.png")
 ```
 
@@ -258,9 +261,9 @@ include_graphics("media/flooding-pplaces_media/didid.png")
 ```
 
 ::: {.notes}
-- $Treatment\:group \times Post$: electoral punishment of -4.0 pp for non-climate candidates because of the flood (small reward for pro-climate)
-- $Climate \:candidate \times Post$: no change over time (1 pp) in election chances of *non-climate candidates in non-flooded areas*
-- $Treatment\:group \times Climate \:candidate$: election chances of _pro-climate candidates in flooded areas_ were only slightly higher *before the flood* (2.3 pp)
+- $Treatment\:group \times Post$: electoral punishment of -3.5 pp for non-climate candidates because of the flood (small reward for pro-climate)
+- $Climate \:candidate \times Post$: no change over time in election chances of *non-climate candidates in non-flooded areas*
+- $Treatment\:group \times Climate \:candidate$: election chances of _pro-climate candidates in flooded areas_ same as non-climate candidates *before the flood*
 :::
 
 ---
@@ -290,7 +293,7 @@ include_graphics("media/flooding-pplaces_media/didid.png")
 
 ---
 
-## Study II: DIDID placebo test
+## Study II: placebo test
 
 <br>
 
@@ -299,9 +302,9 @@ include_graphics("media/flooding-pplaces_media/didid.png")
 include_graphics("media/flooding-pplaces_media/did_estimates_2x2_candidates.png")
 ```
 
-- Clear DIDID effects in __real test__
-- No DIDID effects in __placebo test__
-- And also __no DIDID for other candidate features:__ _incumbent_ and _pro-welfare_
+- Clear DIDID effects in __real test__ &check;
+- No DIDID effects in __placebo test__ &check;
+- And also __no DIDID for other candidate features:__ _incumbent_ and _pro-welfare_ &check;
 
 # Conclusions {background-color="#8b2325" transition="slide" background-transition="slide"}
 
@@ -344,13 +347,14 @@ include_graphics("media/flooding-pplaces_media/twostudies.png")
 ::: {.incremental}
 - Pro-climate __parties__ (left-green bloc) gain around 2 %-points (or more) in flooded areas
 - Pro-climate __candidates__ see their election chances increase by 7.8 %-points vs. non-climate candidates
-    - (more for candidates in the pro-climate parties)
-- Extreme weather experiences can have significant, long-lasting effects on actual behavior &rarr; __pro-climate voting__
+    - (even more within the pro-climate parties)
+- __Extreme weather experiences__ can have significant, long-lasting effects on actual behavior &rarr; __pro-climate voting__
 - Voters connect weather events to climate policy (at least implicitly) and make voting decisions on this basis
 :::
 :::
 ::::
 
+::: {.absolute top=400}
 ## Thank you! {.center background-color="#8b2325" transition="fade" background-transition="fade"}
 
 ::: {width="65%"}
@@ -359,6 +363,8 @@ include_graphics("media/lighthouse.jpg")
 ```
 {{< fa camera >}} Marco Faria
 :::
+:::
+
 
 # Supplementary material {visibility="uncounted"}
 
@@ -381,8 +387,8 @@ include_graphics("media/flooding-pplaces_media/balance_density.png")
 ## Study I: DID robustness - event study plots (matched) {visibility="uncounted"}
 
 ```{r}
+#| out-height: 50%
 #| fig-align: center
-#| out-width: 60%
 include_graphics("media/flooding-pplaces_media/did_estimates_eventstudy_ipw.png")
 ```
 
@@ -405,5 +411,7 @@ include_graphics("media/flooding-pplaces_media/did_estimates_eventstudy.png")
 #| fig-align: center
 include_graphics("media/flooding-pplaces_media/did_estimates_2x2.png")
 ```
+
+<br>
 
 &rarr; _with alternative baseline (2007) still flooding effect of at least 1.5 %-points_
