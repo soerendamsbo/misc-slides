@@ -202,7 +202,9 @@ include_graphics("media/figure2_interactions_education_party.jpg")
 {{< fa camera >}} Vikingeskibsmuseet
 :::
 
-## 3. Stormflod og klimastemmer &mdash;<br>oversvømmelser efter stormen Bodil
+## 3. Stormflod og klimastemmer
+
+<br>
 
 :::: {.columns}
 ::: {.column width="48%"}
@@ -229,7 +231,7 @@ include_graphics("media/flooding_map_timeline2b.png")
 
 ```{r}
 #| fig-align: center
-#| #| out-width: 85%
+#| #| out-width: 75%
 include_graphics("media/did_estimates_2x2_new.png")
 ```
 
