@@ -1,5 +1,5 @@
 ---
-title: Politologisk forskning med vejr- og klimadata
+title: Vejr og politik
 subtitle: Præsentation på DMI
 lang: da    
 date: "20230117"
@@ -102,9 +102,9 @@ include_graphics("media/weather-voting_triangulation.png")
 
 <br>
 
-- **Nedbør** mindsker sandsynligheden for at stemme med **-0.95 %-point** per centimeter regn
+- **Nedbør** mindsker sandsynligheden for at stemme med **-0,95 %-point** per cm regn
 
-- Negativ effekt af nedbør vokser med mere nedbør
+- Negativ effekt vokser med mere nedbør
 
 - Størst effekt for unge<br>(marginale vælgere) &rarr;
 :::
@@ -118,7 +118,7 @@ include_graphics("media/interaction_panel2.png")
 :::
 ::::
 
-## 2. Temperatur og klimaholdninger &mdash;<br>"lokal opvarmningseffekten"
+## 2. Temperatur og klimaholdninger
 
 :::: {.columns}
 ::: {.column width="48%"}
@@ -132,6 +132,8 @@ include_graphics("media/damsbopaper.png")
 ::: {.column width="48%"}
 
 <br>
+
+- Direkte erfaringer med usædvanlige temperaturer
 
 - **Lokal opvarmningseffekten** er, når "*deviations in the day’s temperature affect individuals’ global warming beliefs*"
 
@@ -235,15 +237,6 @@ include_graphics("media/flooding_map_timeline2b.png")
 include_graphics("media/did_estimates_2x2_new.png")
 ```
 
-## Større effekt desto mere oversvømmelse
-
-<br>
-
-```{r}
-#| fig-align: center
-include_graphics("media/did_estimates_intensity_2011.png")
-```
-
 ## Større valgbarhed for klimakandidater efter Bodil
 
 <br>
@@ -255,20 +248,18 @@ include_graphics("media/did_estimates_intensity_2011.png")
 
 - 9.554 kandidater ved KV13 og KV17
 
-- Stormfloden øger spændet i sandsynlighed for valg mellem klimakandidater og andre med 7.8 %-point
+- Stormfloden øger spændet i sandsynlighed for valg mellem klimakandidater og andre med 7,8 %-point
 
 :::
 ::: {.column width="3%"}
 :::
 ::: {.column width="48%"}
-
+<br>
 ```{r}
 #| out-width: 95%
 #| fig-align: left
 include_graphics("media/proclimate_candidates_kv2017a.png")
 ```
-*Klimakandidater*
-
 :::
 ::::
 
@@ -282,9 +273,9 @@ include_graphics("media/proclimate_candidates_kv2017a.png")
 
 **Spørgsmål**
 
-- DMIs API til forskningsbrug: Hvor placeres stationer? Ikke-offentliggjorte målinger? Koordinater og historisk konsistens essentielt!
-- Hvordan forholder DMI sig til vejrets betydning for samfund og politik?
-- Kontaktperson(er) til fremtidige projekter?
+- Mange muligheder med vejrdata?
+
+- Vejr og politik ifølge DMI?
 
 ## Tak {.center background-color="#8b2325" transition="slide" background-transition="slide"}
 
@@ -293,10 +284,10 @@ include_graphics("media/proclimate_candidates_kv2017a.png")
 ```{r}
 include_graphics("media/lighthouse.jpg")
 ```
-{{< fa camera >}} Marco Faria
+<p style="color:grey;font-size:14px;">{{< fa camera >}} Marco Faria</p>    
 :::
 
-# Supperende materiale {visibility="uncounted"}
+# Supplerende materiale {visibility="uncounted"}
 
 ## 1. Vejr og valgdeltagelse
 
@@ -389,4 +380,11 @@ include_graphics("media/flooding-pplaces_media/did_estimates_eventstudy.png")
 #| fig-align: center
 #| #| out-width: 90%
 include_graphics("media/flooding-pplaces_media/didid.png")
+```
+
+## 3. Stormflod og klimastemmer
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_intensity_2011.png")
 ```
