@@ -2,7 +2,7 @@
 title: Politologisk forskning med vejr- og klimadata
 subtitle: Præsentation på DMI
 lang: da    
-date: "20230116"
+date: "20230117"
 date-format: long
 author: 
   - Kasper M. Hansen
