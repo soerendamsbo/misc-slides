@@ -1,0 +1,543 @@
+---
+title: Politologisk forskning med brug af vejr- og klimaobservationer
+subtitle: Præsentation på DMI
+lang: da    
+date: "20230116"
+date-format: long
+author: 
+  - Kasper M. Hansen
+  - Søren Damsbo-Svendsen
+institute: 
+  - Professor, ph.d.<br>Institut for statskundskab<br>Københavns Universitet<br>
+  - Ph.d.-stipendiat<br>Institut for statskundskab<br>Københavns Universitet<br>
+format: 
+  revealjs:
+    theme: sd-revealjs-theme.scss
+    logo: media/logo5.png
+    incremental: true   
+    #smaller: true
+    overview: true
+    slide-number: true
+    preview-links: auto
+    title-slide-attributes: 
+      data-background-color: "#8b2325"
+    self-contained: false
+    chalkboard: false
+    fragments: true
+    slide-level: 2
+    width: 1200
+    height: 750
+    margin: 0.1
+execute:
+  echo: false
+  cache: true
+---
+
+`r pacman::p_load(tidyverse, knitr, lubridate, kableExtra, sf)`
+
+## Hvordan vi bruger vejr- og klimaobservationer i politologisk forskning
+
+## Plan
+
+1. Vejr og valgdeltagelse
+2. Temperatur og klimaholdninger
+3. Stormflod og vælgeradfærd
+4. Opsamling
+
+# 1: Vejr og valgdeltagelse {.center background-color="#8b2325" transition="fade" background-transition="fade"}
+
+## 1: Vejr og valgdeltagelse
+
+:::: {.columns}
+::: {.column width="48%"}
+**Hvordan påvirker vejret på valgdagen vælgernes beslutning om at stemme?**<br>
+
+- Fokus på nedbør: reducerer det valgdeltagelsen?
+
+- Stemmeprocenten er en nøgleindikator på demokratiers sundhed og legitimitet
+
+- *Mekanisme:* **omkostninger** (og potentielt også __humør__ mv.)
+:::
+::: {.column width="3%"}
+:::
+::: {.column width="48%"}
+```{r}
+include_graphics("media/weather-voting.png")
+```
+:::
+::::
+
+## Metaanalyse af nedbør og valgdeltagelse
+
+:::: {.columns}
+::: {.column width="48%"}
+
+- N = 27 (34 i alt)
+
+- Forskellige data, designs og resultater
+
+- De fleste negative: 
+
+    - Simpelt gns.: **-0.82 %-point per cm**
+    - Vægtet gns.: **-0.42 %-point per cm**
+
+:::
+::: {.column width="3%"}
+:::
+::: {.column width="48%"}
+```{r}
+#| out-width: 95%
+include_graphics("media/meta2.png")
+```
+:::
+::::
+
+## Selvstændigt studie med bedre data
+
+<br>
+
+:::: {.columns}
+::: {.column width="48%"}
+**Data: valgdeltagelse**
+
+- Registerdata med valgdeltagelse for 4.549.145 vælgere (18-80 år)
+    - Næsten **komplet befolkning**
+    - KV2013 og KV2017 &rarr; vælgerpanel 
+:::
+::: {.column width="3%"}
+:::
+::: {.column width="48%"}
+
+**Data: vejrobservationer**
+
+- Vælgernes hjemmekoordinater matchet med **166 vejrstationer**
+
+- __Individuel vejroplevelse__ *trianguleret* fra tre nærmeste vejrstationer
+:::
+::::
+
+. . .
+
+```{r}
+#| out-width: 50%
+#| fig-align: right
+
+include_graphics("media/weather-stations.png")
+```
+
+## Forskningsdesign og modeller
+
+To typer modeller:
+
+- (1) en "pooled model"
+
+- (2) en "panel model" (primær)
+
+- Regression af valgdeltagelse (0/1) på *nedbør*, *solskin*, *temperatur* med vælger og valg *fixed effects*
+
+    - stærk basis for kausal inferens
+
+    - supplerende kontrolvariable: alder, køn, tæthed på kyst, urbanisering, kommunestørrelse, kommuneindvandrere, valgets tæthed
+
+## Resultater 1: Negativ effekt af nedbør
+
+- **Nedbør** &mdash; "dårligt vejr" &mdash; mindsker sandsynligheden for at stemme
+
+- **-0.95 %-point** per centimeter regn, i gns.
+
+- **Nedbør effect** vokser med mere regn (ikke-lineær)
+
+- Ingen effekt ved 0 regn, næsten **-4 %-point** ved maks.
+
+- __Solskin__ (stråling) &mdash; "godt vejr" &mdash; øger også deltagelsen
+
+## Resultater 2: Stærk effekt på marginale vælgere
+
+:::: {.columns}
+::: {.column width="48%"}
+- Vigtigt spørgsmål: **Er marginale vælgergrupper mere påvirkelige?**
+
+- **Potentielt problem** for demokratisk repræsentation
+
+- Vi fokuserer på **unge vælgere** i 20erne (bor ikke hjemme, har ikke solid vane om at stemme)
+    
+- Unge vælgere påvirkes op til seks gange mere af vejret
+
+    - Ingen effekt på førstgangsvælgere (*første kohorte*)
+
+    - Meget stærke effekter på *2. og 3. kohorte*
+:::
+::: {.column width="3%"}
+:::
+::: {.column width="48%"}
+```{r}
+
+include_graphics("media/interaction_panel2.png")
+```
+:::
+::::
+
+# 2: "Lokal opvarmningseffekten" {.center background-color="#8b2325" transition="fade" background-transition="fade"}
+
+## 2: "Lokal opvarmningseffekten"
+
+:::: {.columns}
+::: {.column width="48%"}
+
+```{r}
+include_graphics("media/damsbopaper.png")
+```
+:::
+
+::: {.column width="48%"}
+
+__RQ: How do unusual *temperatures* affect Europeans' *opinions* towards climate change?__
+
+- Direct **experiences** with the weather, independent of elite discourse (?)
+
+- **The local warming effect** is when "deviations in the day’s temperature affect individuals’ global warming beliefs"
+
+- Recent weather experiences as a **heuristic**
+
+- Inspired by Egan & Mullin (2012) and others in the US
+
+:::
+::::
+
+## Data
+
+:::: {.columns}
+::: {.column width="48%"}
+
+- European Social Survey round 8 (2016)
+
+- _Dependent_ variable: **climate opinion index** (0-100, based on 6 questions)
+
+- _Independent_ variable: **temperature** over the past 7 days compared with "normal" in last 30 years
+
+- Temperatures [observered at country-level](https://www.ecad.eu/) matched with respondents in each country
+
+    - I exclude extremely large/mountainous countries &rarr; 12 remaining countries
+    
+:::
+::: {.column width="48%"}
+```{r kort}
+#| warning: false
+#| message: false
+#| fig-width: 6
+
+rnaturalearth::ne_countries(continent = "Europe") %>% 
+  st_as_sf(crs = 4326) %>%
+  select(name) %>% 
+  filter(name != "Russia") %>% 
+  mutate(temperature_variance = case_when(str_detect(tolower(name), "austria|switz|russia|spain|norway|sweden|israel|slovenia") ~ "high",
+                                          str_detect(tolower(name), "finland|france|italy|germany|united kingdom|poland|iceland|hungary|netherland|estonia|lithuania|ireland") ~ "low",
+                                          str_detect(tolower(name), "belgium|portugal|czech") ~ "no_weather",
+                                          TRUE ~ "no_data")) %>% 
+  st_crop(st_bbox(c(xmin = -50, xmax = 30, ymin = 10, ymax = 70))) %>% 
+  select(temperature_variance) %>% 
+  ggplot() +
+  geom_sf(aes(fill = factor(temperature_variance, 
+                            levels = c("low", "high", "no_weather", "no_data"), 
+                            labels = c("Included", "Excluded (extreme weather variation)", "Excluded (no weather data)", "Excluded (no survey data)"))), 
+          color = "black") +
+  ggthemes::theme_map() +
+  scale_fill_manual(values = c("#00CC66", "#CC0000", "grey30", "grey70")) +
+  labs(fill = NULL) 
+```
+:::
+::::
+
+## Resultater (1)
+
+:::: {.columns}
+::: {.column width="48%"}
+- Regression analysis of **relationship between temperatures and opinions**
+
+- **&rarr; Result: clear positive association**
+
+- Identifying assumption: **as-if random** allocation of temperature
+
+- Experiences with unusually hot weather _causes strengthened climate opinions_
+
+- Fairly weak effect - but everyone is constantly affected by weather
+
+- Weather experiences as "cheap", readily available information about climate change
+:::
+
+::: {.column width="48%"}
+```{r}
+include_graphics("media/damsboplot.png")
+```
+:::
+::::
+
+## Resultater (2)
+
+*Who* is affected by the weather? Who relies on the weather heuristic?
+
+- Two potential moderators: **education** (political awareness, sophistication) and **partisanship** (motivation)
+
+```{r, out.width="80%"}
+include_graphics("media/figure2_interactions_education_party.jpg")
+```
+
+__&rarr; Result: some suggestive evidence, but no; everyone is affected__
+
+## Resultater (3)
+
+Is it exclusively a **direct effect of personal experience?** 
+
+- The **media (elites)** could play the role of framing/articulating weather experiences as politically relevant
+
+    - connect weather and climate change &mdash; and provide "indirect experiences"
+
+    - &rarr; the effect would be __larger for people with higher news consumption__
+
+```{r, out.width="68%"}
+include_graphics("media/figure3_interaction_news.jpg")
+```
+
+__&rarr; Result: suggestive evidence, but no: news exposure makes no difference__
+
+# 3: Stormflod og klimastemmer {.center background-color="#8b2325" transition="fade" background-transition="fade"}
+
+## {background-image="media/vikingeskib.jpg"} 
+
+::: {.absolute left=0 top=730}
+{{< fa camera >}} Vikingeskibsmuseet
+:::
+
+## Theory: extreme weather experience &rarr; behavior {transition="slide-in none-out" background-transition="slide-in none-out"}
+
+:::: {.columns}
+::: {.column width="30%"}
+> _RQ: How does climate-related extreme weather experience affect pro-climate voting?_
+
+:::
+::: {.column width="70%"}
+::: {.incremental}
+- Ample evidence that extreme weather experiences affects __climate change perceptions and attitudes__
+- But limited evidence that weather experiences affect _actual behavior:_
+    - __environmental behavior:__ it does *not* increase private energy saving, recycling, etc. (e.g. Rüttenauer 2021)
+    - __information/communication behavior:__ it *can* increase Twitter climate discussion, community dicussion, and web searches (e.g. Boudet et al. 2019; Osberghaus & Demski 2019; Sisco et al. 2017)
+- How about more collective, _political behavior?_ 
+    - **Pro-climate voting!**
+
+:::
+:::
+::::
+
+## Theory: extreme weather experience &rarr; behavior
+
+:::: {.columns}
+::: {.column width="30%"}
+> _RQ: How does climate-related extreme weather experience affect pro-climate voting?_
+
+:::
+::: {.column width="70%"}
+
+__Pro-climate voting:__
+
+::: {.incremental}
+- _"a sizeable effect for pro-climate voting_ [20 %-points] _after experiencing a flood"_ (Baccini & Leemann 2021)
+- Californian wildfires increase support for costly, pro-environment policies by 5-6 %-points (Hazlett & Mildenberger 2020)
+- Studies of __retrospective voting and natural disasters__ sometimes show electoral rewards for (relatively) pro-climate parties (e.g. Gasper & Reeves 2011; Bechtel & Hainmueller 2011)
+- Some null findings (e.g. Hilbig & Riaz, 2022; Melville-Rea 2022) 
+:::
+:::
+::::
+
+## The 2013 storm surge in Denmark
+
+```{r}
+#| fig-align: center
+include_graphics("media/flooding_map_timeline2.png")
+```
+
+- A rarely harmful and costly weather event &rarr; "Hurricane Sandy-equivalent"
+- **Data:** detailed and complete geocoded **storm surge insurance cases** from the Danish Storm Council
+- N = 2,924
+
+## Study I: voting for pro-climate parties
+
+- Level of analysis: __1,386 polling districts__
+
+- Context: Danish parliamentary elections 1994-2019 (focus on 2011-2015)
+
+- Outcome: __district vote share for pro-climate parties__ 
+    - the left-green bloc w/ strong _issue ownership_
+
+- Matched with district flooding based on __3 treatment definitions__ (all binary):
+    - Storm surge __damages__ (USD) above average
+    - 1+ cases of __rehousing__ cases
+    - 1+ total __flooding__ cases
+
+- Difference-in-differences (DID) design
+
+## Study I: pretreatment balance
+
+```{r}
+#| fig-align: center
+include_graphics("media/balance_density.png")
+```
+
+&rarr; _flooded and unflooded areas are fairly well-balanced on most covariates_
+
+## Study I: parallel trends
+
+```{r}
+#| fig-align: center
+include_graphics("media/parallel_trends_plot.png")
+```
+
+&rarr; _generally, parallel pretrends (with some imbalances); 2015 (post) stands out!_
+
+## Study I: DID results - main
+
+<br>
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_2x2_2011.png")
+```
+
+&rarr; _flooding effect on pro-climate voting approx. 2-4 %-points_
+
+## Study I: DID robustness - propensity-score matching 
+
+<br>
+
+::: {.nonincremental}
+- Following Abadie (2005)
+- **Covariates:** ln(polling district area), ln(distance to the water), ln(historical average turnout), academic education (%), primary education (%), ln(median income), ln(total wealth), single-family homes (%)
+- __DID estimate (damages):__ 2.06 (bootstrapped 95% CI: [1.11, 3.02])
+- No placebo effects
+:::
+
+<br>
+
+&rarr; _flooding effect robust to covariate matching_
+
+## Study I: DID results - flooding intensity
+
+<br>
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_intensity_2011.png")
+```
+
+&rarr; _flooding effect tends to grow with flooding **intensity**_
+
+## Study II: voting for pro-climate candidates
+
+<br>
+
+- Level of analysis: __9,554 election candidates__
+
+- Context: Danish local elections 2009-2017 (focus on 2013-2017)
+
+- Outcome: __elected or not__ (binary)
+
+- Data: __candidate survey__ w/ climate-related policy responses from 73% of candidates
+
+- __Pro-climate candidate (binary):__ climate as key priority or climate score above 4/5
+
+- Treatment: __high economic damage__ in municipality where candidate is running
+
+- Triple differences (DIDID) design
+
+## Study II: pro-climate candidates
+
+<br>
+
+:::: {.columns}
+::: {.column width="40%"}
+
+### Key expectations
+
+1. If voters engage in pro-climate voting,
+2. __the gap in election chances__ of pro-climate candidates versus non-climate candidates
+3. __should increase__ in heavily flooded communities (because of the flood)
+4. __&rarr; positive DIDID__
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="55%"}
+
+    Pro-climate candidates within each party (%)
+```{r}
+include_graphics("media/proclimate_candidates_kv2017.png")
+```
+
+:::
+::::
+
+## Study II: DIDID results
+
+```{r}
+#| fig-align: center
+#| out-width: 70%
+include_graphics("media/didid.png")
+```
+
+::: {.notes}
+- $Treatment\:group \times Post$: electoral punishment of -4.0 pp for non-climate candidates because of the flood (small reward for pro-climate)
+- $Climate \:candidate \times Post$: no change over time (1 pp) in election chances of *non-climate candidates in non-flooded areas*
+- $Treatment\:group \times Climate \:candidate$: election chances of _pro-climate candidates in flooded areas_ were only slightly higher *before the flood* (2.3 pp)
+:::
+
+---
+
+## Study II: DIDID results
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="43%"}
+```{r}
+include_graphics("media/didid.png")
+```
+:::
+
+::: {.column width="55%"}
+
+- __DIDID, all parties:__ approx. 5.5 %-points
+
+- &rarr; _pro-climate candidates benefit electorally in post-flooding elections_
+
+:::
+::::
+
+
+
+
+
+
+
+
+...
+
+- Hvor mange målinger, nogle ikke offentliggjorte?, koordinater er vigtige og historisk konsistens
+- Hvor placeres de? 
+- Hvordan forholder de sig til medier osv. de her spørgsmål?
+- Kontaktperson?
+
+# Opsummering {background-color="#8b2325" transition="slide" background-transition="slide"}
+
+## Opsummering
+
+Nogle spørgsmål.
+
+## Tak {.center background-color="#8b2325" transition="fade" background-transition="fade"}
+
+::: {width="65%"}
+{{< fa envelope >}} &rarr; kmh@ifs.ku.dk, sdas@ifs.ku.dk
+```{r}
+include_graphics("media/lighthouse.jpg")
+```
+{{< fa camera >}} Marco Faria
+:::
