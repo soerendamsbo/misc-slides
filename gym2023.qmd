@@ -1,0 +1,241 @@
+---
+title: Klima, vejr og politik
+lang: da    
+date: "20230213"
+date-format: long
+author: 
+  - Søren Damsbo-Svendsen
+institute: 
+  - Ph.d.-stipendiat<br>Institut for statskundskab<br>Københavns Universitet<br>
+format: 
+  revealjs:
+    theme: sd-revealjs-theme.scss
+    incremental: false
+    #smaller: true
+    overview: true
+    slide-number: true
+    preview-links: auto
+    title-slide-attributes: 
+      data-background-color: "#8b2325"
+    self-contained: false
+    chalkboard: false
+    fragments: true
+    slide-level: 2
+    width: 1200
+    height: 750
+    margin: 0.1
+execute:
+  echo: false
+  cache: true
+---
+
+`r pacman::p_load(tidyverse, knitr, lubridate, kableExtra, sf)`
+
+## Klima, vejr og politik
+
+- Hvem er jeg?
+- Hvad forsker jeg i?
+- Hvad interesserer jeg mig for? Hvorfor?
+
+![](media/lynæs.jpg){.absolute left=0 top=255 width="390"}
+![](media/xaver-hamburg.jpg){.absolute right=0 top=255 width="390"}
+![](media/bodil.png){.absolute bottom=5 right=0 width="390"}
+![](media/20180719_163331_red2.png){.absolute left=0 bottom=5 width="390"}
+![](media/rain-election.png){.absolute right=400 top=255 width="390"}
+![](media/heatwave.jpg){.absolute right=400 bottom=5 width="390"}
+    
+## To eksempler fra min forskning {transition="slide" background-transition="slide"}
+
+<br><br><br><br>
+
+1. Vejr og valgdeltagelse
+
+2. Temperatur og klimaholdninger
+
+## 1. Gider vi ikke gå ned at stemme i dårligt vejr? {transition="slide" background-transition="slide"}
+
+<br>
+
+```{r}
+#| fig-align: center
+#| out-width: 70%
+include_graphics("media/weather-voting.png")
+```
+
+## 1. Gider vi ikke gå ned at stemme i dårligt vejr?
+
+<br>
+
+```{r}
+#| out-width: 75%
+#| fig-align: center
+
+include_graphics("media/weather-stations.png")
+```
+
+## 1. Gider vi ikke gå ned at stemme i dårligt vejr?
+
+<br>
+
+```{r}
+#| out-width: 85%
+#| fig-align: center
+
+include_graphics("media/map_weather.png")
+```
+
+## 1. Gider vi ikke gå ned at stemme i dårligt vejr?
+
+<br>
+
+**Resultater 1/2:**
+
+:::: {.columns}
+::: {.column width="60%"}
+
+<br>
+
+- **Regn** mindsker sandsynligheden for at stemme med **-0,95 %-point per centimeter** (10 mm)
+
+- I januar 2023 faldt der 4 mm om dagen i DK
+
+:::
+::: {.column width="12%"}
+:::
+::: {.column width="25%"}
+
+<br><br>
+
+**Hvad med jer? Tror I, det spiller en rolle for unge vælgere?**
+:::
+::::
+
+## 1. Gider vi ikke gå ned at stemme i dårligt vejr?
+
+<br>
+
+**Resultater 2/2:**
+
+:::: {.columns}
+::: {.column width="48%"}
+
+<br>
+
+- **Markant større effekt for unge**<br>(marginale vælgere) &rarr;
+
+- Men ikke den yngste vælgergruppe:<br>18-22 år 
+
+- Heller ikke mere modne vælgere:<br>især 40-60 år
+
+:::
+::: {.column width="3%"}
+:::
+::: {.column width="48%"}
+```{r}
+#| fig-align: center
+include_graphics("media/interaction_panel2.png")
+```
+:::
+::::
+
+## {background-image="media/europeheatmap.jpg"  transition="slide" background-transition="slide"} 
+
+::: {.absolute left=0 top=730}
+{{< fa camera >}} Yahoo! News
+:::
+
+## 2. Gør varmt vejr os mere klimabevidste? {transition="slide" background-transition="slide"}
+
+<br>
+
+```{r}
+#| out-width: 70%
+include_graphics("media/damsbopaper.png")
+```
+
+## 2. Gør varmt vejr os mere klimabevidste? 
+
+<br>
+
+**Data:**
+
+1. Europæisk **spørgeskema** med seks klimaspørgsmål
+
+2. De seneste dages udendørs **temperatur** i forhold til normalt  
+
+```{r kort}
+#| warning: false
+#| message: false
+#| fig-width: 6
+#| fig-height: 4
+
+rnaturalearth::ne_countries(continent = "Europe") |>
+  st_as_sf(crs = 4326) %>%
+  select(name) |>
+  filter(name != "Russia") |>
+  mutate(temperature_variance = case_when(str_detect(tolower(name), "austria|switz|russia|spain|norway|sweden|israel|slovenia") ~ "high",
+                                          str_detect(tolower(name), "finland|france|italy|germany|united kingdom|poland|iceland|hungary|netherland|estonia|lithuania|ireland") ~ "low",
+                                          str_detect(tolower(name), "belgium|portugal|czech") ~ "no_weather",
+                                          TRUE ~ "no_data")) |>
+  st_crop(st_bbox(c(xmin = -50, xmax = 30, ymin = 10, ymax = 70))) |>
+  select(temperature_variance) |>
+  ggplot() +
+  geom_sf(aes(fill = factor(temperature_variance, 
+                            levels = c("low", "high", "no_weather", "no_data"), 
+                            labels = c("Included", "Excluded (extreme weather variation)", "Excluded (no weather data)", "Excluded (no survey data)"))), 
+          color = "black") +
+  ggthemes::theme_map() +
+  ggplot2::theme(legend.background = element_blank(),
+                 legend.position = c(.01, .75)) +
+  scale_fill_manual(values = c("#00CC66", "#CC0000", "grey30", "grey70")) +
+  labs(fill = NULL) 
+```
+
+## 2. Gør varmt vejr os mere klimabevidste? 
+
+<br>
+
+**Resultater:**
+
+:::: {.columns}
+::: {.column width="50%"}
+
+```{r}
+#| out-width: 95%
+#| fig-align: left
+include_graphics("media/damsboplot.png")
+```
+
+:::
+::: {.column width="50%"}
+
+<br><br>
+```{r}
+#| out-width: 95%
+#| fig-align: right
+include_graphics("media/figure2_interactions_education_party.jpg")
+```
+
+:::
+::::
+
+## Konklusion
+
+<br>
+
+- **Ekstremt vejr** kan påvirke os på mange måder:
+
+    - Valgdeltagelse
+    - Klimaholdninger
+    - Partivalg
+    - osv.
+
+# Spørgsmål? {.center background-color="#8b2325" transition="slide" background-transition="slide"}
+
+```{r}
+#| out-width: 75%
+include_graphics("media/vikingeskib.jpg")
+```
+::: {.absolute right=150 bottom=10}
+{{< fa camera >}} Vikingeskibsmuseet
+:::
