@@ -1,6 +1,6 @@
 ---
 title: 'Paper presentation of "Personalized risk messaging can reduce climate concerns"'
-subtitle: Survey Methodology course 2023
+subtitle: Survey Methodology course
 lang: en
 date: "20230511"
 date-format: long
@@ -31,17 +31,19 @@ execute:
 
 `r pacman::p_load(tidyverse, knitr, lubridate, kableExtra, sf)`
 
+## Personalized risk messaging can reduce climate concerns
+
 :::: {.columns}
 ::: {.column width="48%"}
-<br><br>
-
-### Personalized risk messaging can reduce climate concerns
-
-- Authors:
+::: {.nonincremental}
+- Simple, original **survey experiment** on climate communication
+- **Authors:**
     - Matto Mildenberger
     - Mark Lubell
     - Michelle Hummel
-- Published in Global Environmental Change in 2019
+- Published in *Global Environmental Change* in 2019
+- Climate opinion literature / political science
+:::
 :::
 ::: {.column width="3%"}
 :::
@@ -55,62 +57,72 @@ include_graphics("media/mildenberger-paper.png")
 
 ## Context: Sea-level rise and flooding in the San Francisco Bay Area
 
-![](media/sfb6.jpg){.absolute left=0 top=150 width="400"}
+![](media/sfb2.jpg){.absolute right=0 top=140 width="400"}
 
-![](media/sfb2.jpg){.absolute right=0 top=150 width="400"}
+![](media/sfb3.jpg){.absolute bottom=40 right=0 width="400"}
 
-![](media/sfb3.jpg){.absolute bottom=75 right=0 width="400"}
+![](media/sfb1.jpg){.absolute right=400 top=140 width="400"}
 
-![](media/sfb4.jpg){.absolute left=0 bottom=75 width="400"}
+![](media/sfb5.png){.absolute right=400 bottom=40 width="400"}
 
-![](media/sfb1.jpg){.absolute right=400 top=150 width="400"}
+![](media/mildenberger-sfbaymap.png){.absolute left=0 top=140 width="400"}
 
-![](media/sfb5.png){.absolute right=400 bottom=75 width="400"}
+![](media/sfb4.jpg){.absolute left=0 bottom=40 width="400"}
 
 ## Background
 
-- Academics and climate communicators are looking for ways to promote public support for  
-- Widespread idea: (Psychological) **distance** is preventing people from engaging
+- Academics and climate communicators are looking for ways to promote public support for climate adaptation and the green transition
+- Widespread idea: (psychological) **distance** is preventing people from engaging:
 - Climate change and sea-level rise are too abstract risks
-- Many believe it will mostly harm future and far-away populations
-- not *personally relevant*
-- Hypothesis: Communicating about *personalized* risks will improve concern and support
-    - **personalized risk messaging:** local coastal flooding caused by sea-level rise
-- Empirical question! 
-- And empirical evidence is mixed (among other things due to methodological differences and issues, e.g., ambiguous treatments)
+- Many believe it will mostly harm future and far-away populations:
+    - not *personally relevant*
+- **Hypothesis**: Communicating about *personalized* risks from local coastal flooding will **improve concern and support**
+- Empirical question if it works! And **empirical evidence is mixed** (e.g., due to methodological differences)
     
 ## Research question
 
 <br><br>
 
-> "not clear whether personalized risk messaging will have the effects on public risk attitudes that many advocates and practitioners hope", i.e., the effects on "sea-level rise risk perceptions in vulnerable coastal areas"
+- It is "*not clear whether personalized risk messaging will have the effects on public risk attitudes that many advocates and practitioners hope*", i.e., positive effects on "*sea-level rise risk perceptions in vulnerable coastal areas*", so...
 
-> **Does providing people with information about projected coastal flooding in their area increase their concern about climate change and willingness to pay for regional adaptation measures?** 
+<br>
+
+- **RQ: Does providing people with information about projected coastal flooding in their area increase concern about sea-level rise and willingness to pay for climate adaptation measures?**
+
+# Research design:<br>simple survey experiment fielded in the San Francisco Bay area
 
 ## Sample
 
+<br>
+
+:::: {.columns}
+::: {.column width="48%"}
 - Qualtrics
-- Households
-- San Francisco Bay area, nine counties (329 zip code areas, 258 areas with 1-17 respondents)
-- Not matching zip codes: 18% (assumed movers, against 11% in US within a year), uses self-reports
-- N (complete) = 2201
-- XX respondents exited because their self-reported zip code was not in SFB area
-
-```{r}
-#| fig-align: center
-include_graphics("media/mildenberger-sfbaymap.png")
-```
-
+- **Households in San Francisco Bay area:** 9 counties (329 zip code areas, 258 areas with 1-17 respondents)
+- **N = 2201**
+- somewhat skewed sample
+- some potential issues with zip codes
+:::
+::: {.column width="3%"}
+:::
+::: {.column width="48%"}
 ```{r}
 #| fig-align: center
 include_graphics("media/mildenberger-map.png")
 ```
+:::
+::::
 
-## Survey design with three sections
+## Survey with three sections
 
-1. Background questions, including zip code, ideology, and belief in global warming
-2. Map treatment (or nothing in clean control group)
-3. Outcomes: Concern about sea-level rise and WTP for adaptation policy
+<br>
+
+1. **Background questions**
+2. **Map treatment**
+    - **Treatment group 1:**<br>map of projected flooding in zip code area with **1m sea-level rise**
+    - **Treatment group 2:**<br>map of projected flooding in zip code area with **1m sea-level rise plus 100-year storm**
+    - **Control group:** nothing
+3. **Outcomes:** (1) *concern* about sea-level rise and (2) *WTP* for regional adaptation policy
 
 ## Background questions
 
@@ -126,14 +138,12 @@ include_graphics("media/mildenberger-map.png")
 
 **Global warming belief.** *Recently, you may have noticed that global warming has been getting some attention in the news. Global warming refers to the idea that the world’s average temperature has been increasing over the past 150 years, may be increasing more in the future, and that the world’s climate may change as a result. What do you think: __Do you think that global warming is happening?__*
 
-## Map treatment
-
-**Flood projection tools: KAMP: 3m**
+## Map treatment: flooding projection tools
 
 :::: {.columns}
 ::: {.column width="48%"}
 ```{r}
-#| fig-align: center
+#| fig-cap: "'KAMP' projection in Denmark with 3m sea-level rise."
 include_graphics("media/KAMP3m.png")
 ```
 :::
@@ -142,26 +152,17 @@ include_graphics("media/KAMP3m.png")
 ::: {.column width="48%"}
 ```{r}
 #| fig-align: center
+#| fig-cap: "Source: kamp.klimatilpasning.dk."
 include_graphics("media/KAMP3mCPH.png")
 ```
-Source: https://kamp.klimatilpasning.dk
+
 :::
 ::::
 
-## Treatment
-
-- Treatment group 1: projected flooding with **1m sea-level rise**
-- Treatment group 2: projected flooding with **1m sea-level rise plus 100-year storm**
-- Control group: nothing
-- Source: U.S. Geological Survey's Coastal Storm Modeling System (CoSMoS) project
-- 20 seconds!
-- Projected California SLR in 2100 (77 years): Between 49 and 104 cm above the 1991-2009 average (67% chance)
-- Hard to understand?
-
----
+## Example treatment
 
 :::: {.columns}
-::: {.column width="48%"}
+::: {.column width="44%"}
 ```{r}
 #| fig-align: center
 include_graphics("media/mildenberger-treatment.png")
@@ -169,112 +170,141 @@ include_graphics("media/mildenberger-treatment.png")
 :::
 ::: {.column width="3%"}
 :::
-::: {.column width="48%"}
-<br>
-*This map shows the ﬂooding risk in your zip code from a 1 m (3.28 feet) sea-level rise. (The map may take a few moments to load). The hatched blue lines indicate the parts of your zip code that will be ﬂooded. If you don’t see any hatched blue lines, there will be no ﬂooding associated with sea-level rise in your zip code. The black lines just give the boundaries of the zip code so that you can more easily ﬁnd the general location of your home on this map. Please spend a few moments looking at this map. A red button will appear in a few seconds that will let you move on to the next page.*
+::: {.column width="52%"}
+*This map shows the flooding risk in your zip code from a 1 m (3.28 feet) sea-level rise. (The map may take a few moments to load). __The hatched blue lines indicate the parts of your zip code that will be flooded.__ If you don’t see any hatched blue lines, there will be no flooding associated with sea-level rise in your zip code. The black lines just give the boundaries of the zip code so that you can more easily find the general location of your home on this map. Please spend a few moments looking at this map. A red button will appear in a few seconds that will let you move on to the next page.*
+
+::: {.nonincremental}
+- 20 second pause!
+- But complex and hard to understand?
+:::
 :::
 ::::
 
-## Two outcomes {.nonincremental}
+## Two outcomes
 
-<br>**1) How much do you think sea-level rise will harm...?**
+<br><br>**1) How much do you think sea-level rise will harm...?**
 
+::: {.nonincremental}
 1. You personally
 2. People in the Bay Area
 3. People in the United States
 4. People in developing countries
 5. Future generations
+:::
 
-*Not at all (1), Only a little (2) , A moderate amount (3), A great deal (4), Don’t know*
+**Not at all (1), Only a little (2) , A moderate amount (3), A great deal (4),** Don’t know
 
 <br><br>**2) WTP for regional adaption measure (details in a minute)**
 
 # Results
 
-## Results 0
+## Results 1/6: Baseline concern is lowest for personal harm 
 
 ```{r}
 #| fig-align: center
 include_graphics("media/mildenberger-baseline.png")
 ```
 
-## Results 1
+## Results 2/6: Main effect is a (surprising?) substantial reduction in concern over personal harm
 
 ```{r}
 #| fig-align: center
 include_graphics("media/mildenberger-main.png")
 ```
 
-## Results 2
-
-Subgroup analysis: Simple OLS model (no covariates, pooled treatments) with sample subsets
+## Results 3/6: Effect is driven by people who believe global warming is happening
 
 ```{r}
 #| fig-align: center
 include_graphics("media/mildenberger-belief.png")
 ```
 
-## Results 3
+## Results 4/6: Effect is driven by ideologically left- and center-leaning people
 
 ```{r}
 #| fig-align: center
 include_graphics("media/mildenberger-ideology.png")
 ```
 
-## Results 3
+## Results 5/6: Effect tracks objective risk nicely:<br>higher flooding risk &rarr; more positive effect
 
 ```{r}
 #| fig-align: center
 include_graphics("media/mildenberger-riskgroup.png")
 ```
 
-## Willingness-to-pay (WTP)
+## 2nd outcome --- willingness to pay
+
+Contingent valuation of policy proposal (single-bounded dichotomous choice)
+
+## 2nd outcome --- willingness to pay
+
+Contingent valuation of policy proposal (single-bounded dichotomous choice)
 
 <br>
 
-1. Inform about the _recent passage of **ballot Measure AA** to fund the San Francisco Bay Clean Water, Pollution Prevention and Habitat Restoration Program, which **restored wetlands across the Bay Area through a $12 annual land parcel tax, offering substantial climate adaptation benefits.**_
-2. _If another ballot initiative was offered for a parcel tax of \[MONEY AMOUNT] per year to [USE CASE], would you support this ballot measure or not?_
-    - MONEY AMOUNT: \$1, \$2, \$5, \$10, \$20, \$50, \$100
-    - USE CASE: "build flood control infrastructure", "prevent the impacts of sea-level rise", "support wetlands restoration"
-3. Estimate WTP by modelling support (binary) for the future ballot measure as function of randomized dollar amount in treatment and control group
+:::: {.columns}
+::: {.column width="48%"}
 
-## Results 4: WTP
+
+_Information about recent passage of **ballot Measure AA** to fund the San Francisco Bay Clean Water, Pollution Prevention and Habitat Restoration Program, which **restored wetlands** across the Bay Area through a $12 annual land parcel tax, offering **substantial climate adaptation benefits.**_
 
 <br>
 
-- Negative effect of cost in both groups: $4.76 (treatment group) and $4.00 (control group) increased costs reduces support by 1%
-- But no difference between treatment group and control group:
-- "Encouragingly, negative responses to ﬂooding risk maps did not translate into a reduced willingness-to-pay for proposed climate adaptation infrastructure"
+*__If another ballot initiative was offered for a parcel tax of \[MONEY AMOUNT] per year to [USE CASE], would you support this ballot measure or not?__*
+:::
+::: {.column width="1%"}
+:::
+::: {.column width="51%"}
+- MONEY AMOUNT:<br>\$1, \$2, \$5, \$10, \$20, \$50, \$100
+- USE CASE:<br>(a) "build flood control infrastructure"<br>(b) "prevent the impacts of sea-level rise"<br>(c) "support wetlands restoration"
+- Estimate WTP in treatment vs. control group
+:::
+::::
+
+## Result 6/6: No reduction in WTP
+
+<br>
+
+- **Negative effect of cost** in both groups: 
+    - 1% reduction in support per $4.76 (treatment group) and $4.00 (control group)
+- But **no difference between treatment group and control group**
+    - &rarr; no reduction in WTP
+- "*Encouragingly, negative responses to flooding risk maps did not translate into a reduced willingness-to-pay for proposed climate adaptation infrastructure*"
 
 ## Why *reduced* concern?
 
-Theoretical reasons why it need not be true:
+<br>
 
-1. fear &rarr; avoidance; "false" warnings; backlash from exaggerated fear appeals
-2. construal-level theory: qualitatively different engagement with risk, depending on distance; salience and distance are different
-3. ideologically grounded motivated reasoning
-4. Individuals who believe in climate change may have assumed they were more at risk than these maps suggest; as a result, they update their sense of personal vulnerability post-treatment. In other words, individuals may rely on their pre-existing beliefs about climate change to inform evaluations of personal harm.
-    - in the absence of speciﬁc information about local ﬂooding, individuals may rely on their strong climate change beliefs to inform sea-level rise risk perceptions. But when confronted with more speciﬁc information, those same individuals may begin to process the sea-level rise threat in the context of diﬀerent emotional and cognitive considerations, and ﬁxate more on speciﬁc local risk factors.
+1. **Fear &rarr; avoidance;** "false" warnings; backlash from exaggerated fear appeals
 
-## Issues
+2. **Construal-level theory:** qualitatively different engagement with risk depending on distance/abstractness; salience and distance are different
 
-1. Sample / generalizability
-    - SF Bay, Qualtrics, Households, US
-    - unbalanced even at that
-    - Response rates 8-12%
-    - Sampling procedure, slightly obscure?
-    - Zip code sampling and then select subjective
-    - external validity
+3. Ideologically grounded **motivated reasoning**
+
+<br>
+
+4. "*[I]n the absence of specific information about local flooding, individuals may __rely on their strong climate change beliefs to inform sea-level rise risk perceptions__. But when confronted with more specific information, those same individuals may begin to process the sea-level rise threat in the context of different emotional and cognitive considerations, and fixate more on specific local risk factors.*"
+
+## Four issues
+
+1. **The sample** and external validity:
+    - Only SF Bay (and only US), poor representativeness, low response rates (8-12%), slightly obscure zip code-based sampling procedure
     
-2. Treatment
-    - Priming vs. information? Problem that it is not placebo-controlled (also that there is no difference between two map types)
-    - What do people take from information? A majority takes that they are safe, assumedly? A minority that that will be hurt? On average: reduction. Tendency to increase close to 50%, to decrease at lower. 
-    - Zip-code level abstract and not valuable on its own
-    - Social/general/abstract risk much more important?
-    - Very hard to understand risk information in maps
+2. **The treatment:**
+    - **Information vs. priming?** Possible problem that it is not placebo-controlled? The fact that the two map types yield same results point to priming effect? 
+    - Very **hard to understand** and digest risk information in **maps**
+    - What do people **actually learn?** A majority learn that they are safe, only a minority that that will be harmed &rarr; a reduction, on average?
+    - **Zip-code areas** abstract, not valuable or meaningful on their own, non-individual
 
-3. Outcome questions
-    - WTP: small/hard policy vignette. Inattention?! Hard to understand? Some select randomly? No inattention check regarding the vignette and/or treatment AMOUNT. 
-    - Will it harm you? "How much do you think sea-level rise will harm...", qualitative/verbal. Problem or not depending on what it is used for. Essentially subjective expectations (beliefs)? But referred to as "Public [Harm] Concern"... 
+## Four issues
+
+3. **Outcome questions:**
+    - **Concern:** "How much do you think sea-level rise will harm..." with 4-point response scale: Highly verbal, imprecise, **essentially subjective expectation (beliefs)** ... but not used that way (referred to as 'public concern')
+    - May update expectations (reduced personal concern) but not care/worry (more) about that particular risk object (personal harm)
+    - **WTP:** Very imperfect measurement approach, complex vignette, no inattention or comprehension checks 
+    - Also no incentives: Free to say "yes" to whatever<br>(average WTP: $59 per year = high?) 
+    
+4. Hugely **contextual**
 
 ## Thanks! {.center background-color="#8b2325" transition="fade" background-transition="fade"}
