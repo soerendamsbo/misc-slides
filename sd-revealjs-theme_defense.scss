@@ -1,0 +1,117 @@
+/*-- scss:defaults --*/
+// importing fonts
+@import url(https://fonts.googleapis.com/css?family=Metrophobic&display=swap);
+
+// fonts
+$font-family-sans-serif: 'Metrophobic', Tahoma, sans-serif !default;
+
+// headings
+$presentation-heading-font: 'Metrophobic',  Tahoma, sans-serif  !default;
+$presentation-heading-color: #026B81 !default;
+$h1-font-size: 1.33em   !default;
+$h2-font-size: 1.25em !default;
+$h3-font-size: 1.1em !default;
+$h4-font-size: 1em !default;
+$presentation-heading-font-weight: 300;
+
+//code
+$code-color: #026B81 !default;
+$font-family-monospace: 'Inconsolata', monospace  !default;
+
+// general  
+$body-bg: #fff;
+$body-color: #000000;
+$link-color: #026B81;
+$presentation-font-size-root: 30px;
+
+/*-- scss:rules --*/
+.reveal pre code {
+  background-color: #f8f8f8;
+  font-size: 1.33em;
+  padding: 0.5em;
+  line-height: 1.33em;
+}
+
+
+.subtitle {
+  color: $body-bg;
+  font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
+}
+
+.author {
+  color: $body-bg;
+  font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
+}
+
+.footer {
+  font-family: $presentation-heading-font;
+}
+
+.reveal .slide-number {
+  font-family: $presentation-heading-font;
+}
+
+.reveal .panel-tabset [role=tab] {
+    font-size: 0.8em;
+}
+
+.reveal .footer {
+    color: #026B81;
+}
+
+.center{
+    text-align: center;
+}
+
+section.has-dark-background a, section.has-dark-background a:hover {
+    color: #DCDCDC;
+}
+
+.slide-logo {
+  display: block !important;
+  position: fixed !important;
+  top: 0 !important;
+  right: 10px !important;
+  max-height: 15% !important;
+  height: 100% !important;
+  width: auto !important;
+  color: $body-color !important;
+}
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 10px !important;
+  right: 10px !important;
+  top: unset !important;
+  color: #026B81 !important;
+}
+
+// Sørens additions
+
+.title {
+  font-size: 20px;
+}
+
+.grey{
+	color: gray;
+}
+
+.darkred{
+  color: #038DAD;
+}
+
+p strong {
+    color: #038DAD;
+    font-weight: 300;
+}
+
+li strong {
+    color: #038DAD;
+    line-height: 175%;
+    font-weight: 300;
+}
+
+ul {
+    line-height:175%
+}

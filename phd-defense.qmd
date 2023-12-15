@@ -1,0 +1,325 @@
+---
+title: "Political Weather:<br>How experiencing climate change shapes our political lives"
+subtitle: PhD Defense
+date: "20240109"
+date-format: long
+author: Søren Damsbo-Svendsen
+format: 
+  revealjs:
+    theme: defense2024.scss
+    incremental: true   
+    #smaller: true
+    overview: true
+    slide-number: true
+    preview-links: auto
+    title-slide-attributes: 
+      data-background-image: /media_defense/cover.png
+      data-background-size: 12%
+      data-background-position: 97% 8%
+    self-contained: false
+    chalkboard: false
+    fragments: true
+    slide-level: 2
+    width: 1200
+    height: 750
+    margin: 0.1
+execute:
+  echo: false
+  cache: true
+---
+
+```{r}
+#| include: false
+pacman::p_load(tidyverse, knitr, lubridate, kableExtra)
+sysfonts::font_add_google("Alegreya Sans", "Alegreya Sans", regular.wt = 300)
+showtext::showtext_auto()
+```
+
+## Picture #1 of extreme weather
+
+This project is about how people react politically to climate change and weather. I'll show you more images. But first let's look at the facts (hard to fully understand).
+
+[https://www.theguardian.com/world/gallery/2021/jul/19/climate-crisis-weather-around-world-in-pictures-wildfires-floods-winds](https://www.theguardian.com/world/gallery/2021/jul/19/climate-crisis-weather-around-world-in-pictures-wildfires-floods-winds)
+
+##  {background-image="media_defense/GLOBE.png" background-size="85%" background-color="black"}
+
+::: {.absolute right="-25" bottom="-45" .small}
+{{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
+:::
+
+##  {background-image="media_defense/EUROPE.png" background-size="85%" background-color="black"}
+
+::: {.absolute right="-25" bottom="-45" .small}
+{{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
+:::
+
+##  {background-image="media_defense/DENMARK.png" background-size="85%" background-color="black"}
+
+::: {.absolute right="-25" bottom="-45" .small}
+{{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
+:::
+
+## One consequence is more extreme weather experiences {background-image="media_defense/weathersim.png" background-size="75%" background-color="white"}
+
+## More pictures of extreme weather
+
+This is easier to understand. And it is an easier route to understanding climate change for everyone experiencing it. More and more people, more and more frequently, more and more intensely.
+
+## Easier to understand than this {background-image="media_defense/co2.png" background-size="50%" background-color="white"}
+
+## Media coverage
+
+At the same time, it is not the most accurate way to learn about climate change. There are **other sources of information**. One is education, but it is slow and not dynamic in the short run. A more dynamic influence is media coverage.
+
+## The voter
+
+Voters increasingly experiences climate change directly through the weather. But they are still influenced by traditional sources as well, notably media coverage (politicians, activists, etc.). They may also point to weather events and make them visible as climate-related events. 
+
+-   Encounters new climate information all the time
+-   Increasingly in extreme weather events
+-   More and more often, they are attributed to climate change by scientists
+-   But no matter what, there is a growing sense that we are feeling the consequences of climate change, regardless of attribution of individual events (subjective attritution or association)
+-   This means that we experience climate change.
+
+## The problem
+
+-   Climate change
+-   Public support is not strong enough
+-   Danish minister of climate says policy must follow 80% (20230814)
+-   (Increasing) polarization -\> different ways of engaging with new information about climate change
+
+## Research question
+
+> How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?
+
+Focus on Denmark...
+
+## Background
+
+- Effects of personal experiences often underplayed
+- Complex web of climate attitudes and influences
+- Experience a solution?
+    -   Can it cut across worldviews?
+    -   Can it be the forceful teacher?
+    -   Let's see...
+
+# Content
+
+::: {.absolute right="0" top="0"}
+![](media_defense/tikz/1.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="0"}
+![](media_defense/tikz/2.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="0"}
+![](media_defense/tikz/3.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="0"}
+![](media_defense/tikz/4.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="0"}
+![](media_defense/tikz/5.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="0"}
+![](media_defense/tikz/6.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="0"}
+![](media_defense/tikz/7.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="0"}
+![](media_defense/tikz/8.png)
+:::
+
+# Article 1: Media {transition="slide"}
+
+## A quick summary ---
+
+## {background-image="media_defense/tikz/8.png" background-size="80%"}
+
+# Article 2: Temperature {transition="slide"}
+
+## A quick summary ---
+
+## {background-image="media_defense/tikz/8.png" background-size="80%"}
+
+# Article 3: Flooding {transition="slide"}
+
+## {background-image="media/xavermap.png"}
+
+::: {.absolute right="-125" top="600"}
+**Northern Europe on**<br>December 5 2013
+:::
+
+::: {.absolute left="0" top="730"}
+{{< fa camera >}} European Environment Agency
+:::
+
+##  {background-image="media/lynæs.jpg"}
+
+::: {.absolute left="0" top="730"}
+{{< fa camera >}} Lynæs Bådelaug
+:::
+
+##  {background-image="media/xaver-hamburg.jpg"}
+
+::: {.absolute left="0" top="730"}
+{{< fa camera >}} rktic
+:::
+
+##  {background-image="media/vikingeskib.jpg"}
+
+::: {.absolute left="0" top="730"}
+{{< fa camera >}} Vikingeskibsmuseet
+:::
+
+##  {background-image="media/bodil.png"}
+
+::: {.absolute left="0" top="730"}
+{{< fa camera >}} Jeanne & John Bollerup-Jensen
+:::
+
+
+
+## The 2013 storm surge in Denmark
+
+```{r}
+#| fig-align: center
+include_graphics("media/flooding_map_timeline.png")
+```
+
+## Study I: how the vote share of pro-climate parties increases after the flood
+
+```{r}
+#| fig-align: center
+include_graphics("media/balance_density.png")
+```
+
+## Study I: parallel trends
+
+```{r}
+#| fig-align: center
+include_graphics("media/parallel_trends_plot.png")
+```
+
+## Study I: DID results - main
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_2x2_2011.png")
+```
+
+## Study I: DID results - flooding intensity
+
+<br>
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_intensity_2011.png")
+```
+
+## Study II: how voters reward pro-climate candidates with higher election chances after the flood
+
+```{r}
+include_graphics("media/proclimate_candidates_kv2017.png")
+```
+
+## Study II: DIDID results
+
+```{r}
+#| fig-align: center
+#| out-width: 70%
+include_graphics("media/didid.png")
+```
+
+::: notes
+12345
+:::
+
+## Study II: DIDID results
+
+<br>
+
+::: columns
+::: {.column width="43%"}
+```{r}
+include_graphics("media/didid.png")
+```
+:::
+
+::: {.column width="55%"}
+:::
+:::
+
+## Study II: DIDID placebo test
+
+<br>
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_2x2_candidates.png")
+```
+
+## A quick summary ---
+
+<br>
+
+::: columns
+::: {.column width="30%"}
+> RQ
+:::
+
+::: {.column width="70%"}
+::: incremental
+abc
+:::
+:::
+:::
+
+## {background-image="media_defense/tikz/8.png" background-size="80%"}
+
+# Article 4: Turnout {transition="slide"}
+
+## A quick summary ---
+
+# Conclusion {transition="slide"}
+
+> Research Question: How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?
+
+## Thank you! {.center}
+
+::: {width="65%" .small}
+```{r}
+include_graphics("media/lighthouse.jpg")
+```
+
+{{< fa camera >}} Marco Faria
+:::
+
+# Supplementary material for Article 1: Media {visibility="uncounted"}
+
+# Supplementary material for Article 2: Temperature {visibility="uncounted"}
+
+# Supplementary material for Article 3: Flooding {visibility="uncounted"}
+
+# Supplementary material for Article 4: Turnout {visibility="uncounted"}
