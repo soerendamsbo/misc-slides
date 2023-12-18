@@ -13,7 +13,7 @@ format:
     slide-number: true
     preview-links: auto
     title-slide-attributes: 
-      data-background-image: /media_defense/cover.png
+      data-background-image: /media-def/cover.png
       data-background-size: 12%
       data-background-position: 97% 8%
     self-contained: false
@@ -35,37 +35,51 @@ sysfonts::font_add_google("Alegreya Sans", "Alegreya Sans", regular.wt = 300)
 showtext::showtext_auto()
 ```
 
-## Picture #1 of extreme weather
+# Intro (picture #1 of extreme weather) {#sec-intro}
 
 This project is about how people react politically to climate change and weather. I'll show you more images. But first let's look at the facts (hard to fully understand).
 
 [https://www.theguardian.com/world/gallery/2021/jul/19/climate-crisis-weather-around-world-in-pictures-wildfires-floods-winds](https://www.theguardian.com/world/gallery/2021/jul/19/climate-crisis-weather-around-world-in-pictures-wildfires-floods-winds)
 
-##  {background-image="media_defense/GLOBE.png" background-size="85%" background-color="black"}
+## For instance
 
-::: {.absolute right="-25" bottom="-45" .small}
+![](media/lynæs.jpg){.absolute left=0 top=150 width="400"}
+
+![](media/xaver-hamburg.jpg){.absolute right=0 top=150 width="400"}
+
+![](media/bodil.png){.absolute bottom=50 right=0 width="400"}
+
+![](media/20180719_163331_red2.png){.absolute left=0 bottom=50 width="400"}
+
+![](media/rain-election.png){.absolute right=400 top=150 width="400"}
+
+![](media/heatwave.jpg){.absolute right=400 bottom=50 width="400"}
+
+##  {background-image="media-def/GLOBE.png" background-size="85%" background-color="black"}
+
+::: {.absolute right="-25" bottom="-40" .small}
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
 
-##  {background-image="media_defense/EUROPE.png" background-size="85%" background-color="black"}
+##  {background-image="media-def/EUROPE.png" background-size="85%" background-color="black"}
 
-::: {.absolute right="-25" bottom="-45" .small}
+::: {.absolute right="-25" bottom="-40" .small}
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
 
-##  {background-image="media_defense/DENMARK.png" background-size="85%" background-color="black"}
+##  {background-image="media-def/DENMARK.png" background-size="85%" background-color="black"}
 
-::: {.absolute right="-25" bottom="-45" .small}
+::: {.absolute right="-25" bottom="-40" .small}
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
 
-## One consequence is more extreme weather experiences {background-image="media_defense/weathersim.png" background-size="75%" background-color="white"}
+## One consequence is more extreme weather experiences {background-image="media-def/weathersim.png" background-size="75%" background-color="white"}
 
 ## More pictures of extreme weather
 
 This is easier to understand. And it is an easier route to understanding climate change for everyone experiencing it. More and more people, more and more frequently, more and more intensely.
 
-## Easier to understand than this {background-image="media_defense/co2.png" background-size="50%" background-color="white"}
+## Easier to understand than this {background-image="media-def/co2.png" background-size="50%" background-color="white"}
 
 ## Media coverage
 
@@ -103,184 +117,279 @@ Focus on Denmark...
     -   Can it be the forceful teacher?
     -   Let's see...
 
-# Content
+## The model
 
-::: {.absolute right="0" top="0"}
-![](media_defense/tikz/1.png)
+::: {.absolute right="0" top="-20"}
+![](media-def/tikz/1.png)
 :::
 
 . . .
 
-::: {.absolute right="0" top="0"}
-![](media_defense/tikz/2.png)
+::: {.absolute right="0" top="-20"}
+![](media-def/tikz/2.png)
 :::
 
 . . .
 
-::: {.absolute right="0" top="0"}
-![](media_defense/tikz/3.png)
+::: {.absolute right="0" top="-20"}
+![](media-def/tikz/3.png)
 :::
 
 . . .
 
-::: {.absolute right="0" top="0"}
-![](media_defense/tikz/4.png)
+::: {.absolute right="0" top="-20"}
+![](media-def/tikz/4.png)
 :::
 
 . . .
 
-::: {.absolute right="0" top="0"}
-![](media_defense/tikz/5.png)
+::: {.absolute right="0" top="-20"}
+![](media-def/tikz/5.png)
 :::
 
 . . .
 
-::: {.absolute right="0" top="0"}
-![](media_defense/tikz/6.png)
+::: {.absolute right="0" top="-20"}
+![](media-def/tikz/6.png)
 :::
 
 . . .
 
-::: {.absolute right="0" top="0"}
-![](media_defense/tikz/7.png)
+::: {.absolute right="0" top="-20"}
+![](media-def/tikz/7.png)
 :::
 
 . . .
 
-::: {.absolute right="0" top="0"}
-![](media_defense/tikz/8.png)
+::: {.absolute right="0" top="-20"}
+![](media-def/tikz/8.png)
 :::
 
 # Article 1: Media {transition="slide"}
 
-## A quick summary ---
+## Article 1: Media {#sec-p1}
 
-## {background-image="media_defense/tikz/8.png" background-size="80%"}
+
+::: {.nonincremental}
+
+- "Mass media influence on the rapid rise of climate change"
+- Published in *International Journal of Public Opinion Research* (2022)
+
+:::
+
+## Background
+
+- 2019
+- Climate stuff is complex
+- Media is fragmented
+- Climate change became publicly salient
+- What happened?
+
+## Public salience
+
+<Figure 1a>
+
+## Media coverage
+
+<Figure 1b>
+<Extra media plots>
+
+## Statistical analysis
+
+Verdict: Yes.
+
+## Other sources
+
+## Subgroups
+
+<Subgroup plot>
+
+## A quick summary -- {#sec-sum1}
+
+::: {.absolute bottom="-20" .medium}
+<Supplementary material in *@sec-sup1*>
+:::
+
+## {background-image="media-def/tikz/8.png" background-size="80%"}
 
 # Article 2: Temperature {transition="slide"}
 
-## A quick summary ---
+## Article 2: Temperature {#sec-p2}
 
-## {background-image="media_defense/tikz/8.png" background-size="80%"}
+::: {.nonincremental}
+
+- "How weather experiences strengthen climate opinions in Europe"
+- Published in *West European Politics* (2021)
+
+:::
+
+## {background-image="media/europeheatmap.jpg"  transition="slide" background-transition="slide"} 
+
+::: {.absolute left=0 top=730 .small}
+{{< fa camera >}} Yahoo! News
+:::
+
+## Does warmer weather make us more climate conscious? {transition="slide" background-transition="slide"}
+
+## {background-image="media-def/map2.png" background-size="50%" background-color="#F7E2B7" background-position="right"}
+
+<!-- Data -->
+
+## Results {background-color="white"}
+
+::: {.absolute right="0" top="100"}
+![](media-def/effectplot0.png){width="60%"}
+:::
+
+. . .
+
+::: {.absolute right="0" top="100"}
+![](media-def/effectplot.png){width="60%"}
+:::
+
+## Effect size {background-color="white"}
+
+::: {.absolute right="0" top="100" .small}
+![](media-def/temp-meta0.png){width="65%"}
+<br>{{< fa copyright >}} [Sugerman et al. (2021). "Local warming is real: A meta-analysis of the effect of recent temperature on climate change beliefs."](https://doi.org/10.1016/j.cobeha.2021.04.015)
+:::
+
+. . .
+
+::: {.absolute right="0" top="100" .small}
+![](media-def/temp-meta1.png){width="65%"}
+:::
+ 
+. . .
+
+::: {.absolute right="0" top="100" .small}
+![](media-def/temp-meta2.png){width="65%"}
+:::
+
+## Heterogeneity {background-color="white"}
+
+::: {.absolute right="0" top="150"}
+![](media-def/figure2_defense0.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="150"}
+![](media-def/figure2_defense1.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="150"}
+![](media-def/figure2_defense2.png)
+:::
+
+## Heterogeneity {background-color="white"}
+
+::: {.absolute right="0" top="150"}
+![](media-def/figure3_defense0.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="150"}
+![](media-def/figure3_defense1.png)
+:::
+
+. . .
+
+::: {.absolute right="0" top="150"}
+![](media-def/figure3_defense2.png)
+:::
+
+
+## A quick summary -- {#sec-sum2}
+
+::: {.absolute bottom="-20" .medium}
+<Supplementary material in *@sec-sup2*>
+:::
+
+## {background-image="media-def/tikz/8.png" background-size="80%"}
 
 # Article 3: Flooding {transition="slide"}
 
-## {background-image="media/xavermap.png"}
+## Article 3: Flooding {#sec-p3}
 
-::: {.absolute right="-125" top="600"}
-**Northern Europe on**<br>December 5 2013
-:::
 
-::: {.absolute left="0" top="730"}
-{{< fa camera >}} European Environment Agency
-:::
+::: {.nonincremental}
 
-##  {background-image="media/lynæs.jpg"}
+- "Pro-climate voting in response to local flooding"
+- Unpublished manuscript
 
-::: {.absolute left="0" top="730"}
-{{< fa camera >}} Lynæs Bådelaug
-:::
-
-##  {background-image="media/xaver-hamburg.jpg"}
-
-::: {.absolute left="0" top="730"}
-{{< fa camera >}} rktic
 :::
 
 ##  {background-image="media/vikingeskib.jpg"}
 
-::: {.absolute left="0" top="730"}
+::: {.absolute left="0" bottom="-20" .small}
 {{< fa camera >}} Vikingeskibsmuseet
+:::
+
+##  {background-image="media/lynæs.jpg"}
+
+::: {.absolute left="0" bottom="-20" .small}
+{{< fa camera >}} Lynæs Bådelaug
 :::
 
 ##  {background-image="media/bodil.png"}
 
-::: {.absolute left="0" top="730"}
+::: {.absolute left="0" bottom="-20" .small}
 {{< fa camera >}} Jeanne & John Bollerup-Jensen
 :::
 
-
-
-## The 2013 storm surge in Denmark
+## {background-color="white"}
 
 ```{r}
 #| fig-align: center
-include_graphics("media/flooding_map_timeline.png")
+include_graphics("media-def/figure1.png")
 ```
 
-## Study I: how the vote share of pro-climate parties increases after the flood
+## {background-color="white"}
 
 ```{r}
 #| fig-align: center
-include_graphics("media/balance_density.png")
+include_graphics("media-def/figure2.png")
 ```
 
-## Study I: parallel trends
+## {background-color="white"}
 
 ```{r}
 #| fig-align: center
-include_graphics("media/parallel_trends_plot.png")
+include_graphics("media-def/figure3.png")
 ```
 
-## Study I: DID results - main
-
-```{r}
-#| fig-align: center
-include_graphics("media/did_estimates_2x2_2011.png")
-```
-
-## Study I: DID results - flooding intensity
+## {background-color="white"}
 
 <br>
 
 ```{r}
 #| fig-align: center
-include_graphics("media/did_estimates_intensity_2011.png")
+include_graphics("media-def/figure4.png")
 ```
 
-## Study II: how voters reward pro-climate candidates with higher election chances after the flood
-
-```{r}
-include_graphics("media/proclimate_candidates_kv2017.png")
-```
-
-## Study II: DIDID results
-
-```{r}
-#| fig-align: center
-#| out-width: 70%
-include_graphics("media/didid.png")
-```
-
-::: notes
-12345
-:::
-
-## Study II: DIDID results
-
-<br>
-
-::: columns
-::: {.column width="43%"}
-```{r}
-include_graphics("media/didid.png")
-```
-:::
-
-::: {.column width="55%"}
-:::
-:::
-
-## Study II: DIDID placebo test
+## {background-color="white"}
 
 <br>
 
 ```{r}
 #| fig-align: center
-include_graphics("media/did_estimates_2x2_candidates.png")
+include_graphics("media-def/figure5.png")
 ```
 
-## A quick summary ---
+## {background-color="white"}
+
+<br>
+
+```{r}
+#| fig-align: center
+include_graphics("media-def/figure6.png")
+```
+
+## A quick summary -- {#sec-sum3}
 
 <br>
 
@@ -296,13 +405,68 @@ abc
 :::
 :::
 
-## {background-image="media_defense/tikz/8.png" background-size="80%"}
+::: {.absolute bottom="-20" .medium}
+<Supplementary material in *@sec-sup3*>
+:::
 
-# Article 4: Turnout {transition="slide"}
+## {background-image="media-def/tikz/8.png" background-size="80%"}
 
-## A quick summary ---
+# Article 4: Turnout {transition="slide" #sec-p4}
 
-# Conclusion {transition="slide"}
+## Article 4: Turnout
+
+::: {.nonincremental}
+
+- "When the election rains out and how bad weather excludes marginal voters from turning out"
+- Published in *Electoral Studies* (2023)
+- Co-authored with Kasper M. Hansen
+
+:::
+
+## Link to project
+
+## Meta {background-color="white"}
+
+::: {.columns}
+::: {.column width="88%"}
+![](media-def/p4-fig1.png)
+:::
+:::
+
+## {background-image="media-def/weather-stations.png" background-size="80%" background-color="white"}
+
+## {background-color="white"}
+
+:::: {.columns}
+::: {.column width="44%"}
+
+<br>
+
+- **Nedbør** mindsker sandsynligheden for at stemme med **-0,95 %-point** per cm regn
+
+- Negativ effekt vokser med mere nedbør
+
+- Størst effekt for unge<br>(marginale vælgere)  in 
+:::
+::: {.column width="1%"}
+:::
+::: {.column width="55%"}
+<br>
+```{r}
+#| fig-align: center
+include_graphics("media/interaction_panel2.png")
+```
+:::
+::::
+
+
+## A quick summary -- {#sec-sum4}
+
+::: {.absolute bottom="-20" .medium}
+<Supplementary material in *@sec-sup4*>
+:::
+
+# Conclusion {transition="slide" #sec-conclusion}
 
 > Research Question: How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?
 
@@ -316,10 +480,138 @@ include_graphics("media/lighthouse.jpg")
 {{< fa camera >}} Marco Faria
 :::
 
-# Supplementary material for Article 1: Media {visibility="uncounted"}
+# Overview {visibility="uncounted" #sec-overview}
 
-# Supplementary material for Article 2: Temperature {visibility="uncounted"}
 
-# Supplementary material for Article 3: Flooding {visibility="uncounted"}
+::: columns
+::: {.column width="40%"}
+::: {.nonincremental .medium}
 
-# Supplementary material for Article 4: Turnout {visibility="uncounted"}
+- Introduction  &rarr;  @sec-intro
+- Article 1: Media  &rarr;  @sec-p1
+    - Summary  in  @sec-sum1
+    - Supplementary material  in  @sec-sup1
+- Article 2: Media  &rarr;  @sec-p2
+    - Summary  in  @sec-sum2
+    - Supplementary material  in  @sec-sup2
+- Article 3: Media  &rarr;  @sec-p3
+    - Summary  in  @sec-sum3
+    - Supplementary material  in  @sec-sup3
+- Article 4: Media  &rarr;  @sec-p4
+    - Summary  in  @sec-sum4
+    - Supplementary material  in  @sec-sup4
+- Conclusion  &rarr;  @sec-conclusion
+
+:::
+:::
+
+::: {.column width="60%"}
+![](media-def/tikz/8.png)
+:::
+:::
+
+# Supplementary material for Article 1: Media {visibility="uncounted" #sec-sup1}
+
+::: {.absolute bottom="-400" .medium}
+<**Article summary** in *@sec-sum1*, **overview** in *@sec-overview*>
+:::
+
+# Supplementary material for Article 2: Temperature {visibility="uncounted" #sec-sup2}
+
+::: {.absolute bottom="-400" .medium}
+<**Article summary** in *@sec-sum2*, **overview** in *@sec-overview*>
+:::
+
+## Temperature deviation measure {visibility="uncounted"}
+
+<br><br><br><br><br>
+
+$temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal\ temperature_{ct}}$
+
+## {visibility="uncounted" background-color="white" width="50%"}
+
+::: {.columns}
+::: {.column width="60%"}
+![](media-def/p2-tab1.png)
+:::
+:::
+
+## {visibility="uncounted" background-color="white"}
+
+::: {.columns}
+::: {.column width="80%"}
+![](media-def/p2-tab2.png)
+:::
+:::
+
+## {visibility="uncounted" background-color="white"}
+
+::: {.columns}
+::: {.column width="90%"}
+![](media-def/p2-fig1.jpg)
+:::
+:::
+
+# Supplementary material for Article 3: Flooding {visibility="uncounted" #sec-sup3}
+
+::: {.absolute bottom="-400" .medium}
+<**Article summary** in *@sec-sum3*, **overview** in *@sec-overview*>
+:::
+
+## {background-color="white"}
+
+```{r}
+#| fig-align: center
+include_graphics("media/balance_density.png")
+```
+
+## {background-color="white"}
+
+```{r}
+include_graphics("media/proclimate_candidates_kv2017.png")
+```
+
+## {background-color="white"}
+
+```{r}
+#| fig-align: center
+#| out-width: 70%
+include_graphics("media/didid.png")
+```
+
+## {background-color="white"}
+
+<br>
+
+::: columns
+::: {.column width="43%"}
+```{r}
+include_graphics("media/didid.png")
+```
+:::
+
+::: {.column width="55%"}
+:::
+:::
+
+## {background-color="white"}
+
+<br>
+
+```{r}
+#| fig-align: center
+include_graphics("media/did_estimates_2x2_candidates.png")
+```
+
+
+# Supplementary material for Article 4: Turnout {visibility="uncounted" #sec-sup4}
+
+::: {.absolute bottom="-400" .medium}
+<**Article summary** in *@sec-sum4*, **overview** in *@sec-overview*>
+:::
+
+## Weather measures {visibility="uncounted"}
+
+<br><br><br><br><br>
+
+$Local\ weather_{vt} = \frac{ \sum^3_i{(Observation_{it}/Distance^2_i)} }{ \sum^3_i{(1/Distance^2_i)} }$
