@@ -73,7 +73,23 @@ This project is about how people react politically to climate change and weather
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
 
-## One consequence is more extreme weather experiences {background-image="media-def/weathersim.png" background-size="75%" background-color="white"}
+## One consequence is more extreme weather experiences {background-color="white"}
+
+::: {.absolute right="0" top="250"}
+![](media-def/weathersim.png){width="80%"}
+:::
+
+. . .
+
+::: {.absolute right="0" top="250"}
+![](media-def/weathersim.png){width="80%"}
+:::
+
+. . .
+
+::: {.absolute right="0" top="250"}
+![](media-def/weathersim.png){width="80%"}
+:::
 
 ## More pictures of extreme weather
 
@@ -165,7 +181,7 @@ Focus on Denmark...
 ![](media-def/tikz/8.png)
 :::
 
-# Article 1: Media {transition="slide"}
+# <br>Article 1: Media {background-image="media-def/klimamarch2019.jpg"  transition="slide" background-transition="slide"}
 
 ## Article 1: Media {#sec-p1}
 
@@ -177,6 +193,10 @@ Focus on Denmark...
 
 :::
 
+::: {.absolute left="0" bottom="-20" .small}
+{{< fa camera >}} (prev. slide) Greenpeace Danmark
+:::
+
 ## Background
 
 - 2019
@@ -185,24 +205,60 @@ Focus on Denmark...
 - Climate change became publicly salient
 - What happened?
 
-## Public salience
+## Climate change's rapid rise in salience in 2019 {background-color="white"}
 
-<Figure 1a>
+::: {.absolute right="-50" top="100"}
+![](media-def/p1-fig1_0){width="75%"}
+:::
+
+. . .
+
+::: {.absolute right="-50" top="100"}
+![](media-def/p1-fig1_1){width="75%"}
+:::
+
+. . .
+
+::: {.absolute right="-50" top="100"}
+![](media-def/p1-fig1_2){width="75%"}
+:::
+
+. . .
+
+::: {.absolute right="-50" top="100"}
+![](media-def/p1-fig1_3){width="75%"}
+:::
 
 ## Media coverage
 
-<Figure 1b>
 <Extra media plots>
 
 ## Statistical analysis
 
-Verdict: Yes.
+- Verdict: Yes.
 
-## Other sources
+::: {.small}
 
-## Subgroups
+- The (summed) coefficient, 0.029, thus implies that the number of additional climate keywords required to produce a percentage point increase in relative public salience is approximately 34 – or anything from 34 articles with a low-intensity climate coverage to one climate-intensive article. 21 “climate articles” lead to a one percentage point increase.
 
-<Subgroup plot>
+:::
+
+## Who is driving media&rarr;public agenda-setting? {background-color="white"}
+
+::: {.absolute right="-50" top="250"}
+![](media-def/p1-fig3_0){width="90%"}
+:::
+
+. . .
+
+::: {.absolute right="-50" top="250"}
+![](media-def/p1-fig3_1){width="90%"}
+:::
+
+- Education: Age 30-49 
+- Immigration: Age 70+, rural, men, center-right (not populist right)
+
+## Confounding, reverse causality, or other influences?
 
 ## A quick summary -- {#sec-sum1}
 
@@ -212,7 +268,7 @@ Verdict: Yes.
 
 ## {background-image="media-def/tikz/8.png" background-size="80%"}
 
-# Article 2: Temperature {transition="slide"}
+# <br>Article 2: Temperature {background-image="media/europeheatmap.jpg"  transition="slide" background-transition="slide"}
 
 ## Article 2: Temperature {#sec-p2}
 
@@ -223,10 +279,8 @@ Verdict: Yes.
 
 :::
 
-## {background-image="media/europeheatmap.jpg"  transition="slide" background-transition="slide"} 
-
-::: {.absolute left=0 top=730 .small}
-{{< fa camera >}} Yahoo! News
+::: {.absolute left="0" bottom="-20" .small}
+{{< fa camera >}} (prev. slide) Yahoo! News
 :::
 
 ## Does warmer weather make us more climate conscious? {transition="slide" background-transition="slide"}
@@ -311,7 +365,7 @@ Verdict: Yes.
 
 ## {background-image="media-def/tikz/8.png" background-size="80%"}
 
-# Article 3: Flooding {transition="slide"}
+# <br>Article 3: Flooding {background-image="media/vikingeskib.jpg" transition="slide" background-transition="slide"}
 
 ## Article 3: Flooding {#sec-p3}
 
@@ -323,10 +377,8 @@ Verdict: Yes.
 
 :::
 
-##  {background-image="media/vikingeskib.jpg"}
-
 ::: {.absolute left="0" bottom="-20" .small}
-{{< fa camera >}} Vikingeskibsmuseet
+{{< fa camera >}} (prev. slide) Vikingeskibsmuseet
 :::
 
 ##  {background-image="media/lynæs.jpg"}
@@ -411,9 +463,9 @@ abc
 
 ## {background-image="media-def/tikz/8.png" background-size="80%"}
 
-# Article 4: Turnout {transition="slide" #sec-p4}
+# <br>Article 4: Turnout {background-transition="slide" transition="slide" background-image="media-def/rain-election.jpeg"}
 
-## Article 4: Turnout
+## Article 4: Turnout {#sec-p4}
 
 ::: {.nonincremental}
 
@@ -423,39 +475,47 @@ abc
 
 :::
 
-## Link to project
+::: {.absolute left="0" bottom="-20" .small}
+{{< fa camera >}} (prev. slide) Edward Linsmier/ AFP 
+:::
 
-## Meta {background-color="white"}
+## Climate change &rarr; weather &rarr; behavior
+
+## Meta-analysis of rainfall&rarr;turnout {background-color="white"}
+
+::: {.absolute left="-30" top="80"}
+![](media-def/p4-fig1_0.png){width="80%"}
+:::
+
+## Our study {background-image="media-def/weather-stations.png" background-size="80%" background-color="white"}
+
+## Results {background-color="white"}
 
 ::: {.columns}
-::: {.column width="88%"}
-![](media-def/p4-fig1.png)
+::: {.column width="75%"}
+![](media-def/p4-fig1_1.png)
+:::
+::: {.column width="25%"}
+
+- Rainfall reduces P(voting) by 0.95 %-points per cm
+- Negative effect grows with rainfall
+- Sunshine increases turnout
 :::
 :::
 
-## {background-image="media-def/weather-stations.png" background-size="80%" background-color="white"}
-
-## {background-color="white"}
+## Heterogeneity {background-color="white"}
 
 :::: {.columns}
-::: {.column width="44%"}
+::: {.column width="60%"}
 
-<br>
-
-- **Nedbør** mindsker sandsynligheden for at stemme med **-0,95 %-point** per cm regn
-
-- Negativ effekt vokser med mere nedbør
-
-- Størst effekt for unge<br>(marginale vælgere)  in 
-:::
-::: {.column width="1%"}
-:::
-::: {.column width="55%"}
-<br>
 ```{r}
 #| fig-align: center
 include_graphics("media/interaction_panel2.png")
 ```
+
+:::
+::: {.column width="40%"}
+
 :::
 ::::
 
@@ -466,41 +526,63 @@ include_graphics("media/interaction_panel2.png")
 <Supplementary material in *@sec-sup4*>
 :::
 
-# Conclusion {transition="slide" #sec-conclusion}
+# Conclusion {background-transition="slide" transition="slide" #sec-conclusion}
+
+::: {.absolute top="0" right="-175"}
+```{r}
+#| out-width: 16%
+#| panel: fill
+#| fig-align: right
+include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "media-def/tikz/8.png", "media/vikingeskib.jpg", "media-def/rain-election.jpeg"))
+```
+:::
+
+. . .
+
+::: {.columns}
+::: {.column width="95%"}
 
 > Research Question: How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?
 
-## Thank you! {.center}
+- "Political weather" &rarr; The weather is political.
+- Everyday experiences
+- Public leadership, responsible use of public attention
 
-::: {width="65%" .small}
-```{r}
-include_graphics("media/lighthouse.jpg")
-```
-
-{{< fa camera >}} Marco Faria
+:::
+::: {.column width="5%"}
+:::
 :::
 
-# Overview {visibility="uncounted" #sec-overview}
+## What's next
 
+- Cross-case / generalizability &rarr; cross-national data with same measurements. Qualify how the world's population responds. Integrated assessment models. 
+- Psychological mechanism. Deep learning or superficial salience spikes due to heuristics use.
+- Is awareness of the link between experience and climate change necessary?
+- Interactions between information flows. 
+
+
+## THANK YOU! {.center background-image="media/lighthouse.jpg"}
+
+# Overview {visibility="uncounted" #sec-overview}
 
 ::: columns
 ::: {.column width="40%"}
 ::: {.nonincremental .medium}
 
-- Introduction  &rarr;  @sec-intro
-- Article 1: Media  &rarr;  @sec-p1
-    - Summary  in  @sec-sum1
-    - Supplementary material  in  @sec-sup1
-- Article 2: Media  &rarr;  @sec-p2
-    - Summary  in  @sec-sum2
-    - Supplementary material  in  @sec-sup2
-- Article 3: Media  &rarr;  @sec-p3
-    - Summary  in  @sec-sum3
-    - Supplementary material  in  @sec-sup3
-- Article 4: Media  &rarr;  @sec-p4
-    - Summary  in  @sec-sum4
-    - Supplementary material  in  @sec-sup4
-- Conclusion  &rarr;  @sec-conclusion
+- Introduction  &rarr;  **@sec-intro**
+- 1: Media  &rarr;  **@sec-p1**
+    - Summary  in  **@sec-sum1**
+    - Supplementary material  in  **@sec-sup1**
+- 2: Temperature  &rarr;  **@sec-p2**
+    - Summary  in  **@sec-sum2**
+    - Supplementary material  in  **@sec-sup2**
+- 3: Flooding  &rarr;  **@sec-p3**
+    - Summary  in  **@sec-sum3**
+    - Supplementary material  in  **@sec-sup3**
+- 4: Turnout  &rarr;  **@sec-p4**
+    - Summary  in  **@sec-sum4**
+    - Supplementary material  in  **@sec-sup4**
+- Conclusion  &rarr;  **@sec-conclusion**
 
 :::
 :::
@@ -510,10 +592,44 @@ include_graphics("media/lighthouse.jpg")
 :::
 :::
 
+::: {.absolute right="0" bottom="-20" .small}
+{{< fa camera >}} (prev. slide) Marco Faria
+:::
+
 # Supplementary material for Article 1: Media {visibility="uncounted" #sec-sup1}
 
 ::: {.absolute bottom="-400" .medium}
 <**Article summary** in *@sec-sum1*, **overview** in *@sec-overview*>
+:::
+
+## Measuring media coverage {visibility="uncounted" background-color="white"}
+
+<br><br>"\\bklima|global[e]? opvarmning|co2|drivhuseffekt|drivhusgas|climate|global warming"
+
+. . .
+
+![](media-def/p1-tab-keywords.png){width="55%"}
+
+## Statistical evidence {visibility="uncounted" background-color="white"}
+
+::: {.columns}
+::: {.column width="75%"}
+
+![](media-def/orig_figure2_cor.png)
+![](media-def/p1-tab.png)
+
+:::
+:::
+
+## Varying lag orders {visibility="uncounted" background-color="white"}
+
+::: {.columns}
+::: {.column width="75%"}
+
+<br>
+![](media-def/p1-tablags.png)
+
+:::
 :::
 
 # Supplementary material for Article 2: Temperature {visibility="uncounted" #sec-sup2}
@@ -558,20 +674,20 @@ $temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal
 <**Article summary** in *@sec-sum3*, **overview** in *@sec-overview*>
 :::
 
-## {background-color="white"}
+## {background-color="white" visibility="uncounted"}
 
 ```{r}
 #| fig-align: center
 include_graphics("media/balance_density.png")
 ```
 
-## {background-color="white"}
+## {background-color="white" visibility="uncounted"}
 
 ```{r}
 include_graphics("media/proclimate_candidates_kv2017.png")
 ```
 
-## {background-color="white"}
+## {background-color="white" visibility="uncounted"}
 
 ```{r}
 #| fig-align: center
@@ -579,7 +695,7 @@ include_graphics("media/proclimate_candidates_kv2017.png")
 include_graphics("media/didid.png")
 ```
 
-## {background-color="white"}
+## {background-color="white" visibility="uncounted"}
 
 <br>
 
@@ -594,7 +710,7 @@ include_graphics("media/didid.png")
 :::
 :::
 
-## {background-color="white"}
+## {background-color="white" visibility="uncounted"}
 
 <br>
 
@@ -604,7 +720,7 @@ include_graphics("media/did_estimates_2x2_candidates.png")
 ```
 
 
-# Supplementary material for Article 4: Turnout {visibility="uncounted" #sec-sup4}
+# Supplementary material for Article 4: Turnout {visibility="uncounted" #sec-sup4 visibility="uncounted"}
 
 ::: {.absolute bottom="-400" .medium}
 <**Article summary** in *@sec-sum4*, **overview** in *@sec-overview*>
