@@ -23,6 +23,7 @@ format:
     width: 1200
     height: 750
     margin: 0.1
+    jump: true
 execute:
   echo: false
   cache: true
@@ -76,19 +77,31 @@ This project is about how people react politically to climate change and weather
 ## One consequence is more extreme weather experiences {background-color="white"}
 
 ::: {.absolute right="0" top="250"}
-![](media-def/weathersim.png){width="80%"}
+![](media-def/weathersim_0.png){width="80%"}
 :::
 
 . . .
 
 ::: {.absolute right="0" top="250"}
-![](media-def/weathersim.png){width="80%"}
+![](media-def/weathersim_1.png){width="80%"}
 :::
 
 . . .
 
 ::: {.absolute right="0" top="250"}
-![](media-def/weathersim.png){width="80%"}
+![](media-def/weathersim_2.png){width="80%"}
+:::
+
+. . .
+
+::: {.absolute right="0" top="250"}
+![](media-def/weathersim_3.png){width="80%"}
+:::
+
+. . .
+
+::: {.absolute right="0" top="250"}
+![](media-def/weathersim_4.png){width="80%"}
 :::
 
 ## More pictures of extreme weather
@@ -298,12 +311,30 @@ Focus on Denmark...
 . . .
 
 ::: {.absolute right="0" top="100"}
-![](media-def/effectplot.png){width="60%"}
+![](media-def/effectplot1.png){width="60%"}
+:::
+
+. . .
+
+::: {.absolute right="0" top="100"}
+![](media-def/effectplot2.png){width="60%"}
+:::
+
+. . .
+
+::: {.absolute right="0" top="100"}
+![](media-def/effectplot3.png){width="60%"}
+:::
+
+. . .
+
+::: {.absolute right="0" top="100"}
+![](media-def/effectplot4.png){width="60%"}
 :::
 
 ## Effect size {background-color="white"}
 
-::: {.absolute right="0" top="100" .small}
+::: {.absolute right="0" top="100" .medium}
 ![](media-def/temp-meta0.png){width="65%"}
 <br>{{< fa copyright >}} [Sugerman et al. (2021). "Local warming is real: A meta-analysis of the effect of recent temperature on climate change beliefs."](https://doi.org/10.1016/j.cobeha.2021.04.015)
 :::
@@ -720,7 +751,7 @@ include_graphics("media/did_estimates_2x2_candidates.png")
 ```
 
 
-# Supplementary material for Article 4: Turnout {visibility="uncounted" #sec-sup4 visibility="uncounted"}
+# Supplementary material for Article 4: Turnout {visibility="uncounted" #sec-sup4}
 
 ::: {.absolute bottom="-400" .medium}
 <**Article summary** in *@sec-sum4*, **overview** in *@sec-overview*>
