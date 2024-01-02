@@ -36,31 +36,29 @@ sysfonts::font_add_google("Alegreya Sans", "Alegreya Sans", regular.wt = 300)
 showtext::showtext_auto()
 ```
 
-# Intro (picture #1 of extreme weather) {#sec-intro}
+# {background-color="black" #sec-intro}
 
-This project is about how people react politically to climate change and weather. I'll show you more images. But first let's look at the facts (hard to fully understand).
-
-[https://www.theguardian.com/world/gallery/2021/jul/19/climate-crisis-weather-around-world-in-pictures-wildfires-floods-winds](https://www.theguardian.com/world/gallery/2021/jul/19/climate-crisis-weather-around-world-in-pictures-wildfires-floods-winds)
-
-## For instance
-
-![](media/lynæs.jpg){.absolute left=0 top=150 width="400"}
-
-![](media/xaver-hamburg.jpg){.absolute right=0 top=150 width="400"}
-
-![](media/bodil.png){.absolute bottom=50 right=0 width="400"}
-
-![](media/20180719_163331_red2.png){.absolute left=0 bottom=50 width="400"}
-
-![](media/rain-election.png){.absolute right=400 top=150 width="400"}
-
-![](media/heatwave.jpg){.absolute right=400 bottom=50 width="400"}
+Let's begin with a picture.
 
 ##  {background-image="media-def/GLOBE.png" background-size="85%" background-color="black"}
 
 ::: {.absolute right="-25" bottom="-40" .small}
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
+
+##  {background-image="media-def/GLOBE.png" background-size="85%" background-color="black" background-opacity="0.2"}
+
+<br><br><br>
+The graph shows global warming with incredible accuracy
+
+1. The global temperature has increased since the industrial revolution
+2. Especially clear in recent 30 years
+3. Climate scientists are able to *predict* and *explain* this development
+4. They also know how to stop it (decarbonization)  
+
+. . .
+
+**But it is hard for ordinary citizens to truly understand scope and implication of the climate problem from statistical information alone**
 
 ##  {background-image="media-def/EUROPE.png" background-size="85%" background-color="black"}
 
@@ -74,7 +72,37 @@ This project is about how people react politically to climate change and weather
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
 
-## One consequence is more extreme weather experiences {background-color="white"}
+## Instead
+
+::: {.absolute left=0 top=100     width="800"}
+**This is easier to understand: Personal experience with climate change and extreme weather.**
+
+:::
+
+. . .
+
+![](media-def/heatwave.jpg){.absolute right=-50  top=-35     width="420"}
+![](media-def/3500.webp){.absolute right=-50 top=215     width="420"}
+![](media-def/2000.jpeg){.absolute right=-50 bottom=-25  width="420"}
+
+. . .
+
+![](media-def/seoul.jpg){.absolute left=390  top=-35      width="420"}
+![](media-def/2000x1370.jpg){.absolute left=390  top=215      width="420"}
+![](media-def/4000.webp){.absolute  left=390  bottom=-25   width="420"}
+
+. . .
+
+![](media-def/rhine-river-is-drying-up-1970341256.jpg){.absolute left=-50  top=-35     width="420"}
+![](media-def/wildfire2.png){.absolute left=-50  top=215     width="420"}
+![](media-def/5396.png){.absolute left=-50  bottom=-25  width="420"}
+
+::: {.absolute left="0" bottom="-45" .small}
+{{< fa camera >}} Patrick T Fallon/AFP/Getty Images, Jennifer Gauthier/Reuters, Oli Scarff/AFP/Getty Images
+Rhein-Erft-Kreis/Cologne District Government/AP Photo, Hakan Mosvold Larsen, EPA Photo
+:::
+
+## Climate change creates more extreme weather experiences {background-color="white"}
 
 ::: {.absolute right="0" top="250"}
 ![](media-def/weathersim_0.png){width="80%"}
@@ -104,49 +132,69 @@ This project is about how people react politically to climate change and weather
 ![](media-def/weathersim_4.png){width="80%"}
 :::
 
-## More pictures of extreme weather
+## {}
 
-This is easier to understand. And it is an easier route to understanding climate change for everyone experiencing it. More and more people, more and more frequently, more and more intensely.
+![](media-def/20230819-005946-1-3300x2475ma_0.jpg){.absolute right=-50  top=-35     width="420"}
+![](media-def/20230811-153623-4-8192x5464ma.jpg){.absolute right=-50 top=215     width="420"}
+![](media-def/){.absolute right=-50 bottom=-25  width="420"}
 
-## Easier to understand than this {background-image="media-def/co2.png" background-size="50%" background-color="white"}
+![](media-def/kinanyt1.jpg){.absolute left=390  top=-35      width="420"}
+![](media-def/){.absolute left=390  top=215      width="420"}
+![](media-def/){.absolute  left=390  bottom=-25   width="420"}
+
+![](media-def/gettyimages-1605378306.jpg){.absolute left=-50  top=-35     width="420"}
+![](media-def/){.absolute left=-50  top=215     width="420"}
+![](media-def/){.absolute left=-50  bottom=-25  width="420"}
+
+::: {.absolute left="0" bottom="-45" .small}
+{{< fa camera >}} Go Nakamura/The New York Times, Anadolu Agency/Ritzau Scanpix, Tingshu Wang, Jacob Ehrbahn
+:::
+
+## The project
+
+- Research project about how people react, politically, to climate change and weather.
+
+- Personal experiences are easier to understand. And it is an easier route to understanding climate change for everyone experiencing it. More and more people, more and more frequently, more and more intensely.
+
+- Voters increasingly experiences climate change directly through the weather. But they are still influenced by traditional sources as well, notably media coverage (politicians, activists, etc.). They may also point to weather events and make them visible as climate-related events. 
+    -   Encounters new climate information all the time
+    -   Increasingly in extreme weather events
+    -   More and more often, they are attributed to climate change by scientists
+    -   But no matter what, there is a growing sense that we are feeling the consequences of climate change, regardless of attribution of individual events (subjective attritution or association)
+    -   This means that we experience climate change.
 
 ## Media coverage
 
 At the same time, it is not the most accurate way to learn about climate change. There are **other sources of information**. One is education, but it is slow and not dynamic in the short run. A more dynamic influence is media coverage.
 
-## The voter
-
-Voters increasingly experiences climate change directly through the weather. But they are still influenced by traditional sources as well, notably media coverage (politicians, activists, etc.). They may also point to weather events and make them visible as climate-related events. 
-
--   Encounters new climate information all the time
--   Increasingly in extreme weather events
--   More and more often, they are attributed to climate change by scientists
--   But no matter what, there is a growing sense that we are feeling the consequences of climate change, regardless of attribution of individual events (subjective attritution or association)
--   This means that we experience climate change.
-
-## The problem
-
--   Climate change
--   Public support is not strong enough
--   Danish minister of climate says policy must follow 80% (20230814)
--   (Increasing) polarization -\> different ways of engaging with new information about climate change
-
 ## Research question
 
-> How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?
+<br>
 
-Focus on Denmark...
+> __How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?__
 
-## Background
-
-- Effects of personal experiences often underplayed
-- Complex web of climate attitudes and influences
-- Experience a solution?
+-   Public support is not strong enough
+<!-- -   Danish minister of climate says policy must follow 80% (20230814) -->
+-   (Increasing) polarization -\> different ways of engaging with new information about climate change
+- Personal experience a solution?
+    -   Often underplayed 
     -   Can it cut across worldviews?
-    -   Can it be the forceful teacher?
+    -   Can it be the "forceful teacher"?
     -   Let's see...
+    
+## Research question
+
+<br>
+
+> __How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?__
+
+Focusing on Denmark... Which is many things. Weather experiences are less extreme and dramatic. General climate concern and literacy is high. Political polarization is low (increasing in many places). Also on climate.
 
 ## The model
+
+<!-- Complex web of climate attitudes and influences -->
+
+. . .
 
 ::: {.absolute right="0" top="-20"}
 ![](media-def/tikz/1.png)
@@ -242,34 +290,93 @@ Focus on Denmark...
 ![](media-def/p1-fig1_3){width="75%"}
 :::
 
-## Media coverage
+## Media coverage {background-color="white"}
 
-<Extra media plots>
+::: {.absolute left="0" top="150"}
+![](media-def/defmedia1.png)
+<!-- Increase in attention in online media, print media, and foreign media in study period (lower before, variable after) -->
+:::
+
+. . .
+
+::: {.absolute left="0" top="150"}
+![](media-def/defmedia2.png)
+<!-- Looks more like an increase in study period -->
+:::
+
+. . .
+
+::: {.absolute left="0" top="150"}
+![](media-def/defmedia3.png)
+<!-- We can standarize each series from 0-100 to see the development more clearly week by week: Several co-developments. -->
+:::
+
+. . .
+
+::: {.absolute left="0" top="150"}
+![](media-def/defmedia4.png)
+<!-- Let's add public salience. -->
+:::
+
+. . .
+
+::: {.absolute left="0" top="150"}
+![](media-def/defmedia5.png)
+<!-- ... And standardize it from 0 to 100. -->
+:::
+
+. . .
+
+::: {.absolute left="0" top="150"}
+![](media-def/defmedia6.png)
+We add climate media coverage again, which reveals a clear correlation.
+:::
+
+. . .
+
+::: {.absolute left="0" top="150"}
+![](media-def/defmedia7.png)
+<!-- If we look only at the DR online climate coverage, as in the models, it looks like they track each other, but still not clear if one is the driver. For that we need statistical models.-->
+:::
+
+## Media coverage {background-color="white"}
+
+::: {.absolute right="-50" top="100"}
+![](media-def/p1-fig1_3){width="75%"}
+<!-- Also not clear here. -->
+:::
+
 
 ## Statistical analysis
 
-- Verdict: Yes.
+- Time series VAR models
+- **Verdict: Yes. The public responds to media coverage**
+- No sign of reverse causality
+- When climate coverage increases by approximately 34, public salience increases by 1 %-point
+- Can be anything from 34 articles with low-intensity climate coverage to 1 climate-intensive article (~21 climate articles)
 
-::: {.small}
+## Who is receptive to media climate coverage? {background-color="white"}
 
-- The (summed) coefficient, 0.029, thus implies that the number of additional climate keywords required to produce a percentage point increase in relative public salience is approximately 34 – or anything from 34 articles with a low-intensity climate coverage to one climate-intensive article. 21 “climate articles” lead to a one percentage point increase.
-
+::: {.absolute left="0" top="125" width="90%"}
+- Important because it shows the limits of media influence. Can they drive climate concern? Yes, but only among some.
 :::
 
-## Who is driving media&rarr;public agenda-setting? {background-color="white"}
+. . .
 
-::: {.absolute right="-50" top="250"}
+::: {.absolute right="-50" top="120"}
 ![](media-def/p1-fig3_0){width="90%"}
 :::
 
 . . .
 
-::: {.absolute right="-50" top="250"}
+::: {.absolute right="-50" top="120"}
 ![](media-def/p1-fig3_1){width="90%"}
 :::
 
+::: {.absolute left="0" bottom="-20"}
 - Education: Age 30-49 
 - Immigration: Age 70+, rural, men, center-right (not populist right)
+:::
 
 ## Confounding, reverse causality, or other influences?
 
@@ -418,7 +525,7 @@ Focus on Denmark...
 {{< fa camera >}} Lynæs Bådelaug
 :::
 
-##  {background-image="media/bodil.png"}
+##  {background-image="media-def/bodil_new_upscayl.jpg"}
 
 ::: {.absolute left="0" bottom="-20" .small}
 {{< fa camera >}} Jeanne & John Bollerup-Jensen
@@ -478,12 +585,11 @@ include_graphics("media-def/figure6.png")
 
 ::: columns
 ::: {.column width="30%"}
-> RQ
+Does local flooding experience lead to pro-climate voting?
 :::
 
 ::: {.column width="70%"}
 ::: incremental
-abc
 :::
 :::
 :::
@@ -510,7 +616,7 @@ abc
 {{< fa camera >}} (prev. slide) Edward Linsmier/ AFP 
 :::
 
-## Climate change &rarr; weather &rarr; behavior
+## Weather, behavior, and climate change
 
 ## Meta-analysis of rainfall&rarr;turnout {background-color="white"}
 
