@@ -46,7 +46,7 @@ Let's begin with a picture.
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
 
-##  {background-image="media-def/GLOBE.png" background-size="85%" background-color="black" background-opacity="0.2"}
+##  {background-image="media-def/GLOBE.png" background-size="85%" background-color="black" background-opacity="0.15"}
 
 <br><br><br>
 The graph shows global warming with incredible accuracy
@@ -152,7 +152,7 @@ Rhein-Erft-Kreis/Cologne District Government/AP Photo, Hakan Mosvold Larsen, EPA
 
 ## The project
 
-- Research project about how people react, politically, to climate change and weather.
+- Research project about how voters react to climate change and weather
 
 - Personal experiences are easier to understand. And it is an easier route to understanding climate change for everyone experiencing it. More and more people, more and more frequently, more and more intensely.
 
@@ -251,6 +251,7 @@ Focusing on Denmark... Which is many things. Weather experiences are less extrem
 
 - "Mass media influence on the rapid rise of climate change"
 - Published in *International Journal of Public Opinion Research* (2022)
+- Question
 
 :::
 
@@ -266,25 +267,40 @@ Focusing on Denmark... Which is many things. Weather experiences are less extrem
 - Climate change became publicly salient
 - What happened?
 
-## Climate change's rapid rise in salience in 2019 {background-color="white"}
+## Climate change's rapid rise in 2019 {background-color="white"}
 
 ::: {.absolute right="-50" top="100"}
-![](media-def/p1-fig1_0){width="75%"}
+![](media-def/p1-fig1_0){width="70%"}
 :::
 
 . . .
 
 ::: {.absolute right="-50" top="100"}
-![](media-def/p1-fig1_1){width="75%"}
+![](media-def/p1-fig1_1){width="70%"}
 :::
 
 . . .
+
+::: {.absolute right="-50" top="100"}
+![](media-def/p1-fig1_2){width="70%"}
+:::
+
+. . .
+
+::: {.absolute right="-50" top="100" .small}
+![](media-def/eb19.png){width="75%"}
+<br>{{< fa copyright >}} [Kantar. (2019). Special Eurobarometer 490 Report: Climate Change. European Commission, Directorate-General for Climate Action.](https://europa.eu/eurobarometer/api/deliverable/download/file?deliverableId=70456)
+:::
+
+
+## Climate change's rapid rise in 2019 {background-color="white"}
 
 ::: {.absolute right="-50" top="100"}
 ![](media-def/p1-fig1_2){width="75%"}
 :::
 
 . . .
+
 
 ::: {.absolute right="-50" top="100"}
 ![](media-def/p1-fig1_3){width="75%"}
@@ -293,15 +309,8 @@ Focusing on Denmark... Which is many things. Weather experiences are less extrem
 ## Media coverage {background-color="white"}
 
 ::: {.absolute left="0" top="150"}
-![](media-def/defmedia1.png)
-<!-- Increase in attention in online media, print media, and foreign media in study period (lower before, variable after) -->
-:::
-
-. . .
-
-::: {.absolute left="0" top="150"}
 ![](media-def/defmedia2.png)
-<!-- Looks more like an increase in study period -->
+<!-- Increase in attention in online media, print media, and foreign media in study period (lower before, variable after). Looks more like an increase in study period. -->
 :::
 
 . . .
@@ -328,15 +337,8 @@ Focusing on Denmark... Which is many things. Weather experiences are less extrem
 . . .
 
 ::: {.absolute left="0" top="150"}
-![](media-def/defmedia6.png)
-We add climate media coverage again, which reveals a clear correlation.
-:::
-
-. . .
-
-::: {.absolute left="0" top="150"}
 ![](media-def/defmedia7.png)
-<!-- If we look only at the DR online climate coverage, as in the models, it looks like they track each other, but still not clear if one is the driver. For that we need statistical models.-->
+<!-- We add climate media coverage again, which reveals a clear correlation. If we look only at the DR online climate coverage, as in the models, it looks like they track each other, but still not clear if one is the driver. For that we need statistical models.-->
 :::
 
 ## Media coverage {background-color="white"}
@@ -349,11 +351,12 @@ We add climate media coverage again, which reveals a clear correlation.
 
 ## Statistical analysis
 
-- Time series VAR models
-- **Verdict: Yes. The public responds to media coverage**
+<br>
+
+- **Yes, the public responds to more media coverage**
 - No sign of reverse causality
-- When climate coverage increases by approximately 34, public salience increases by 1 %-point
-- Can be anything from 34 articles with low-intensity climate coverage to 1 climate-intensive article (~21 climate articles)
+- When climate coverage increases by approximately 34,<br>public salience increases by 1 %-point
+- 34 articles with low-intensity climate coverage or 1 highly climate-intensive
 
 ## Who is receptive to media climate coverage? {background-color="white"}
 
@@ -382,11 +385,21 @@ We add climate media coverage again, which reveals a clear correlation.
 
 ## A quick summary -- {#sec-sum1}
 
+<br>*Does increased mass media coverage of climate change increase public salience?*
+
+- Yes, mass media can drive public salience
+- They did so during climate change's rise in 2019 in Denmark (Europe)
+- "Real-world events" are driving media coverage
+- Major responsibility on part of media
+- Effect only/mostly among those that are attentive<br>&rarr; limit to mass media influence
+
 ::: {.absolute bottom="-20" .medium}
 <Supplementary material in *@sec-sup1*>
 :::
 
 ## {background-image="media-def/tikz/8.png" background-size="80%"}
+
+Interested in how we react to direct weather experiences...
 
 # <br>Article 2: Temperature {background-image="media/europeheatmap.jpg"  transition="slide" background-transition="slide"}
 
@@ -396,6 +409,7 @@ We add climate media coverage again, which reveals a clear correlation.
 
 - "How weather experiences strengthen climate opinions in Europe"
 - Published in *West European Politics* (2021)
+- Question
 
 :::
 
@@ -403,7 +417,7 @@ We add climate media coverage again, which reveals a clear correlation.
 {{< fa camera >}} (prev. slide) Yahoo! News
 :::
 
-## Does warmer weather make us more climate conscious? {transition="slide" background-transition="slide"}
+## Does warmer weather make us more climate conscious?
 
 ## {background-image="media-def/map2.png" background-size="50%" background-color="#F7E2B7" background-position="right"}
 
@@ -458,6 +472,12 @@ We add climate media coverage again, which reveals a clear correlation.
 ![](media-def/temp-meta2.png){width="65%"}
 :::
 
+::: {.absolute right="-250" top="250" width="50%"}
+
+- Small effect, but...
+
+:::
+
 ## Heterogeneity {background-color="white"}
 
 ::: {.absolute right="0" top="150"}
@@ -494,14 +514,32 @@ We add climate media coverage again, which reveals a clear correlation.
 ![](media-def/figure3_defense2.png)
 :::
 
+::: {.absolute right="-75" top="200" width="50%"}
+
+- Suggestive evidence of heterogeneity
+- Not statistically significant
+- Conclusion: The temperature effect affects everyone
+
+:::
+
+
+
 
 ## A quick summary -- {#sec-sum2}
+
+<br>*Does warmer weather make us more climate conscious?*
+
+- Public climate opinion in 12 European countries
+- Temperature from unusually cold to unusually warm in past 7 days 
+- Robust, homogenous effect of warm temperatures
 
 ::: {.absolute bottom="-20" .medium}
 <Supplementary material in *@sec-sup2*>
 :::
 
 ## {background-image="media-def/tikz/8.png" background-size="80%"}
+
+What other weather experiences affect political outcomes? Behavior would be interesting.
 
 # <br>Article 3: Flooding {background-image="media/vikingeskib.jpg" transition="slide" background-transition="slide"}
 
@@ -511,7 +549,8 @@ We add climate media coverage again, which reveals a clear correlation.
 ::: {.nonincremental}
 
 - "Pro-climate voting in response to local flooding"
-- Unpublished manuscript
+- Unpublished manuscript (under review)
+- Question
 
 :::
 
@@ -519,13 +558,13 @@ We add climate media coverage again, which reveals a clear correlation.
 {{< fa camera >}} (prev. slide) Vikingeskibsmuseet
 :::
 
-##  {background-image="media/lynæs.jpg"}
+##  {background-image="media-def/lynæs_new.jpg" background-position="0% 0%"}
 
 ::: {.absolute left="0" bottom="-20" .small}
 {{< fa camera >}} Lynæs Bådelaug
 :::
 
-##  {background-image="media-def/bodil_new_upscayl.jpg"}
+##  {background-image="media-def/bodil_new.jpg" background-size="fill" background-position="0% 0%"}
 
 ::: {.absolute left="0" bottom="-20" .small}
 {{< fa camera >}} Jeanne & John Bollerup-Jensen
@@ -533,51 +572,221 @@ We add climate media coverage again, which reveals a clear correlation.
 
 ## {background-color="white"}
 
-```{r}
-#| fig-align: center
-include_graphics("media-def/figure1.png")
-```
+::: {.absolute left="250" top="-30"}
+![](media-def/flooding_map_empty.png){width="62%"}
+:::
 
-## {background-color="white"}
+. . .
 
-```{r}
-#| fig-align: center
-include_graphics("media-def/figure2.png")
-```
+::: {.absolute left="250" top="-30"}
+![](media-def/flooding_map_total.png){width="62%"}
+:::
 
-## {background-color="white"}
+## Pro-climate voting {background-color="white" #sec-ptstep}
 
-```{r}
-#| fig-align: center
-include_graphics("media-def/figure3.png")
-```
+::: {.absolute left="100" top="100"}
+![](media-def/pt0.png){width="70%"}
+:::
 
-## {background-color="white"}
+. . .
 
+::: {.absolute left="100" top="100"}
+![](media-def/pt1.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt2.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt3.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt4.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt5.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt6.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt7.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt8.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt9.png){width="70%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/pt10.png){width="70%"}
+:::
+
+::: {.absolute bottom="-20" right="0" .medium}
+<*@sec-pt* shows figure with similar trajectories for other treatments>
+:::
+
+## Effect {background-color="white" #sec-floodeffect}
+
+::: {.absolute left="50" top="200"}
+![](media-def/did_estimates_2x2_empty.png){width="85%"}
+:::
+
+. . .
+
+::: {.absolute left="50" top="200"}
+![](media-def/figure3.png){width="85%"}
+:::
+
+::: {.absolute bottom="-20" right="0" .medium}
+<*@sec-balance* plots the sociodemographic balance of the treatment and control group>
+:::
+
+## Flooding intensity {background-color="white"}
+
+::: {.absolute left="50" top="200"}
+![](media-def/did_estimates_intensity_2011_empty.png){width="95%"}
+:::
+
+. . .
+
+::: {.absolute left="50" top="200"}
+![](media-def/figure4.png){width="95%"}
+:::
+
+## Paper 3: Flooding -- part 2 {background-color="white"}
+
+::: {.nonincremental}
 <br>
+New dataset from three ingredients:
 
-```{r}
-#| fig-align: center
-include_graphics("media-def/figure4.png")
-```
+1. Local candidate votes
+2. Local flooding cases
+3. Polling advice application
 
-## {background-color="white"}
+Does flooding increase support for **pro-climate candidates?**
+:::
 
-<br>
+. . .
 
-```{r}
-#| fig-align: center
-include_graphics("media-def/figure5.png")
-```
+::: {.absolute right="-300" top="0" .small width="40%"}
+![](media-def/kandidattest1.png){width="65%"}
+![](media-def/kandidattest2.png){width="65%"}
+![](media-def/kandidattest3.png){width="65%"}
+<br>{{< fa copyright >}} Altinget/DR
+:::
 
-## {background-color="white"}
+## Results {background-color="white"}
 
-<br>
+::: {.absolute left="100" top="100"}
+![](media-def/didid_plot0.png){width="90%"}
+:::
 
-```{r}
-#| fig-align: center
-include_graphics("media-def/figure6.png")
-```
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/didid_plot1.png){width="90%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/didid_plot2.png){width="90%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/didid_plot3.png){width="90%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/didid_plot4.png){width="90%"}
+:::
+
+. . .
+
+::: {.absolute left="100" top="100"}
+![](media-def/didid_plot5.png){width="90%"}
+:::
+
+## Statistical evidence {background-color="white" #sec-stat}
+
+- Statistically significant effect of 0.18 to 0.26 %-points
+- &rarr; positive gap in election chances for pro-climate candidates
+- Roughly translatable to 3 %-points higher election chances for the median candidate
+
+::: {.absolute bottom="-20" right="0" .medium}
+<*@sec-dididmodel* shows the OLS model output>
+:::
+
+## New or existing climate candidates? {background-color="white"}
+
+*Sample: 2,077 candidates running in both elections*
+
+. . .
+
+::: {.absolute left="0" top="200"}
+![](media-def/coefplot_candidatetypes0.png){width="90%"}
+:::
+
+. . .
+
+::: {.absolute left="0" top="200"}
+![](media-def/coefplot_candidatetypes1.png){width="90%"}
+:::
+
+. . .
+
+::: {.absolute left="0" top="200"}
+![](media-def/coefplot_candidatetypes2.png){width="90%"}
+:::
+
+. . .
+
+::: {.absolute left="0" top="200"}
+![](media-def/coefplot_candidatetypes3.png){width="90%"}
+:::
+
+. . .
+
+::: {.absolute left="0" top="200"}
+![](media-def/coefplot_candidatetypes4.png){width="90%"}
+:::
+
+## Also ... not more new candidates per se
+
+## Climate or incumbent or pro-welfare candidates? {background-color="white"}
+
+Mostly climate ... 
 
 ## A quick summary -- {#sec-sum3}
 
@@ -590,6 +799,10 @@ Does local flooding experience lead to pro-climate voting?
 
 ::: {.column width="70%"}
 ::: incremental
+- Yes, for parties and candidates
+- Assumedly, climate change becomes more salient to voters
+- They use heuristics like party issue ownership or candidate communication to translate salience into a vote
+- Several unanswered questions: What is the psychological/behavioral mechanism? How much is supply-driven? How much is it about climate change, not incumbency or other factors, how would it look in different contexts?
 :::
 :::
 :::
@@ -600,6 +813,8 @@ Does local flooding experience lead to pro-climate voting?
 
 ## {background-image="media-def/tikz/8.png" background-size="80%"}
 
+Electoral turnout is another important behaviral outcome, and we have stellar data on it. 
+
 # <br>Article 4: Turnout {background-transition="slide" transition="slide" background-image="media-def/rain-election.jpeg"}
 
 ## Article 4: Turnout {#sec-p4}
@@ -609,6 +824,7 @@ Does local flooding experience lead to pro-climate voting?
 - "When the election rains out and how bad weather excludes marginal voters from turning out"
 - Published in *Electoral Studies* (2023)
 - Co-authored with Kasper M. Hansen
+- Question
 
 :::
 
@@ -618,46 +834,102 @@ Does local flooding experience lead to pro-climate voting?
 
 ## Weather, behavior, and climate change
 
-## Meta-analysis of rainfall&rarr;turnout {background-color="white"}
+## Meta-analysis of rainfall and turnout {background-color="white"}
 
 ::: {.absolute left="-30" top="80"}
-![](media-def/p4-fig1_0.png){width="80%"}
+![](media-def/meta0.png){width="80%"}
+:::
+
+. . .
+
+::: {.absolute left="-30" top="80"}
+![](media-def/meta1.png){width="80%"}
+:::
+
+. . .
+
+::: {.absolute left="-30" top="80"}
+![](media-def/meta2.png){width="80%"}
 :::
 
 ## Our study {background-image="media-def/weather-stations.png" background-size="80%" background-color="white"}
 
+. . .
+
+::: {.absolute left="0" bottom="0"}
+Great, great data on 5000000 voters
+:::
+
+## Election Day weather {background-color="white"}
+
+::: {.absolute right="-300" top="-50" width="70%"}
+![](media-def/map_weather.jpg)
+:::
+
 ## Results {background-color="white"}
 
-::: {.columns}
-::: {.column width="75%"}
-![](media-def/p4-fig1_1.png)
+::: {.absolute left="-30" top="80"}
+![](media-def/meta2.png){width="75%"}
 :::
-::: {.column width="25%"}
 
-- Rainfall reduces P(voting) by 0.95 %-points per cm
-- Negative effect grows with rainfall
-- Sunshine increases turnout
+. . .
+
+::: {.absolute left="-30" top="80"}
+![](media-def/meta3.png){width="75%"}
 :::
+
+. . .
+
+::: {.absolute left="-30" top="80"}
+![](media-def/meta4.png){width="75%"}
 :::
+
+::: {.absolute right="-150" top="320" width="35%"}
+- Rainfall reduces P(voting) by **0.95** %-points per cm
+- Effect size close to the simple, unweighted average (- - -)
+:::
+
+## Results {background-color="white"}
+
+::: {.absolute left="-30" top="80"}
+![](media-def/nonlinear_panel_pred.jpg){width="75%"}
+:::
+
+::: {.absolute left="-30" bottom="50"}
+- Sunshine also increases turnout
+- Negative rainfall effect grows with more rainfall
+:::
+
 
 ## Heterogeneity {background-color="white"}
 
-:::: {.columns}
-::: {.column width="60%"}
+. . .
 
-```{r}
-#| fig-align: center
-include_graphics("media/interaction_panel2.png")
-```
-
+::: {.absolute left="-30" top="55"}
+![](media-def/interaction_empty_panel.png){width="55%"}
 :::
-::: {.column width="40%"}
 
+. . .
+
+::: {.absolute left="-30" top="55"}
+![](media-def/interaction_panel.png){width="55%"}
 :::
-::::
+
+::: {.absolute right="-100" top="120" width="40%"}
+- Strong heterogeneity
+- Young voter turnout is strongly influenced by Election Day weather
+- Problematic for democratic representation
+- Climate change?
+:::
 
 
 ## A quick summary -- {#sec-sum4}
+
+- Electoral turnout is shaped by experienced weather
+- Notably rainfall: approx. 1 %-point per 1 cm
+- More extreme weather has larger effects
+- Especially on young voters
+- Important implications for democracy
 
 ::: {.absolute bottom="-20" .medium}
 <Supplementary material in *@sec-sup4*>
@@ -684,6 +956,7 @@ include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "m
 - "Political weather" &rarr; The weather is political.
 - Everyday experiences
 - Public leadership, responsible use of public attention
+- Climate change a self-correcting problem?
 
 :::
 ::: {.column width="5%"}
@@ -691,6 +964,8 @@ include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "m
 :::
 
 ## What's next
+
+<!-- Only examples... -->
 
 - Cross-case / generalizability &rarr; cross-national data with same measurements. Qualify how the world's population responds. Integrated assessment models. 
 - Psychological mechanism. Deep learning or superficial salience spikes due to heuristics use.
@@ -741,33 +1016,49 @@ include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "m
 
 ## Measuring media coverage {visibility="uncounted" background-color="white"}
 
-<br><br>"\\bklima|global[e]? opvarmning|co2|drivhuseffekt|drivhusgas|climate|global warming"
+<br><br>"\\bklima|global[e]? opvarmning|co2|drivhuseffekt|drivhusgas|climate|global warming"<br><br>
 
-. . .
 
-![](media-def/p1-tab-keywords.png){width="55%"}
+::: {.nonincremental}
+
+1. Natural log of the number of keyword hits (default) 
+2. Raw number of keyword hits
+3. Square root of the number of keyword hits
+4. Number of climate articles (1+ keyword hits)
+
+:::
+
 
 ## Statistical evidence {visibility="uncounted" background-color="white"}
 
-::: {.columns}
-::: {.column width="75%"}
+*Cross-lagged panel correlation*
+
+::: {.absolute top="200" left=10 width="75%"}
 
 ![](media-def/orig_figure2_cor.png)
+
+:::
+
+## Statistical evidence {visibility="uncounted" background-color="white"}
+
+*Vector autoregression model*
+
+::: {.absolute top="200" left=10 width="55%"}
+
 ![](media-def/p1-tab.png)
 
 :::
-:::
 
-## Varying lag orders {visibility="uncounted" background-color="white"}
+## Statistical evidence {visibility="uncounted" background-color="white"}
 
-::: {.columns}
-::: {.column width="75%"}
+*Vector autoregression models with varying lag order*
 
-<br>
+::: {.absolute top="200" left=10 width="65%"}
+
 ![](media-def/p1-tablags.png)
 
 :::
-:::
+
 
 # Supplementary material for Article 2: Temperature {visibility="uncounted" #sec-sup2}
 
@@ -775,21 +1066,20 @@ include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "m
 <**Article summary** in *@sec-sum2*, **overview** in *@sec-overview*>
 :::
 
-## Temperature deviation measure {visibility="uncounted"}
+## Temperature deviation measure {visibility="uncounted" background-color="white"}
 
-<br><br><br><br><br>
-
+<br>
 $temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal\ temperature_{ct}}$
 
-## {visibility="uncounted" background-color="white" width="50%"}
+. . .
 
-::: {.columns}
-::: {.column width="60%"}
-![](media-def/p2-tab1.png)
-:::
-:::
+<br>
+![](media-def/p2-tab1.png){width="47%"}
 
-## {visibility="uncounted" background-color="white"}
+
+## OLS model output {visibility="uncounted" background-color="white"}
+
+<br>
 
 ::: {.columns}
 ::: {.column width="80%"}
@@ -797,7 +1087,9 @@ $temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal
 :::
 :::
 
-## {visibility="uncounted" background-color="white"}
+## Robustness checks {visibility="uncounted" background-color="white"}
+
+*Changing the sample size or 7-day temperature window*
 
 ::: {.columns}
 ::: {.column width="90%"}
@@ -811,51 +1103,115 @@ $temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal
 <**Article summary** in *@sec-sum3*, **overview** in *@sec-overview*>
 :::
 
-## {background-color="white" visibility="uncounted"}
+## Storm surge timeline and map {background-color="white" visibility="uncounted"}
 
 ```{r}
 #| fig-align: center
-include_graphics("media/balance_density.png")
+include_graphics("media-def/figure1.png")
 ```
 
-## {background-color="white" visibility="uncounted"}
+## Parliamentary speeches {background-color="white" visibility="uncounted"}
 
-```{r}
-include_graphics("media/proclimate_candidates_kv2017.png")
-```
+![](media-def/parliament.png){width="80%"}
 
-## {background-color="white" visibility="uncounted"}
+## Media coverage {background-color="white" visibility="uncounted"}
+
+![](media-def/infomedia_top25.png){width="80%"}
+
+## Climate issue ownership {background-color="white" visibility="uncounted"}
+
+![](media-def/issue-ownership.png){width="80%"}
+
+## Parallel trends {background-color="white" visibility="uncounted" #sec-pt}
+
+![](media-def/figure2.png){width="90%"}
+
+::: {.absolute bottom="-20"  right="0" .medium}
+<Stepwise parallel trends graph in *@sec-ptstep*>
+:::
+
+## Balance {background-color="white" visibility="uncounted"  #sec-balance}
 
 ```{r}
 #| fig-align: center
-#| out-width: 70%
-include_graphics("media/didid.png")
+include_graphics("media-def/balance_density.png")
 ```
 
-## {background-color="white" visibility="uncounted"}
+::: {.absolute bottom="-20" right="0" .medium}
+<Coefficient plot in *@sec-floodeffect*>
+:::
+
+## Event study plot {background-color="white" visibility="uncounted"}
+
+![](media-def/did_estimates_eventstudy_ipw.png){width="90%"}
+
+## Full sample and 2007 baseline {background-color="white" visibility="uncounted"}
+
+![](media-def/did_estimates_2x2_fullsample.png){width="90%"}
+
+## Parties and climate candidates {background-color="white" visibility="uncounted"}
+
+```{r}
+include_graphics("media-def/proclimate_candidates.png")
+```
+
+## Climate candidate keywords {background-color="white" visibility="uncounted"}
+
+![](media-def/clicankey.png)
+
+## Candidate study: data details {background-color="white" visibility="uncounted"}
+
+::: {.nonincremental}
+
+1. I start with the merged dataset of 11,774 candidates appearing in the administrative votes dataset and the survey dataset
+2. I reattach the vote tallies from each polling station, which extends the dataset to 194,039 rows (election-candidate-districts)
+3. I merge the dataset with the district-level flooding treatments used previously
+4. As in Study 1, I restrict the dataset to coastal polling districts, which reduces the final dataset to 118,176 rows (9.748 unique election-candidates and 7.671 unique persons)
+5. From registry data, I know that 4,437 (48.8%) of those running in 2013 were running again in 2017.
+- 2,077 out of 7,671 unique candidates in coastal districts are rerunners (42% per election's 4,900-ish candidates, should have been 49%)
+
+:::
+
+## OLS model output {background-color="white" visibility="uncounted" #sec-dididmodel}
+
+::: {.columns}
+::: {.column width="50%"}
+![](media-def/dididmodel.png)
+:::
+:::
+
+::: {.absolute bottom="-20" right="0" .medium}
+<*@sec-stat* summarises the results>
+:::
+
+
+## DIDID coefficient plot {background-color="white" visibility="uncounted"}
+
+*Sample: All candidates, running in one election or both*
+
+![](media-def/didid_modelplot.png){width="70%"}
+
+## DIDID coefficient plot {background-color="white" visibility="uncounted"}
+
+*Sample: Only candidates running in both elections*
+
+![](media-def/didid_modelplot_rerunners.png){width="70%"}
+
+## Mechanism probes {background-color="white" visibility="uncounted"}
 
 <br>
 
-::: columns
-::: {.column width="43%"}
-```{r}
-include_graphics("media/didid.png")
-```
+::: {.medium}
+1. Pro-climate voting or candidates that become more pro-climate? 
+    - A little bit, but...
+    - Distinguishing 4 types from each other among candidates running in both elections shows that it works for always-climate (and converted-climate)
+2. Pro-climate voting or parties’ promotion of pro-climate candidates? 
+    - Ballot position or New candidate as outcomes (DID or cross-sectional) show no
+3. Pro-climate voting or support for incumbent or pro-welfare candidates? 
+    - Yes, there is overlap, but less than nationally
+    - Distinguishing 4 climate-incumbent types suggests that pro-climate makes a difference
+    - Pro-welfare does not work without pro-climate, while the reverse works
 :::
-
-::: {.column width="55%"}
-:::
-:::
-
-## {background-color="white" visibility="uncounted"}
-
-<br>
-
-```{r}
-#| fig-align: center
-include_graphics("media/did_estimates_2x2_candidates.png")
-```
-
 
 # Supplementary material for Article 4: Turnout {visibility="uncounted" #sec-sup4}
 
@@ -863,8 +1219,45 @@ include_graphics("media/did_estimates_2x2_candidates.png")
 <**Article summary** in *@sec-sum4*, **overview** in *@sec-overview*>
 :::
 
-## Weather measures {visibility="uncounted"}
+## Weather measures {visibility="uncounted" background-color="white"}
 
 <br><br><br><br><br>
 
 $Local\ weather_{vt} = \frac{ \sum^3_i{(Observation_{it}/Distance^2_i)} }{ \sum^3_i{(1/Distance^2_i)} }$
+
+## Covariate balance: age, distance, and density {visibility="uncounted" background-color="white"}
+
+::: {.absolute left="-30" top="80"}
+![](media-def/balance_age.jpg){width="75%"}
+:::
+
+. . .
+
+::: {.absolute left="-30" top="80"}
+![](media-def/balance_coast.jpg){width="75%"}
+:::
+
+. . .
+
+::: {.absolute left="-30" top="80"}
+![](media-def/balance_density.jpg){width="75%"}
+:::
+
+## Non-linear weather effects {visibility="uncounted" background-color="white"}
+
+![](media-def/nonlinear_panel.jpg){width="75%"}
+
+## List of additional robustness checks {visibility="uncounted" background-color="white"}
+
+<br>
+
+::: {.nonincremental .medium}
+1. One weather variable at a time
+2. Without additional control variables (age, close to coast, local population density, gender, ln(population), non-western immigrant population share, closeness of election)
+3. Adding municipality fixed effects, restricting to non-movers, or to age 40-60
+4. Excluding addresses with many residents
+5. Using only nearest weather station and limiting maximum distance
+6. Placebo test with weather from 30/60 days before Election Day
+7. A range of alternative standard errors
+8. Logistic regression
+:::
