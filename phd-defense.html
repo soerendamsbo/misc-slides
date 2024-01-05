@@ -34,6 +34,22 @@
     }
   </style>
   <link rel="stylesheet" href="phd-defense_files/libs/revealjs/dist/theme/quarto.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
   <link href="phd-defense_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="phd-defense_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="phd-defense_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -346,41 +362,40 @@ Søren Damsbo-Svendsen
 <h1></h1>
 <p>Let’s begin with a picture.</p>
 </section>
-<section id="section" class="slide level2" data-background-image="media-def/GLOBE.png" data-background-size="85%" data-background-color="black">
+<section id="section" class="slide level2" data-background-image="media-def/GLOBE.png" data-background-size="87%" data-background-color="black">
+<h2></h2>
+<div class="absolute small" style="bottom: -40px; right: -25px; ">
+<p><i class="fa-solid fa-copyright" aria-hidden="true"></i> Professor Ed Hawkins (University of Reading) at <a href="https://showyourstripes.info/">showyourstripes.info</a></p>
+</div>
+<!-- ##  {background-image="media-def/GLOBE.png" background-size="87%" background-color="black" background-opacity="0.15"} -->
+<!-- <br><br><br> -->
+<!-- This graph shows global warming with incredible accuracy -->
+<!-- 1. The global temperature has increased since the industrial revolution -->
+<!-- 2. Especially in the past 8 years -->
+<!-- 3. Climate scientists are able to *predict* and *explain* this development -->
+<!-- . . . -->
+<!-- <br>**It is hard for ordinary citizens to truly understand the climate crisis from statistical information** -->
+</section>
+<section id="section-1" class="slide level2" data-background-image="media-def/EUROPE.png" data-background-size="87%" data-background-color="black">
 <h2></h2>
 <div class="absolute small" style="bottom: -40px; right: -25px; ">
 <p><i class="fa-solid fa-copyright" aria-hidden="true"></i> Professor Ed Hawkins (University of Reading) at <a href="https://showyourstripes.info/">showyourstripes.info</a></p>
 </div>
 </section>
-<section id="section-1" class="slide level2" data-background-image="media-def/GLOBE.png" data-background-size="85%" data-background-color="black" data-background-opacity="0.15">
-<h2></h2>
-<p><br><br><br> The graph shows global warming with incredible accuracy</p>
-<ol type="1">
-<li class="fragment">The global temperature has increased since the industrial revolution</li>
-<li class="fragment">Especially clear in recent 30 years</li>
-<li class="fragment">Climate scientists are able to <em>predict</em> and <em>explain</em> this development</li>
-<li class="fragment">They also know how to stop it (decarbonization)</li>
-</ol>
-<div class="fragment">
-<p><strong>But it is hard for ordinary citizens to truly understand scope and implication of the climate problem from statistical information alone</strong></p>
-</div>
-</section>
-<section id="section-2" class="slide level2" data-background-image="media-def/EUROPE.png" data-background-size="85%" data-background-color="black">
+<section id="section-2" class="slide level2" data-background-image="media-def/DENMARK.png" data-background-size="87%" data-background-color="black">
 <h2></h2>
 <div class="absolute small" style="bottom: -40px; right: -25px; ">
 <p><i class="fa-solid fa-copyright" aria-hidden="true"></i> Professor Ed Hawkins (University of Reading) at <a href="https://showyourstripes.info/">showyourstripes.info</a></p>
 </div>
 </section>
-<section id="section-3" class="slide level2" data-background-image="media-def/DENMARK.png" data-background-size="85%" data-background-color="black">
+<section id="section-3" class="slide level2">
 <h2></h2>
-<div class="absolute small" style="bottom: -40px; right: -25px; ">
-<p><i class="fa-solid fa-copyright" aria-hidden="true"></i> Professor Ed Hawkins (University of Reading) at <a href="https://showyourstripes.info/">showyourstripes.info</a></p>
-</div>
-</section>
-<section id="instead" class="slide level2">
-<h2>Instead</h2>
-<div class="absolute" style="top: 100px; left: 0px; width: 800px; ">
-<p><strong>This is easier to understand: Personal experience with climate change and extreme weather.</strong></p>
+<div class="absolute" style="top: 150px; left: 0px; width: 600px; ">
+<p>There is another way of learning about climate change</p>
+<ul>
+<li class="fragment">One that is easier, concrete, immediate, and visceral</li>
+<li class="fragment">Personal experience</li>
+</ul>
 </div>
 <div class="fragment">
 <p><img data-src="media-def/heatwave.jpg" class="absolute" style="top: -35px; right: -50px; width: 420px; "> <img data-src="media-def/3500.webp" class="absolute" style="top: 215px; right: -50px; width: 420px; "> <img data-src="media-def/2000.jpeg" class="absolute" style="bottom: -25px; right: -50px; width: 420px; "></p>
@@ -390,8 +405,8 @@ Søren Damsbo-Svendsen
 </div>
 <div class="fragment">
 <p><img data-src="media-def/rhine-river-is-drying-up-1970341256.jpg" class="absolute" style="top: -35px; left: -50px; width: 420px; "> <img data-src="media-def/wildfire2.png" class="absolute" style="top: 215px; left: -50px; width: 420px; "> <img data-src="media-def/5396.png" class="absolute" style="left: -50px; bottom: -25px; width: 420px; "></p>
-<div class="absolute small" style="left: 0px; bottom: -45px; ">
-<p><i class="fa-solid fa-camera" aria-hidden="true"></i> Patrick T Fallon/AFP/Getty Images, Jennifer Gauthier/Reuters, Oli Scarff/AFP/Getty Images Rhein-Erft-Kreis/Cologne District Government/AP Photo, Hakan Mosvold Larsen, EPA Photo</p>
+<div class="absolute small" style="left: -40px; bottom: -45px; width: 110%; ">
+<p><i class="fa-solid fa-camera" aria-hidden="true"></i> Christophe Gateau/AFP/Getty Images, Josh Edelson/AFP, Patrick T Fallon/AFP/Getty Images, EPA Photo, Rhein-Erft-Kreis/Cologne District Government/AP Photo, Oli Scarff/AFP/Getty Images, AP Photo/Alvaro Barrientos, Jennifer Gauthier/Reuters, AP Photo/Rafael Yaghobzadeh</p>
 </div>
 </div>
 </section>
@@ -423,65 +438,55 @@ Søren Damsbo-Svendsen
 </section>
 <section id="section-4" class="slide level2">
 <h2></h2>
-<p><img data-src="media-def/20230819-005946-1-3300x2475ma_0.jpg" class="absolute" style="top: -35px; right: -50px; width: 420px; "> <img data-src="media-def/20230811-153623-4-8192x5464ma.jpg" class="absolute" style="top: 215px; right: -50px; width: 420px; "> <img data-src="media-def/.png" class="absolute" style="bottom: -25px; right: -50px; width: 420px; "></p>
-<p><img data-src="media-def/kinanyt1.jpg" class="absolute" style="top: -35px; left: 390px; width: 420px; "> <img data-src="media-def/.png" class="absolute" style="top: 215px; left: 390px; width: 420px; "> <img data-src="media-def/.png" class="absolute" style="left: 390px; bottom: -25px; width: 420px; "></p>
-<p><img data-src="media-def/gettyimages-1605378306.jpg" class="absolute" style="top: -35px; left: -50px; width: 420px; "> <img data-src="media-def/.png" class="absolute" style="top: 215px; left: -50px; width: 420px; "> <img data-src="media-def/.png" class="absolute" style="left: -50px; bottom: -25px; width: 420px; "></p>
-<div class="absolute small" style="left: 0px; bottom: -45px; ">
-<p><i class="fa-solid fa-camera" aria-hidden="true"></i> Go Nakamura/The New York Times, Anadolu Agency/Ritzau Scanpix, Tingshu Wang, Jacob Ehrbahn</p>
+<p><img data-src="media-def/strand.webp" class="absolute" style="top: -35px; right: -50px; width: 420px; "> <img data-src="media-def/20230819-005946-1-3300x2475ma_0.jpg" class="absolute" style="top: 215px; right: -50px; width: 420px; "> <img data-src="media-def/5000.avif" class="absolute" style="bottom: -25px; right: -50px; width: 420px; "></p>
+<p><img data-src="media-def/kinanyt1.jpg" class="absolute" style="top: -35px; left: 390px; width: 420px; "> <img data-src="media-def/acapulco.webp" class="absolute" style="top: 215px; left: 390px; width: 420px; "> <img data-src="media-def/000_323C99Z.jpg" class="absolute" style="left: 390px; bottom: -25px; width: 420px; "></p>
+<p><img data-src="media-def/gettyimages-1605378306.jpg" class="absolute" style="top: -35px; left: -50px; width: 420px; "> <img data-src="media-def/3750.png" class="absolute" style="top: 215px; left: -50px; width: 420px; "> <img data-src="media-def/20230811-153623-4-8192x5464ma.jpg" class="absolute" style="left: -50px; bottom: -25px; width: 420px; "></p>
+<div class="absolute small" style="left: -40px; bottom: -45px; width: 110%; ">
+<p><i class="fa-solid fa-camera" aria-hidden="true"></i> Anadolu Agency/Ritzau Scanpix, Adrian Dennis/AFP/Getty Images, Jacob Ehrbahn, Tingshu Wang, Oscar Guerrero Ramirez/Getty Images, Remko de Waal/ANP/AFP, Daniel Leal/Agence France-Presse/Getty Images, Go Nakamura/The New York Times, David McNew/Getty Images</p>
 </div>
 </section>
-<section id="the-project" class="slide level2">
-<h2>The project</h2>
+<section id="argument" class="slide level2">
+<h2>Argument</h2>
+<p><br></p>
 <ul>
-<li class="fragment"><p>Research project about how voters react to climate change and weather</p></li>
-<li class="fragment"><p>Personal experiences are easier to understand. And it is an easier route to understanding climate change for everyone experiencing it. More and more people, more and more frequently, more and more intensely.</p></li>
-<li class="fragment"><p>Voters increasingly experiences climate change directly through the weather. But they are still influenced by traditional sources as well, notably media coverage (politicians, activists, etc.). They may also point to weather events and make them visible as climate-related events.</p>
-<ul>
-<li class="fragment">Encounters new climate information all the time</li>
-<li class="fragment">Increasingly in extreme weather events</li>
-<li class="fragment">More and more often, they are attributed to climate change by scientists</li>
-<li class="fragment">But no matter what, there is a growing sense that we are feeling the consequences of climate change, regardless of attribution of individual events (subjective attritution or association)</li>
-<li class="fragment">This means that we experience climate change.</li>
-</ul></li>
+<li class="fragment">The green transition is too slow, and public support too low</li>
+<li class="fragment">Voters increasingly experience climate change</li>
+<li class="fragment">Personal experience is easier to understand</li>
+<li class="fragment">Weather affects everybody, and the personal relevance is clear</li>
+<li class="fragment">Perhaps it can cut through political polarization and different worldviews</li>
+<li class="fragment">Will voters respond to climate change experiences with pro-climate opinions and behavior?</li>
 </ul>
 </section>
-<section id="media-coverage" class="slide level2">
-<h2>Media coverage</h2>
-<p>At the same time, it is not the most accurate way to learn about climate change. There are <strong>other sources of information</strong>. One is education, but it is slow and not dynamic in the short run. A more dynamic influence is media coverage.</p>
+<section id="argument-1" class="slide level2">
+<h2>Argument</h2>
+<p><br></p>
+<ul>
+<li class="fragment">Voters are also influenced by education and traditional information sources (fortunately)</li>
+<li class="fragment">Notably media coverage</li>
+<li class="fragment">Political elites can increase public awareness and make weather experiences visible</li>
+</ul>
+<div class="fragment">
+<h4 id="personal-weather-experiences-and-climate-media-coverage-are-potential-drivers-of-pro-climate-opinions-and-behavior">Personal weather experiences and climate media coverage are potential drivers of pro-climate opinions and behavior</h4>
+</div>
 </section>
 <section id="research-question" class="slide level2">
 <h2>Research question</h2>
-<p><br></p>
-<blockquote>
-<p><strong>How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?</strong></p>
-</blockquote>
-<ul>
-<li class="fragment">Public support is not strong enough <!-- -   Danish minister of climate says policy must follow 80% (20230814) --></li>
-<li class="fragment">(Increasing) polarization -&gt; different ways of engaging with new information about climate change</li>
-<li class="fragment">Personal experience a solution?
-<ul>
-<li class="fragment">Often underplayed</li>
-<li class="fragment">Can it cut across worldviews?</li>
-<li class="fragment">Can it be the “forceful teacher”?</li>
-<li class="fragment">Let’s see…</li>
-</ul></li>
-</ul>
-</section>
-<section id="research-question-1" class="slide level2">
-<h2>Research question</h2>
-<p><br></p>
-<blockquote>
-<p><strong>How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?</strong></p>
-</blockquote>
-<p>Focusing on Denmark… Which is many things. Weather experiences are less extreme and dramatic. General climate concern and literacy is high. Political polarization is low (increasing in many places). Also on climate.</p>
-</section>
-<section id="the-model" class="slide level2">
-<h2>The model</h2>
-<!-- Complex web of climate attitudes and influences -->
+<p><br><br></p>
 <div class="fragment">
+<blockquote>
+<p><strong>How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?</strong></p>
+</blockquote>
+<p><br></p>
+<ul>
+<li class="fragment">Empirical focus on <strong>Denmark</strong></li>
+</ul>
+</div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<!-- Complex web of climate attitudes and influences -->
 <div class="absolute" style="top: -20px; right: 0px; ">
 <p><img data-src="media-def/tikz/1.png"></p>
-</div>
 </div>
 <div class="fragment">
 <div class="absolute" style="top: -20px; right: 0px; ">
@@ -526,25 +531,45 @@ Søren Damsbo-Svendsen
 </section>
 <section id="sec-p1" class="slide level2">
 <h2>Article 1: Media</h2>
+<div class="absolute" style="top: 0px; right: -175px; ">
+<div class="cell panel-fill" data-layout-align="right" data-hash="phd-defense_cache/revealjs/unnamed-chunk-2_8c28bc2f0d92e93f59b1d0a9494f38d2">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media-def/klimamarch2019.jpg" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:95%;">
 <div>
 <ul>
 <li>“Mass media influence on the rapid rise of climate change”</li>
 <li>Published in <em>International Journal of Public Opinion Research</em> (2022)</li>
-<li>Question</li>
 </ul>
 </div>
+<blockquote>
+<p><strong>Does increased mass media coverage of climate change increase public salience?</strong></p>
+</blockquote>
 <div class="absolute small" style="left: 0px; bottom: -20px; ">
 <p><i class="fa-solid fa-camera" aria-hidden="true"></i> (prev. slide) Greenpeace Danmark</p>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div>
 </div>
 </section>
 <section id="background" class="slide level2">
 <h2>Background</h2>
 <ul>
-<li class="fragment">2019</li>
-<li class="fragment">Climate stuff is complex</li>
-<li class="fragment">Media is fragmented</li>
-<li class="fragment">Climate change became publicly salient</li>
+<li class="fragment">Climate change is a complex issue</li>
+<li class="fragment">We need information to form opinions</li>
+<li class="fragment">Climate change became highly publicly salient in 2019</li>
 <li class="fragment">What happened?</li>
+<li class="fragment">Did the mass media play a role?</li>
+<li class="fragment">Despite fragmentation of media and audience</li>
 </ul>
 </section>
 <section id="climate-changes-rapid-rise-in-2019" class="slide level2" data-background-color="white">
@@ -558,74 +583,55 @@ Søren Damsbo-Svendsen
 </div>
 </div>
 <div class="fragment">
-<div class="absolute" style="top: 100px; right: -50px; ">
-<p><img data-src="media-def/p1-fig1_2.png" style="width:70.0%"></p>
-</div>
-</div>
-<div class="fragment">
+<!-- ::: {.absolute right="-50" top="100"} -->
+<!-- ![](media-def/p1-fig1_2){width="70%"} -->
+<!-- ::: -->
+<!-- . . . -->
 <div class="absolute small" style="top: 100px; right: -50px; ">
 <p><img data-src="media-def/eb19.png" style="width:75.0%"> <br><i class="fa-solid fa-copyright" aria-hidden="true"></i> <a href="https://europa.eu/eurobarometer/api/deliverable/download/file?deliverableId=70456">Kantar. (2019). Special Eurobarometer 490 Report: Climate Change. European Commission, Directorate-General for Climate Action.</a></p>
 </div>
 </div>
 </section>
-<section id="climate-changes-rapid-rise-in-2019-1" class="slide level2" data-background-color="white">
+<section id="sec-rapidrise" class="slide level2" data-background-color="white">
 <h2>Climate change’s rapid rise in 2019</h2>
 <div class="absolute" style="top: 100px; right: -50px; ">
-<p><img data-src="media-def/p1-fig1_2.png" style="width:75.0%"></p>
+<p><img data-src="media-def/p1-fig1_2.png" style="width:72.0%"></p>
 </div>
 <div class="fragment">
 <div class="absolute" style="top: 100px; right: -50px; ">
-<p><img data-src="media-def/p1-fig1_3.png" style="width:75.0%"></p>
+<p><img data-src="media-def/p1-fig1_3.png" style="width:72.0%"></p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 320px; right: -150px; width: 35%; ">
+<ul>
+<li>Spotting the connection is hard</li>
+</ul>
+</div>
+<div class="absolute medium" style="bottom: -25px; right: -175px; width: 35%; ">
+<p>&lt;<em><a href="#/sec-mediacov">Section&nbsp;8.2</a></em> shows weekly media coverage,<br><em><a href="#/sec-decoms">Section&nbsp;8.3</a></em> shows decomposed time series&gt;</p>
 </div>
 </div>
 </section>
-<section id="media-coverage-1" class="slide level2" data-background-color="white">
-<h2>Media coverage</h2>
-<div class="absolute" style="top: 150px; left: 0px; ">
-<p><img data-src="media-def/defmedia2.png"> <!-- Increase in attention in online media, print media, and foreign media in study period (lower before, variable after). Looks more like an increase in study period. --></p>
-</div>
-<div class="fragment">
-<div class="absolute" style="top: 150px; left: 0px; ">
-<p><img data-src="media-def/defmedia3.png"> <!-- We can standarize each series from 0-100 to see the development more clearly week by week: Several co-developments. --></p>
-</div>
-</div>
-<div class="fragment">
-<div class="absolute" style="top: 150px; left: 0px; ">
-<p><img data-src="media-def/defmedia4.png"> <!-- Let's add public salience. --></p>
-</div>
-</div>
-<div class="fragment">
-<div class="absolute" style="top: 150px; left: 0px; ">
-<p><img data-src="media-def/defmedia5.png"> <!-- ... And standardize it from 0 to 100. --></p>
-</div>
-</div>
-<div class="fragment">
-<div class="absolute" style="top: 150px; left: 0px; ">
-<p><img data-src="media-def/defmedia7.png"> <!-- We add climate media coverage again, which reveals a clear correlation. If we look only at the DR online climate coverage, as in the models, it looks like they track each other, but still not clear if one is the driver. For that we need statistical models.--></p>
-</div>
-</div>
-</section>
-<section id="media-coverage-2" class="slide level2" data-background-color="white">
-<h2>Media coverage</h2>
-<div class="absolute" style="top: 100px; right: -50px; ">
-<p><img data-src="media-def/p1-fig1_3.png" style="width:75.0%"> <!-- Also not clear here. --></p>
-</div>
-</section>
-<section id="statistical-analysis" class="slide level2">
-<h2>Statistical analysis</h2>
+<section id="sec-p1res" class="slide level2">
+<h2>Statistical results</h2>
 <p><br></p>
 <ul>
 <li class="fragment"><strong>Yes, the public responds to more media coverage</strong></li>
 <li class="fragment">No sign of reverse causality</li>
-<li class="fragment">When climate coverage increases by approximately 34,<br>public salience increases by 1 %-point</li>
+<li class="fragment">When climate coverage increases by ~34,<br>public salience grows by 1 %-point</li>
 <li class="fragment">34 articles with low-intensity climate coverage or 1 highly climate-intensive</li>
 </ul>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-p1model">Section&nbsp;8.5</a></em> shows the model output&gt;</p>
+</div>
 </section>
-<section id="who-is-receptive-to-media-climate-coverage" class="slide level2" data-background-color="white">
-<h2>Who is receptive to media climate coverage?</h2>
-<div class="absolute" style="top: 125px; left: 0px; width: 90%; ">
+<section id="who-is-responsive-to-media-climate-coverage" class="slide level2" data-background-color="white">
+<h2>Who is responsive to media climate coverage?</h2>
+<div class="absolute" style="top: 125px; left: 0px; width: 95%; ">
 <ul>
-<li class="fragment">Important because it shows the limits of media influence. Can they drive climate concern? Yes, but only among some.</li>
+<li class="fragment">Shows the extent and limit of media influence</li>
+<li class="fragment">Can mass media drive climate concern? Yes, but only in some groups</li>
 </ul>
 </div>
 <div class="fragment">
@@ -637,7 +643,7 @@ Søren Damsbo-Svendsen
 <div class="absolute" style="top: 120px; right: -50px; ">
 <p><img data-src="media-def/p1-fig3_1.png" style="width:90.0%"></p>
 </div>
-<div class="absolute" style="left: 0px; bottom: -20px; ">
+<div class="absolute large" style="left: 0px; bottom: -10px; ">
 <ul>
 <li class="fragment">Education: Age 30-49</li>
 <li class="fragment">Immigration: Age 70+, rural, men, center-right (not populist right)</li>
@@ -645,26 +651,31 @@ Søren Damsbo-Svendsen
 </div>
 </div>
 </section>
-<section id="confounding-reverse-causality-or-other-influences" class="slide level2">
-<h2>Confounding, reverse causality, or other influences?</h2>
-</section>
 <section id="sec-sum1" class="slide level2">
 <h2>A quick summary –</h2>
-<p><br><em>Does increased mass media coverage of climate change increase public salience?</em></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><em>Does increased mass media coverage of climate change increase public salience?</em></p>
+</div><div class="column" style="width:70%;">
+<div>
 <ul>
-<li class="fragment">Yes, mass media can drive public salience</li>
-<li class="fragment">They did so during climate change’s rise in 2019 in Denmark (Europe)</li>
+<li class="fragment">Yes, mass media coverage of climate change can drive public salience</li>
+<li class="fragment">They did so during climate change’s rise in 2019 in Denmark/Europe</li>
+<li class="fragment">Effect concentrated among attentive citizens<br>→ limit of media influence</li>
 <li class="fragment">“Real-world events” are driving media coverage</li>
-<li class="fragment">Major responsibility on part of media</li>
-<li class="fragment">Effect only/mostly among those that are attentive<br>→ limit to mass media influence</li>
+<li class="fragment">Media have major responsibility</li>
 </ul>
+</div>
+</div>
+</div>
 <div class="absolute medium" style="bottom: -20px; ">
-<p>&lt;Supplementary material in <em><a href="#/sec-sup1">Section&nbsp;8</a></em>&gt;</p>
+<p>&lt;<strong>Supplementary material</strong> in <em><a href="#/sec-sup1">Section&nbsp;8</a></em>&gt;</p>
 </div>
 </section>
-<section id="section-5" class="slide level2" data-background-image="media-def/tikz/8.png" data-background-size="80%">
+<section id="section-6" class="slide level2" data-background-image="media-def/tikz/8.png" data-background-size="80%">
 <h2></h2>
-<p>Interested in how we react to direct weather experiences…</p>
+<!-- Interested in how we react to direct weather experiences... -->
 </section></section>
 <section>
 <section id="article-2-temperature" class="title-slide slide level1 center" data-background-image="media/europeheatmap.jpg" data-transition="slide" data-background-transition="slide">
@@ -673,23 +684,44 @@ Søren Damsbo-Svendsen
 </section>
 <section id="sec-p2" class="slide level2">
 <h2>Article 2: Temperature</h2>
+<div class="absolute" style="top: 0px; right: -175px; ">
+<div class="cell panel-fill" data-layout-align="right" data-hash="phd-defense_cache/revealjs/unnamed-chunk-3_b54d0493b230085c49f419e947ee9299">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media/europeheatmap.jpg" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:95%;">
 <div>
 <ul>
 <li>“How weather experiences strengthen climate opinions in Europe”</li>
 <li>Published in <em>West European Politics</em> (2021)</li>
-<li>Question</li>
+<li>Extension of Egan &amp; Mullin (2012)</li>
 </ul>
 </div>
+<h3 id="does-warmer-weather-make-us-more-climate-conscious">Does warmer weather make us more climate conscious?</h3>
 <div class="absolute small" style="left: 0px; bottom: -20px; ">
 <p><i class="fa-solid fa-camera" aria-hidden="true"></i> (prev. slide) Yahoo! News</p>
 </div>
+</div><div class="column" style="width:5%;">
+
+</div>
+</div>
 </section>
-<section id="does-warmer-weather-make-us-more-climate-conscious" class="slide level2">
-<h2>Does warmer weather make us more climate conscious?</h2>
-</section>
-<section id="section-6" class="slide level2" data-background-image="media-def/map2.png" data-background-size="50%" data-background-color="#F7E2B7" data-background-position="right">
+<section id="section-7" class="slide level2" data-background-image="media-def/map2.png" data-background-size="50%" data-background-color="#F7E2B7" data-background-position="right">
 <h2></h2>
-<!-- Data -->
+<p><br></p>
+<ul>
+<li class="fragment">12 European countries</li>
+<li class="fragment">Temperatures in past 7 days</li>
+<li class="fragment">Climate opinions (index)</li>
+<li class="fragment">Estimate how experienced temperatures<br>shape opinions</li>
+</ul>
 </section>
 <section id="results" class="slide level2" data-background-color="white">
 <h2>Results</h2>
@@ -715,6 +747,12 @@ Søren Damsbo-Svendsen
 <div class="absolute" style="top: 100px; right: 0px; ">
 <p><img data-src="media-def/effectplot4.png" style="width:60.0%"></p>
 </div>
+<div class="absolute" style="top: 150px; right: -120px; width: 45%; ">
+<ul>
+<li class="fragment">Warmer-than-usual temperatures increase climate awareness</li>
+<li class="fragment">5°C temperature shift (2 SDs) strengthens climate opinions by 0.5–1.0</li>
+</ul>
+</div>
 </div>
 </section>
 <section id="effect-size" class="slide level2" data-background-color="white">
@@ -733,7 +771,7 @@ Søren Damsbo-Svendsen
 </div>
 <div class="absolute" style="top: 250px; right: -250px; width: 50%; ">
 <ul>
-<li class="fragment">Small effect, but…</li>
+<li class="fragment">Small effect, but …</li>
 </ul>
 </div>
 </div>
@@ -772,58 +810,87 @@ Søren Damsbo-Svendsen
 <ul>
 <li class="fragment">Suggestive evidence of heterogeneity</li>
 <li class="fragment">Not statistically significant</li>
-<li class="fragment">Conclusion: The temperature effect affects everyone</li>
+<li class="fragment">Temperatures affect everyone</li>
 </ul>
 </div>
 </div>
 </section>
 <section id="sec-sum2" class="slide level2">
 <h2>A quick summary –</h2>
-<p><br><em>Does warmer weather make us more climate conscious?</em></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><em>Does warmer weather make us more climate conscious?</em></p>
+</div><div class="column" style="width:70%;">
+<div>
 <ul>
-<li class="fragment">Public climate opinion in 12 European countries</li>
-<li class="fragment">Temperature from unusually cold to unusually warm in past 7 days</li>
-<li class="fragment">Robust, homogenous effect of warm temperatures</li>
+<li class="fragment">Yes!</li>
+<li class="fragment">Robust effect of warmer-than-normal temperatures</li>
+<li class="fragment">Across 12 European countries</li>
+<li class="fragment">Homogenous effect</li>
 </ul>
+</div>
+</div>
+</div>
 <div class="absolute medium" style="bottom: -20px; ">
-<p>&lt;Supplementary material in <em><a href="#/sec-sup2">Section&nbsp;9</a></em>&gt;</p>
+<p>&lt;<strong>Supplementary material</strong> in <em><a href="#/sec-sup2">Section&nbsp;9</a></em>&gt;</p>
 </div>
 </section>
-<section id="section-7" class="slide level2" data-background-image="media-def/tikz/8.png" data-background-size="80%">
+<section id="section-8" class="slide level2" data-background-image="media-def/tikz/8.png" data-background-size="80%">
 <h2></h2>
-<p>What other weather experiences affect political outcomes? Behavior would be interesting.</p>
+<!-- Are behavioral political outcomes shaped by weather experiences? -->
 </section></section>
 <section>
-<section id="article-3-flooding" class="title-slide slide level1 center" data-background-image="media/vikingeskib.jpg" data-transition="slide" data-background-transition="slide">
+<section id="article-3-flooding" class="title-slide slide level1 center" data-background-image="media/vikingeskib.jpg" data-transition="slide" data-background-transition="slide" data-background-position="0% 0%">
 <h1><br>Article 3: Flooding</h1>
 
 </section>
 <section id="sec-p3" class="slide level2">
 <h2>Article 3: Flooding</h2>
+<div class="absolute" style="top: 0px; right: -175px; ">
+<div class="cell panel-fill" data-layout-align="right" data-hash="phd-defense_cache/revealjs/unnamed-chunk-4_b064a33678e9d60122697020f37c57d7">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media/vikingeskib.jpg" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:95%;">
 <div>
 <ul>
 <li>“Pro-climate voting in response to local flooding”</li>
 <li>Unpublished manuscript (under review)</li>
-<li>Question</li>
 </ul>
 </div>
+<blockquote>
+<p><strong>Does local flooding experience lead to pro-climate voting?</strong></p>
+</blockquote>
 <div class="absolute small" style="left: 0px; bottom: -20px; ">
 <p><i class="fa-solid fa-camera" aria-hidden="true"></i> (prev. slide) Vikingeskibsmuseet</p>
 </div>
+<div class="column" style="width:5%;">
+
+</div>
+</div>
+</div>
 </section>
-<section id="section-8" class="slide level2" data-background-image="media-def/lynæs_new.jpg" data-background-position="0% 0%">
+<section id="section-9" class="slide level2" data-background-image="media-def/lynæs_new.jpg" data-background-position="0% 0%">
 <h2></h2>
 <div class="absolute small" style="left: 0px; bottom: -20px; ">
 <p><i class="fa-solid fa-camera" aria-hidden="true"></i> Lynæs Bådelaug</p>
 </div>
 </section>
-<section id="section-9" class="slide level2" data-background-image="media-def/bodil_new.jpg" data-background-size="fill" data-background-position="0% 0%">
+<section id="section-10" class="slide level2" data-background-image="media-def/bodil_new.jpg" data-background-size="fill" data-background-position="0% 0%">
 <h2></h2>
 <div class="absolute small" style="left: 0px; bottom: -20px; ">
 <p><i class="fa-solid fa-camera" aria-hidden="true"></i> Jeanne &amp; John Bollerup-Jensen</p>
 </div>
 </section>
-<section id="section-10" class="slide level2" data-background-color="white">
+<section id="section-11" class="slide level2" data-background-color="white">
 <h2></h2>
 <div class="absolute" style="top: -30px; left: 250px; ">
 <p><img data-src="media-def/flooding_map_empty.png" style="width:62.0%"></p>
@@ -918,14 +985,14 @@ Søren Damsbo-Svendsen
 </div>
 </div>
 </section>
-<section id="paper-3-flooding-part-2" class="slide level2" data-background-color="white">
-<h2>Paper 3: Flooding – part 2</h2>
+<section id="part-2-pro-climate-candidates" class="slide level2" data-background-color="white">
+<h2>Part 2 – pro-climate candidates</h2>
 <div>
-<p><br> New dataset from three ingredients:</p>
+<p><br> New <strong>candidate dataset</strong> from three ingredients:</p>
 <ol type="1">
 <li>Local candidate votes</li>
 <li>Local flooding cases</li>
-<li>Polling advice application</li>
+<li>Polling advice application →</li>
 </ol>
 <p>Does flooding increase support for <strong>pro-climate candidates?</strong></p>
 </div>
@@ -935,8 +1002,44 @@ Søren Damsbo-Svendsen
 </div>
 </div>
 </section>
-<section id="results-1" class="slide level2" data-background-color="white">
-<h2>Results</h2>
+<section id="sec-examples1" class="slide level2">
+<h2>Pro-climate candidates</h2>
+<div class="absolute large justtext" style="top: 200px; left: 100px; width: 75%; ">
+<p><em>Green transition. Global warming is a serious threat to our entire future on Earth. Therefore, it is important that we, also locally, take responsibility for changing course, for example through improved recycling, and, in general, by working towards burdening the environment as little as possible</em><br><br>- Candidate from Green Left (SF)</p>
+</div>
+<div class="fragment">
+<div class="absolute" style="">
+<div class="rectangle">
+
+</div>
+</div>
+<div class="absolute large justtext" style="top: 200px; left: 100px; width: 75%; ">
+<p><em>Storm surge protection. We are in high risk of flooding during storm surge. We experienced it in January 2017, and we still have citizens living in temporary housing 10 months later. If we don’t do something, large parts of the municipality will be flooded</em><br><br>- Candidate from the Liberal Party (V)</p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="">
+<div class="rectangle">
+
+</div>
+</div>
+<div class="absolute large justtext" style="top: 200px; left: 100px; width: 75%; ">
+<p><em>Climate adaptation. We must work to secure our citizens when changing weather threatens their homes</em><br><br>- Candidate from the Social Democrats (S)</p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="">
+<div class="rectangle">
+
+</div>
+</div>
+<div class="absolute large justtext" style="top: 200px; left: 100px; width: 75%; ">
+<p><em>Climate and environment. I have worked actively to change the storm surge legislation. Now, we need additional measures to secure our coasts and our environment. I will work to influence the national government to finance large coastal protection projects. When storm surge strikes, it takes too long for state, municipality, and citizens to discuss the economic aspects</em><br><br>- Candidate from the Liberal Party (V)</p>
+</div>
+</div>
+</section>
+<section id="sec-dididpre" class="slide level2" data-background-color="white">
+<h2>Analysis</h2>
 <div class="absolute" style="top: 100px; left: 100px; ">
 <p><img data-src="media-def/didid_plot0.png" style="width:90.0%"></p>
 </div>
@@ -961,82 +1064,77 @@ Søren Damsbo-Svendsen
 </div>
 </div>
 <div class="fragment">
-<div class="absolute" style="top: 100px; left: 100px; ">
+<div class="absolute medium" style="top: 100px; left: 100px; ">
 <p><img data-src="media-def/didid_plot5.png" style="width:90.0%"></p>
 </div>
 </div>
+<div class="fragment">
+<div class="absolute medium" style="top: 100px; left: 100px; ">
+<p><img data-src="media-def/didid_plot6.png" style="width:90.0%"></p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute medium" style="top: 100px; left: 100px; ">
+<p><img data-src="media-def/didid_plot7.png" style="width:90.0%"></p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-dididpost">Section&nbsp;10.14</a></em> shows the post-estimation DIDID&gt;</p>
+</div>
+</div>
 </section>
-<section id="sec-stat" class="slide level2" data-background-color="white">
-<h2>Statistical evidence</h2>
+<section id="sec-stat" class="slide level2">
+<h2>Results</h2>
+<p><br></p>
 <ul>
-<li class="fragment">Statistically significant effect of 0.18 to 0.26 %-points</li>
-<li class="fragment">→ positive gap in election chances for pro-climate candidates</li>
-<li class="fragment">Roughly translatable to 3 %-points higher election chances for the median candidate</li>
+<li class="fragment">OLS model suggests a <strong>0.18-0.26 %-points</strong> effect of flooding</li>
+<li class="fragment">Flooding increases the election chances of pro-climate candidates</li>
+<li class="fragment">Translates into ~3 %-points higher election chances for the median candidate, if they are pro-climate</li>
 </ul>
 <div class="absolute medium" style="bottom: -20px; right: 0px; ">
-<p>&lt;<em><a href="#/sec-dididmodel">Section&nbsp;10.12</a></em> shows the OLS model output&gt;</p>
+<p>&lt;<em><a href="#/sec-dididmodel">Section&nbsp;10.13</a></em> shows the OLS model output&gt;</p>
 </div>
 </section>
-<section id="new-or-existing-climate-candidates" class="slide level2" data-background-color="white">
-<h2>New or existing climate candidates?</h2>
-<p><em>Sample: 2,077 candidates running in both elections</em></p>
-<div class="fragment">
-<div class="absolute" style="top: 200px; left: 0px; ">
-<p><img data-src="media-def/coefplot_candidatetypes0.png" style="width:90.0%"></p>
-</div>
-</div>
-<div class="fragment">
-<div class="absolute" style="top: 200px; left: 0px; ">
-<p><img data-src="media-def/coefplot_candidatetypes1.png" style="width:90.0%"></p>
-</div>
-</div>
-<div class="fragment">
-<div class="absolute" style="top: 200px; left: 0px; ">
-<p><img data-src="media-def/coefplot_candidatetypes2.png" style="width:90.0%"></p>
-</div>
-</div>
-<div class="fragment">
-<div class="absolute" style="top: 200px; left: 0px; ">
-<p><img data-src="media-def/coefplot_candidatetypes3.png" style="width:90.0%"></p>
-</div>
-</div>
-<div class="fragment">
-<div class="absolute" style="top: 200px; left: 0px; ">
-<p><img data-src="media-def/coefplot_candidatetypes4.png" style="width:90.0%"></p>
-</div>
-</div>
-</section>
-<section id="also-not-more-new-candidates-per-se" class="slide level2">
-<h2>Also … not more new candidates per se</h2>
-</section>
-<section id="climate-or-incumbent-or-pro-welfare-candidates" class="slide level2" data-background-color="white">
-<h2>Climate or incumbent or pro-welfare candidates?</h2>
-<p>Mostly climate …</p>
+<section id="sec-p3mechanism" class="slide level2">
+<h2>Mechanism</h2>
+<ul>
+<li class="fragment">Voters with flooding experience prefer pro-climate candidates</li>
+<li class="fragment">Mostly due to issue salience and candidate communication</li>
+<li class="fragment">Not driven by <strong>supply-side:</strong>
+<ul>
+<li class="fragment">converted climate candidates (<a href="#/sec-climatetypes">Section&nbsp;10.18</a>)</li>
+<li class="fragment">mobilization of new candidates</li>
+<li class="fragment">party promotion of climate candidates</li>
+</ul></li>
+<li class="fragment">Nor by overlap with <strong>incumbent candidates</strong></li>
+<li class="fragment">Nor by overlap with <strong>pro-welfare candidates</strong></li>
+</ul>
 </section>
 <section id="sec-sum3" class="slide level2">
 <h2>A quick summary –</h2>
 <p><br></p>
 <div class="columns">
 <div class="column" style="width:30%;">
-<p>Does local flooding experience lead to pro-climate voting?</p>
+<p><em>Does local flooding experience lead to pro-climate voting?</em></p>
 </div><div class="column" style="width:70%;">
 <div>
 <ul>
-<li class="fragment">Yes, for parties and candidates</li>
-<li class="fragment">Assumedly, climate change becomes more salient to voters</li>
-<li class="fragment">They use heuristics like party issue ownership or candidate communication to translate salience into a vote</li>
-<li class="fragment">Several unanswered questions: What is the psychological/behavioral mechanism? How much is supply-driven? How much is it about climate change, not incumbency or other factors, how would it look in different contexts?</li>
+<li class="fragment">Yes – for parties and candidates</li>
+<li class="fragment">~1-3 %-points higher pro-climate party vote share and candidate election chances</li>
+<li class="fragment">Climate-related issues become more salient to voters</li>
+<li class="fragment">Party issue ownership and candidate communication are used to translate heightened salience into a pro-climate vote</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="absolute medium" style="bottom: -20px; ">
-<p>&lt;Supplementary material in <em><a href="#/sec-sup3">Section&nbsp;10</a></em>&gt;</p>
+<p>&lt;<strong>Supplementary material</strong> in <em><a href="#/sec-sup3">Section&nbsp;10</a></em>&gt;</p>
 </div>
 </section>
-<section id="section-11" class="slide level2" data-background-image="media-def/tikz/8.png" data-background-size="80%">
+<section id="section-12" class="slide level2" data-background-image="media-def/tikz/8.png" data-background-size="80%">
 <h2></h2>
-<p>Electoral turnout is another important behaviral outcome, and we have stellar data on it.</p>
+<!-- Electoral turnout is another important behavioral outcome that is shaped by weather -->
+<!-- <br> -->
+<!-- Explain relationship between weather, turnout behavior, and climate change -->
 </section></section>
 <section>
 <section id="article-4-turnout" class="title-slide slide level1 center" data-background-transition="slide" data-transition="slide" data-background-image="media-def/rain-election.jpeg">
@@ -1045,23 +1143,42 @@ Søren Damsbo-Svendsen
 </section>
 <section id="sec-p4" class="slide level2">
 <h2>Article 4: Turnout</h2>
+<div class="absolute" style="top: 0px; right: -175px; ">
+<div class="cell panel-fill" data-layout-align="right" data-hash="phd-defense_cache/revealjs/unnamed-chunk-5_fc51c809e3f77d53b187f00c11715224">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media-def/rain-election.jpeg" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:95%;">
+<div>
 <div>
 <ul>
 <li>“When the election rains out and how bad weather excludes marginal voters from turning out”</li>
 <li>Published in <em>Electoral Studies</em> (2023)</li>
 <li>Co-authored with Kasper M. Hansen</li>
-<li>Question</li>
 </ul>
 </div>
+<blockquote>
+<p><strong>How does the weather affect electoral turnout?</strong></p>
+</blockquote>
 <div class="absolute small" style="left: 0px; bottom: -20px; ">
-<p><i class="fa-solid fa-camera" aria-hidden="true"></i> (prev. slide) Edward Linsmier/ AFP</p>
+<p><i class="fa-solid fa-camera" aria-hidden="true"></i> (prev. slide) Edward Linsmier/AFP</p>
+</div>
+</div>
+<div class="column" style="width:5%;">
+
+</div>
+</div>
 </div>
 </section>
-<section id="weather-behavior-and-climate-change" class="slide level2">
-<h2>Weather, behavior, and climate change</h2>
-</section>
-<section id="meta-analysis-of-rainfall-and-turnout" class="slide level2" data-background-color="white">
-<h2>Meta-analysis of rainfall and turnout</h2>
+<section id="rainfall-and-turnout" class="slide level2" data-background-color="white">
+<h2>Rainfall and turnout</h2>
 <div class="absolute" style="top: 80px; left: -30px; ">
 <p><img data-src="media-def/meta0.png" style="width:80.0%"></p>
 </div>
@@ -1078,19 +1195,25 @@ Søren Damsbo-Svendsen
 </section>
 <section id="our-study" class="slide level2" data-background-image="media-def/weather-stations.png" data-background-size="80%" data-background-color="white">
 <h2>Our study</h2>
-<div class="fragment">
 <div class="absolute" style="left: 0px; bottom: 0px; ">
-<p>Great, great data on 5000000 voters</p>
-</div>
+<ul>
+<li class="fragment">Combined with registry data on 4,459,145 eligible voters</li>
+</ul>
 </div>
 </section>
 <section id="election-day-weather" class="slide level2" data-background-color="white">
 <h2>Election Day weather</h2>
+<ul>
+<li class="fragment">Turnout around 70%<br>(2013: 72%, 2017: 71%)</li>
+<li class="fragment">Almost 30% don’t vote</li>
+<li class="fragment">Thousands vote in one election<br>and abstain in the other (~20%)</li>
+<li class="fragment"><strong>What role does the weather play?</strong></li>
+</ul>
 <div class="absolute" style="top: -50px; right: -300px; width: 70%; ">
 <p><img data-src="media-def/map_weather.jpg"></p>
 </div>
 </section>
-<section id="results-2" class="slide level2" data-background-color="white">
+<section id="results-1" class="slide level2" data-background-color="white">
 <h2>Results</h2>
 <div class="absolute" style="top: 80px; left: -30px; ">
 <p><img data-src="media-def/meta2.png" style="width:75.0%"></p>
@@ -1112,15 +1235,15 @@ Søren Damsbo-Svendsen
 </div>
 </div>
 </section>
-<section id="results-3" class="slide level2" data-background-color="white">
+<section id="results-2" class="slide level2" data-background-color="white">
 <h2>Results</h2>
 <div class="absolute" style="top: 80px; left: -30px; ">
 <p><img data-src="media-def/nonlinear_panel_pred.jpg" style="width:75.0%"></p>
 </div>
 <div class="absolute" style="left: -30px; bottom: 50px; ">
 <ul>
-<li class="fragment">Sunshine also increases turnout</li>
 <li class="fragment">Negative rainfall effect grows with more rainfall</li>
+<li class="fragment">Sunshine also increases turnout</li>
 </ul>
 </div>
 </section>
@@ -1135,34 +1258,43 @@ Søren Damsbo-Svendsen
 <div class="absolute" style="top: 55px; left: -30px; ">
 <p><img data-src="media-def/interaction_panel.png" style="width:55.0%"></p>
 </div>
-<div class="absolute" style="top: 120px; right: -100px; width: 40%; ">
+<div class="absolute" style="top: 120px; right: -100px; width: 50%; ">
 <ul>
 <li class="fragment">Strong heterogeneity</li>
 <li class="fragment">Young voter turnout is strongly influenced by Election Day weather</li>
 <li class="fragment">Problematic for democratic representation</li>
-<li class="fragment">Climate change?</li>
+<li class="fragment">And … climate change?</li>
 </ul>
 </div>
 </div>
 </section>
 <section id="sec-sum4" class="slide level2">
 <h2>A quick summary –</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><em>How does the weather affect electoral turnout?</em></p>
+</div><div class="column" style="width:70%;">
+<div>
 <ul>
 <li class="fragment">Electoral turnout is shaped by experienced weather</li>
-<li class="fragment">Notably rainfall: approx. 1 %-point per 1 cm</li>
+<li class="fragment">Rainfall reduces turnout by 1 %-point per 1 cm</li>
 <li class="fragment">More extreme weather has larger effects</li>
-<li class="fragment">Especially on young voters</li>
+<li class="fragment">Young voters most susceptible</li>
 <li class="fragment">Important implications for democracy</li>
 </ul>
+</div>
+</div>
+</div>
 <div class="absolute medium" style="bottom: -20px; ">
-<p>&lt;Supplementary material in <em><a href="#/sec-sup4">Section&nbsp;11</a></em>&gt;</p>
+<p>&lt;<strong>Supplementary material</strong> in <em><a href="#/sec-sup4">Section&nbsp;11</a></em>&gt;</p>
 </div>
 </section></section>
 <section>
-<section id="sec-conclusion" class="title-slide slide level1 center" data-background-transition="slide" data-transition="slide">
+<section id="sec-conclusion" class="title-slide slide level1 center" data-background-transition="slide" data-transition="slide" data-background-color="#068AAD">
 <h1>Conclusion</h1>
 <div class="absolute" style="top: 0px; right: -175px; ">
-<div class="cell panel-fill" data-layout-align="right" data-hash="phd-defense_cache/revealjs/unnamed-chunk-2_06dc95b2ca782adb2368422a63273264">
+<div class="cell panel-fill" data-layout-align="right" data-hash="phd-defense_cache/revealjs/unnamed-chunk-6_fed9060a84ab64bae391465c94ea63e9">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-right">
 <figure>
@@ -1180,7 +1312,7 @@ Søren Damsbo-Svendsen
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-right">
 <figure>
-<p><img data-src="media-def/tikz/8.png" style="width:16.0%"></p>
+<p><img data-src="media-def/tikz/8_alt.png" style="width:16.0%"></p>
 </figure>
 </div>
 </div>
@@ -1207,10 +1339,11 @@ Søren Damsbo-Svendsen
 <p>Research Question: How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?</p>
 </blockquote>
 <ul>
-<li class="fragment">“Political weather” → The weather is political.</li>
-<li class="fragment">Everyday experiences</li>
-<li class="fragment">Public leadership, responsible use of public attention</li>
-<li class="fragment">Climate change a self-correcting problem?</li>
+<li class="fragment">Positive or “constructive” responses to climate change</li>
+<li class="fragment">Climate change – a self-correcting problem?</li>
+<li class="fragment">Responsibility of political elites</li>
+<li class="fragment">“Political Weather”</li>
+<li class="fragment">Everyday experiences matter</li>
 </ul>
 </div><div class="column" style="width:5%;">
 
@@ -1218,17 +1351,61 @@ Søren Damsbo-Svendsen
 </div>
 </div>
 </section>
-<section id="whats-next" class="slide level2">
-<h2>What’s next</h2>
-<!-- Only examples... -->
-<ul>
-<li class="fragment">Cross-case / generalizability → cross-national data with same measurements. Qualify how the world’s population responds. Integrated assessment models.</li>
-<li class="fragment">Psychological mechanism. Deep learning or superficial salience spikes due to heuristics use.</li>
-<li class="fragment">Is awareness of the link between experience and climate change necessary?</li>
-<li class="fragment">Interactions between information flows.</li>
-</ul>
+<section id="whats-next" class="slide level2" data-background-color="#068AAD">
+<h2>What’s next?</h2>
+<p><br><br></p>
+<div class="absolute" style="top: 0px; right: -175px; ">
+<div class="cell panel-fill" data-layout-align="right" data-hash="phd-defense_cache/revealjs/unnamed-chunk-7_1c65edae5a834c4edfe5ece16e95b5a9">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media-def/klimamarch2019.jpg" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media/europeheatmap.jpg" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media-def/tikz/8_alt.png" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media/vikingeskib.jpg" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="media-def/rain-election.jpeg" style="width:16.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:80%;">
+<ol type="1">
+<li class="fragment"><strong>Conditions:</strong> When and where does the public respond positively to climate change – why?</li>
+<li class="fragment"><strong>Interaction:</strong> How does personal weather experience interact with elite communication?</li>
+<li class="fragment"><strong>Psychology:</strong> Learning about climate change or superficial use of heuristics?</li>
+</ol>
+</div><div class="column" style="width:5%;">
+
+</div>
+</div>
 </section>
-<section id="thank-you" class="slide level2 center" data-background-image="media/lighthouse.jpg">
+<section id="thank-you" class="slide level2 center" data-background-color="#068AAD">
 <h2>THANK YOU!</h2>
 </section></section>
 <section id="sec-overview" class="title-slide slide level1 center" data-visibility="uncounted">
@@ -1240,22 +1417,22 @@ Søren Damsbo-Svendsen
 <li>Introduction → <strong><a href="#/sec-intro">Section&nbsp;1</a></strong></li>
 <li>1: Media → <strong><a href="#/sec-p1">Section&nbsp;2.1</a></strong>
 <ul>
-<li>Summary in <strong><a href="#/sec-sum1">Section&nbsp;2.10</a></strong></li>
+<li>Summary in <strong><a href="#/sec-sum1">Section&nbsp;2.7</a></strong></li>
 <li>Supplementary material in <strong><a href="#/sec-sup1">Section&nbsp;8</a></strong></li>
 </ul></li>
 <li>2: Temperature → <strong><a href="#/sec-p2">Section&nbsp;3.1</a></strong>
 <ul>
-<li>Summary in <strong><a href="#/sec-sum2">Section&nbsp;3.8</a></strong></li>
+<li>Summary in <strong><a href="#/sec-sum2">Section&nbsp;3.7</a></strong></li>
 <li>Supplementary material in <strong><a href="#/sec-sup2">Section&nbsp;9</a></strong></li>
 </ul></li>
 <li>3: Flooding → <strong><a href="#/sec-p3">Section&nbsp;4.1</a></strong>
 <ul>
-<li>Summary in <strong><a href="#/sec-sum3">Section&nbsp;4.14</a></strong></li>
+<li>Summary in <strong><a href="#/sec-sum3">Section&nbsp;4.13</a></strong></li>
 <li>Supplementary material in <strong><a href="#/sec-sup3">Section&nbsp;10</a></strong></li>
 </ul></li>
 <li>4: Turnout → <strong><a href="#/sec-p4">Section&nbsp;5.1</a></strong>
 <ul>
-<li>Summary in <strong><a href="#/sec-sum4">Section&nbsp;5.9</a></strong></li>
+<li>Summary in <strong><a href="#/sec-sum4">Section&nbsp;5.8</a></strong></li>
 <li>Supplementary material in <strong><a href="#/sec-sup4">Section&nbsp;11</a></strong></li>
 </ul></li>
 <li>Conclusion → <strong><a href="#/sec-conclusion">Section&nbsp;6</a></strong></li>
@@ -1266,7 +1443,7 @@ Søren Damsbo-Svendsen
 </div>
 </div>
 <div class="absolute small" style="bottom: -20px; right: 0px; ">
-<p><i class="fa-solid fa-camera" aria-hidden="true"></i> (prev. slide) Marco Faria</p>
+<!--  (prev. slide) Marco Faria -->
 </div>
 </section>
 
@@ -1274,7 +1451,7 @@ Søren Damsbo-Svendsen
 <section id="sec-sup1" class="title-slide slide level1 center" data-visibility="uncounted">
 <h1>Supplementary material for Article 1: Media</h1>
 <div class="absolute medium" style="bottom: -400px; ">
-<p>&lt;<strong>Article summary</strong> in <em><a href="#/sec-sum1">Section&nbsp;2.10</a></em>, <strong>overview</strong> in <em><a href="#/sec-overview">Section&nbsp;7</a></em>&gt;</p>
+<p>&lt;<strong>Summary</strong> in <em><a href="#/sec-sum1">Section&nbsp;2.7</a></em>, <strong>overview</strong> in <em><a href="#/sec-overview">Section&nbsp;7</a></em>&gt;</p>
 </div>
 </section>
 <section id="measuring-media-coverage" class="slide level2" data-visibility="uncounted" data-background-color="white">
@@ -1289,50 +1466,129 @@ Søren Damsbo-Svendsen
 </ol>
 </div>
 </section>
-<section id="statistical-evidence" class="slide level2" data-visibility="uncounted" data-background-color="white">
-<h2>Statistical evidence</h2>
+<section id="sec-mediacov" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Weekly media coverage</h2>
+<div class="absolute" style="top: 150px; left: 0px; ">
+<p><img data-src="media-def/defmedia1.png"> <!-- Increase in attention in online media, print media, and foreign media in study period (lower before, variable after). Looks more like an increase in study period. --></p>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 150px; left: 0px; ">
+<p><img data-src="media-def/defmedia2.png"> <!-- Increase in attention in online media, print media, and foreign media in study period (lower before, variable after). Looks more like an increase in study period. --></p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 150px; left: 0px; ">
+<p><img data-src="media-def/defmedia3.png"> <!-- We can standarize each series from 0-100 to see the development more clearly week by week: Several co-developments. --></p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 150px; left: 0px; ">
+<p><img data-src="media-def/defmedia4.png"> <!-- Let's add public salience. --></p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 150px; left: 0px; ">
+<p><img data-src="media-def/defmedia5.png"> <!-- ... And standardize it from 0 to 100. --></p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 150px; left: 0px; ">
+<p><img data-src="media-def/defmedia6.png"></p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 150px; left: 0px; ">
+<p><img data-src="media-def/defmedia7.png"> <!-- We add climate media coverage again, which reveals a clear correlation. If we look only at the DR online climate coverage, as in the models, it looks like they track each other, but still not clear if one is the driver. For that we need statistical models.--></p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-rapidrise">Section&nbsp;2.4</a></em> shows the main time series&gt;</p>
+</div>
+</div>
+</section>
+<section id="sec-decoms" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Time series decomposition</h2>
+<p><em>Residual variance = VAR model input</em></p>
+<div class="absolute" style="top: 200px; left: 10px; width: 75%; ">
+<p><img data-src="media-def/appendix_decomposition_residuals_crop.png"></p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-rapidrise">Section&nbsp;2.4</a></em> shows the main time series&gt;</p>
+</div>
+</section>
+<section id="statistical-results" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Statistical results</h2>
 <p><em>Cross-lagged panel correlation</em></p>
 <div class="absolute" style="top: 200px; left: 10px; width: 75%; ">
 <p><img data-src="media-def/orig_figure2_cor.png"></p>
 </div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-p1res">Section&nbsp;2.5</a></em> summarises the results&gt;</p>
+</div>
 </section>
-<section id="statistical-evidence-1" class="slide level2" data-visibility="uncounted" data-background-color="white">
-<h2>Statistical evidence</h2>
+<section id="sec-p1model" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Statistical results</h2>
 <p><em>Vector autoregression model</em></p>
 <div class="absolute" style="top: 200px; left: 10px; width: 55%; ">
 <p><img data-src="media-def/p1-tab.png"></p>
 </div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-p1res">Section&nbsp;2.5</a></em> summarises the results&gt;</p>
+</div>
 </section>
-<section id="statistical-evidence-2" class="slide level2" data-visibility="uncounted" data-background-color="white">
-<h2>Statistical evidence</h2>
-<p><em>Vector autoregression models with varying lag order</em></p>
+<section id="statistical-results-1" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Statistical results</h2>
+<p><em>Vector autoregression model with varying lag order</em></p>
 <div class="absolute" style="top: 200px; left: 10px; width: 65%; ">
 <p><img data-src="media-def/p1-tablags.png"></p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-p1res">Section&nbsp;2.5</a></em> summarises the results&gt;</p>
 </div>
 </section></section>
 <section>
 <section id="sec-sup2" class="title-slide slide level1 center" data-visibility="uncounted">
 <h1>Supplementary material for Article 2: Temperature</h1>
 <div class="absolute medium" style="bottom: -400px; ">
-<p>&lt;<strong>Article summary</strong> in <em><a href="#/sec-sum2">Section&nbsp;3.8</a></em>, <strong>overview</strong> in <em><a href="#/sec-overview">Section&nbsp;7</a></em>&gt;</p>
+<p>&lt;<strong>Summary</strong> in <em><a href="#/sec-sum2">Section&nbsp;3.7</a></em>, <strong>overview</strong> in <em><a href="#/sec-overview">Section&nbsp;7</a></em>&gt;</p>
 </div>
 </section>
-<section id="temperature-deviation-measure" class="slide level2" data-visibility="uncounted" data-background-color="white">
-<h2>Temperature deviation measure</h2>
-<p><br> <span class="math inline">\(temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal\ temperature_{ct}}\)</span></p>
+<section id="temperature-measure" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Temperature measure</h2>
+<p><br></p>
+<div class="absolute large" style="">
+<p><span class="math inline">temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal\ temperature_{ct}}</span></p>
+</div>
+<p><br></p>
 <div class="fragment">
 <p><br> <img data-src="media-def/p2-tab1.png" style="width:47.0%"></p>
+</div>
+</section>
+<section id="data-collection" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Data collection</h2>
+
+<img data-src="media-def/appendix_temperature_seasons2.jpg" style="width:55.0%" class="r-stretch"></section>
+<section id="balance-check" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Balance check</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="media-def/p2-balance.png"></p>
+</div>
 </div>
 </section>
 <section id="ols-model-output" class="slide level2" data-visibility="uncounted" data-background-color="white">
 <h2>OLS model output</h2>
 <p><br></p>
 <div class="columns">
-<div class="column" style="width:80%;">
+<div class="column" style="width:83%;">
 <p><img data-src="media-def/p2-tab2.png"></p>
 </div>
 </div>
 </section>
+<section id="placebo-test" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Placebo test</h2>
+
+<img data-src="media-def/appendix-robust_mock-cutoffs.jpg" style="width:47.0%" class="r-stretch"></section>
 <section id="robustness-checks" class="slide level2" data-visibility="uncounted" data-background-color="white">
 <h2>Robustness checks</h2>
 <p><em>Changing the sample size or 7-day temperature window</em></p>
@@ -1341,12 +1597,20 @@ Søren Damsbo-Svendsen
 <p><img data-src="media-def/p2-fig1.jpg"></p>
 </div>
 </div>
+</section>
+<section id="left-right-party-id" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Left-right party ID</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<p><img data-src="media-def/appendix_partytypes.jpg"></p>
+</div>
+</div>
 </section></section>
 <section>
 <section id="sec-sup3" class="title-slide slide level1 center" data-visibility="uncounted">
 <h1>Supplementary material for Article 3: Flooding</h1>
 <div class="absolute medium" style="bottom: -400px; ">
-<p>&lt;<strong>Article summary</strong> in <em><a href="#/sec-sum3">Section&nbsp;4.14</a></em>, <strong>overview</strong> in <em><a href="#/sec-overview">Section&nbsp;7</a></em>&gt;</p>
+<p>&lt;<strong>Summary</strong> in <em><a href="#/sec-sum3">Section&nbsp;4.13</a></em>, <strong>overview</strong> in <em><a href="#/sec-overview">Section&nbsp;7</a></em>&gt;</p>
 </div>
 </section>
 <section id="storm-surge-timeline-and-map" class="slide level2" data-background-color="white" data-visibility="uncounted">
@@ -1357,7 +1621,7 @@ Søren Damsbo-Svendsen
 <h2>Parliamentary speeches</h2>
 
 <img data-src="media-def/parliament.png" style="width:80.0%" class="r-stretch"></section>
-<section id="media-coverage-3" class="slide level2" data-background-color="white" data-visibility="uncounted">
+<section id="media-coverage" class="slide level2" data-background-color="white" data-visibility="uncounted">
 <h2>Media coverage</h2>
 
 <img data-src="media-def/infomedia_top25.png" style="width:80.0%" class="r-stretch"></section>
@@ -1395,76 +1659,164 @@ Søren Damsbo-Svendsen
 <h2>Climate candidate keywords</h2>
 
 <img data-src="media-def/clicankey.png" class="r-stretch"></section>
-<section id="candidate-study-data-details" class="slide level2" data-background-color="white" data-visibility="uncounted">
-<h2>Candidate study: data details</h2>
+<section id="sec-examples2" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Additional pro-climate candidate examples</h2>
+<div class="absolute" style="">
+<div class="whiterectangle">
+
+</div>
+</div>
+<div class="absolute large justtext" style="top: 200px; left: 100px; width: 75%; ">
+<p><em>Climate-friendly municipality. I want us, as quickly as possible, to create a sustainable municipality that benefits ourselves and future generations. It must happen through the use of new technology and by including sustainability in every decision made by the municipality</em><br><br>- Candidate from a local list</p>
+</div>
+<div class="fragment">
+<div class="absolute" style="">
+<div class="whiterectangle">
+
+</div>
+</div>
+<div class="absolute large justtext" style="top: 200px; left: 100px; width: 75%; ">
+<p><em>Green municipality. More climate adaptation and more efficient energy use = ambitious CO2 targets</em><br><br>- Candidate from Conservative People’s Party (KF)</p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="">
+<div class="whiterectangle">
+
+</div>
+</div>
+<div class="absolute large justtext" style="top: 200px; left: 100px; width: 75%; ">
+<p><em>Climate and environment. Put the planet over profits! My heart beats most for green issues because our future depends on it. Our ambition must be to become a self-sufficient, carbon neutral municipality. We can do that by improving energy efficiency in our buildings and incorporate climate and environment in every relevant proposal</em><br><br>- Candidate from the Red-Green Alliance (Ø)</p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-examples1">Section&nbsp;4.9</a></em> shows the primary examples&gt;</p>
+</div>
+</div>
+</section>
+<section id="candidate-data-details" class="slide level2" data-background-color="white" data-visibility="uncounted">
+<h2>Candidate data details</h2>
+<p><br></p>
 <div>
 <ol type="1">
-<li>I start with the merged dataset of 11,774 candidates appearing in the administrative votes dataset and the survey dataset</li>
-<li>I reattach the vote tallies from each polling station, which extends the dataset to 194,039 rows (election-candidate-districts)</li>
-<li>I merge the dataset with the district-level flooding treatments used previously</li>
-<li>As in Study 1, I restrict the dataset to coastal polling districts, which reduces the final dataset to 118,176 rows (9.748 unique election-candidates and 7.671 unique persons)</li>
-<li>From registry data, I know that 4,437 (48.8%) of those running in 2013 were running again in 2017.</li>
-</ol>
+<li>Begin with merged dataset (votes and survey): 11,774 candidates</li>
+<li>Add vote tallies from each district and election: 194,039 rows (candidate-district-elections)</li>
+<li>Merge with district flooding</li>
+<li>Restrict to coastal districts:
 <ul>
-<li>2,077 out of 7,671 unique candidates in coastal districts are rerunners (42% per election’s 4,900-ish candidates, should have been 49%)</li>
-</ul>
+<li>118,176 rows (candidate-district-elections)</li>
+<li>7,671 unique persons or 9,748 unique election-candidates</li>
+<li>2,077 (approx. 42%) run in both elections</li>
+</ul></li>
+</ol>
 </div>
 </section>
 <section id="sec-dididmodel" class="slide level2" data-background-color="white" data-visibility="uncounted">
 <h2>OLS model output</h2>
+<p><br></p>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
 <p><img data-src="media-def/dididmodel.png"></p>
+</div><div class="column small" style="width:40%;">
+<p><br><br> <span class="math inline">Vote\:share_{itd} = \beta_1 Flooding_{d} + \beta_2 Post_{t} + \beta_3 Climate_{it} + \beta_4 Flooding\times Post_{td} + \beta_5 Flooding\times Climate_{itd} + \beta_6 Climate\times Post_{it} + \beta_7 Flooding\times Post\times Climate_{itd} + \alpha_m + \epsilon_{itd}</span></p>
 </div>
 </div>
 <div class="absolute medium" style="bottom: -20px; right: 0px; ">
-<p>&lt;<em><a href="#/sec-stat">Section&nbsp;4.10</a></em> summarises the results&gt;</p>
+<p>&lt;<em><a href="#/sec-stat">Section&nbsp;4.11</a></em> summarises the results&gt;</p>
+</div>
+</section>
+<section id="sec-dididpost" class="slide level2" data-background-color="white" data-visibility="uncounted">
+<h2>Post-estimation DIDID plot</h2>
+<div class="absolute medium" style="top: 100px; left: 100px; ">
+<p><img data-src="media-def/didid_plot5_postestim.png" style="width:90.0%"> <br><em>Model 1 (municipality FEs)</em></p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-dididpre">Section&nbsp;4.10</a></em> shows the pre-estimation DIDID&gt;</p>
+</div>
+<div class="fragment">
+<div class="absolute" style="">
+<div class="whiterectangle">
+
+</div>
+</div>
+<div class="absolute medium" style="top: 100px; left: 100px; ">
+<p><img data-src="media-def/didid_plot5_postestim_party.png" style="width:90.0%"> <br><em>Model 2 (municipality + party FEs)</em></p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-dididpre">Section&nbsp;4.10</a></em> shows the pre-estimation DIDID&gt;</p>
+</div>
+</div>
+</section>
+<section id="sec-dididrerun" class="slide level2" data-background-color="white" data-visibility="uncounted">
+<h2>Alternative DIDID plot</h2>
+<div class="absolute medium" style="top: 100px; left: 100px; ">
+<p><img data-src="media-def/didid_plot_rerun.png" style="width:90.0%"> <br><em>Sample: Only candidates running in both elections</em></p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-dididpre">Section&nbsp;4.10</a></em> shows the pre-estimation DIDID for the full sample&gt;</p>
 </div>
 </section>
 <section id="didid-coefficient-plot" class="slide level2" data-background-color="white" data-visibility="uncounted">
 <h2>DIDID coefficient plot</h2>
-<p><em>Sample: All candidates, running in one election or both</em></p>
+<p><em>Sample: All candidates</em></p>
 
 <img data-src="media-def/didid_modelplot.png" style="width:70.0%" class="r-stretch"></section>
 <section id="didid-coefficient-plot-1" class="slide level2" data-background-color="white" data-visibility="uncounted">
 <h2>DIDID coefficient plot</h2>
 <p><em>Sample: Only candidates running in both elections</em></p>
 
+<!-- ## Mechanism probes {background-color="white" visibility="uncounted"} -->
+<!-- <br> -->
+<!-- ::: {.medium .nonincremental} -->
+<!-- 1. **Pro-climate voting or candidates becoming more pro-climate?**  -->
+<!--     - A little bit, but distinguishing between them shows that it works for those that were always pro-climate (and converted-climate) among those running twice -->
+<!--     - (See next slide) -->
+<!-- 2. **Pro-climate voting or support for incumbent or pro-welfare candidates?**  -->
+<!--     - There is overlap, but less for candidates in local elections than nationally -->
+<!--     - Distinguishing effects based on climate stance and incumbency suggests that pro-climate makes the larger difference -->
+<!--     - Incumbency also makes some difference -->
+<!--     - No effect for pro-welfare, whereas the pro-climate effect survives the exclusion of pro-welfare candidates -->
+<!-- 3. **Pro-climate voting or parties’ promotion of pro-climate candidates?** -->
+<!--     - No evidence that pro-climate candidates receive higher ballot positions post-flooding or that there is higher turnover in flooded municipalities -->
+<!-- ::: -->
 <img data-src="media-def/didid_modelplot_rerunners.png" style="width:70.0%" class="r-stretch"></section>
-<section id="mechanism-probes" class="slide level2" data-background-color="white" data-visibility="uncounted">
-<h2>Mechanism probes</h2>
-<p><br></p>
-<div class="medium">
-<ol type="1">
-<li class="fragment">Pro-climate voting or candidates that become more pro-climate?
-<ul>
-<li class="fragment">A little bit, but…</li>
-<li class="fragment">Distinguishing 4 types from each other among candidates running in both elections shows that it works for always-climate (and converted-climate)</li>
-</ul></li>
-<li class="fragment">Pro-climate voting or parties’ promotion of pro-climate candidates?
-<ul>
-<li class="fragment">Ballot position or New candidate as outcomes (DID or cross-sectional) show no</li>
-</ul></li>
-<li class="fragment">Pro-climate voting or support for incumbent or pro-welfare candidates?
-<ul>
-<li class="fragment">Yes, there is overlap, but less than nationally</li>
-<li class="fragment">Distinguishing 4 climate-incumbent types suggests that pro-climate makes a difference</li>
-<li class="fragment">Pro-welfare does not work without pro-climate, while the reverse works</li>
-</ul></li>
-</ol>
+<section id="sec-climatetypes" class="slide level2" data-background-color="white" data-visibility="uncounted">
+<h2>Candidates becoming pro-climate?</h2>
+<p><em>Sample: 2,077 candidates running in both elections</em></p>
+<div class="absolute" style="top: 200px; left: 0px; ">
+<p><img data-src="media-def/coefplot_candidatetypes0.png" style="width:90.0%"></p>
+</div>
+<!-- . . . -->
+<!-- ::: {.absolute left="0" top="200"} -->
+<!-- ![](media-def/coefplot_candidatetypes1.png){width="90%"} -->
+<!-- ::: -->
+<!-- . . . -->
+<!-- ::: {.absolute left="0" top="200"} -->
+<!-- ![](media-def/coefplot_candidatetypes2.png){width="90%"} -->
+<!-- ::: -->
+<!-- . . . -->
+<!-- ::: {.absolute left="0" top="200"} -->
+<!-- ![](media-def/coefplot_candidatetypes3.png){width="90%"} -->
+<!-- ::: -->
+<div class="fragment">
+<div class="absolute" style="top: 200px; left: 0px; ">
+<p><img data-src="media-def/coefplot_candidatetypes4.png" style="width:90.0%"></p>
+</div>
+<div class="absolute medium" style="bottom: -20px; right: 0px; ">
+<p>&lt;<em><a href="#/sec-p3mechanism">Section&nbsp;4.12</a></em> discusses the mechanism&gt;</p>
+</div>
 </div>
 </section></section>
 <section>
 <section id="sec-sup4" class="title-slide slide level1 center" data-visibility="uncounted">
 <h1>Supplementary material for Article 4: Turnout</h1>
 <div class="absolute medium" style="bottom: -400px; ">
-<p>&lt;<strong>Article summary</strong> in <em><a href="#/sec-sum4">Section&nbsp;5.9</a></em>, <strong>overview</strong> in <em><a href="#/sec-overview">Section&nbsp;7</a></em>&gt;</p>
+<p>&lt;<strong>Summary</strong> in <em><a href="#/sec-sum4">Section&nbsp;5.8</a></em>, <strong>overview</strong> in <em><a href="#/sec-overview">Section&nbsp;7</a></em>&gt;</p>
 </div>
 </section>
 <section id="weather-measures" class="slide level2" data-visibility="uncounted" data-background-color="white">
 <h2>Weather measures</h2>
 <p><br><br><br><br><br></p>
-<p><span class="math inline">\(Local\ weather_{vt} = \frac{ \sum^3_i{(Observation_{it}/Distance^2_i)} }{ \sum^3_i{(1/Distance^2_i)} }\)</span></p>
+<p><span class="math inline">Local\ weather_{vt} = \frac{ \sum^3_i{(Observation_{it}/Distance^2_i)} }{ \sum^3_i{(1/Distance^2_i)} }</span></p>
 </section>
 <section id="covariate-balance-age-distance-and-density" class="slide level2" data-visibility="uncounted" data-background-color="white">
 <h2>Covariate balance: age, distance, and density</h2>
@@ -1484,18 +1836,25 @@ Søren Damsbo-Svendsen
 </section>
 <section id="non-linear-weather-effects" class="slide level2" data-visibility="uncounted" data-background-color="white">
 <h2>Non-linear weather effects</h2>
-
-<img data-src="media-def/nonlinear_panel.jpg" style="width:75.0%" class="r-stretch"></section>
-<section id="list-of-additional-robustness-checks" class="slide level2" data-visibility="uncounted" data-background-color="white">
-<h2>List of additional robustness checks</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="media-def/nonlinear_panel.jpg"></p>
+</div>
+</div>
+</section>
+<section id="additional-robustness-checks" class="slide level2" data-visibility="uncounted" data-background-color="white">
+<h2>Additional robustness checks</h2>
 <p><br></p>
 <div class="medium">
 <ol type="1">
 <li>One weather variable at a time</li>
-<li>Without additional control variables (age, close to coast, local population density, gender, ln(population), non-western immigrant population share, closeness of election)</li>
-<li>Adding municipality fixed effects, restricting to non-movers, or to age 40-60</li>
+<li>No additional control variables: age, close to coast, local population density, gender, ln(population), non-western immigrant population share, closeness of election</li>
+<li>Adding municipality fixed effects</li>
+<li>Restricting to non-movers</li>
+<li>Restricting to age 40-60</li>
 <li>Excluding addresses with many residents</li>
-<li>Using only nearest weather station and limiting maximum distance</li>
+<li>Using nearest weather station and limiting maximum distance</li>
 <li>Placebo test with weather from 30/60 days before Election Day</li>
 <li>A range of alternative standard errors</li>
 <li>Logistic regression</li>
@@ -1521,7 +1880,6 @@ Søren Damsbo-Svendsen
   <script src="phd-defense_files/libs/revealjs/plugin/notes/notes.js"></script>
   <script src="phd-defense_files/libs/revealjs/plugin/search/search.js"></script>
   <script src="phd-defense_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="phd-defense_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1689,27 +2047,9 @@ Søren Damsbo-Svendsen
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

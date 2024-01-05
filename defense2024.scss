@@ -83,6 +83,28 @@ $code-block-border-color: $body-color !default;
   font-size: 24px;
 }
 
+.large{
+  font-size: 32px;
+}
+
+.justtext{  
+  text-align: justify;
+}
+
+.rectangle {
+    display: table;
+    width: 1200px;
+    height: 600px;
+    background: #026B81;
+}
+
+.whiterectangle {
+    display: table;
+    width: 1200px;
+    height: 600px;
+    background: white;
+}
+
 .subtitle {
   color: $body-color !important;
 }
