@@ -78,7 +78,7 @@ Let's begin with a picture.
 There is another way of learning about climate change
 
 - One that is easier, concrete, immediate, and visceral
-- Personal experience
+- Personal weather experiences
 :::
 
 . . .
@@ -155,24 +155,27 @@ There is another way of learning about climate change
 
 <br>
 
+::: {.column width="85%"}
+
 - The green transition is too slow, and public support too low
 - Voters increasingly experience climate change
 - Personal experience is easier to understand
 - Weather affects everybody, and the personal relevance is clear
-- Perhaps it can cut through political polarization and different worldviews
-- Will voters respond to climate change experiences with pro-climate opinions and behavior?
+- Perhaps it can cut through climate denialism<br>and political polarization
+- Will voters respond to climate change experiences with<br>pro-climate opinions and behavior?
+:::
 
 ## Argument
 
 <br>
 
-- Voters are also influenced by education and traditional information sources (fortunately)
-- Notably media coverage
-- Political elites can increase public awareness and make weather experiences visible
+- Voters are also influenced by traditional information sources<br>(fortunately)
+- Notably **media coverage**
+- Political elites can increase public awareness<br>and make weather experiences visible
 
 . . .
 
-#### Personal weather experiences and climate media coverage are potential drivers of pro-climate opinions and behavior
+#### Personal weather experiences and climate media coverage are<br>potential drivers of pro-climate opinions and behavior
 
 ## Research question
 
@@ -184,7 +187,7 @@ There is another way of learning about climate change
 
 <br>
 
-- Empirical focus on **Denmark**
+- Empirical focus on voters in **Denmark**
     
 ## {}
 
@@ -224,11 +227,11 @@ There is another way of learning about climate change
 ![](media-def/tikz/6.png)
 :::
 
-. . .
+<!-- . . . -->
 
-::: {.absolute right="0" top="-20"}
-![](media-def/tikz/7.png)
-:::
+<!-- ::: {.absolute right="0" top="-20"} -->
+<!-- ![](media-def/tikz/7.png) -->
+<!-- ::: -->
 
 . . .
 
@@ -240,10 +243,9 @@ There is another way of learning about climate change
 
 ## Article 1: Media {#sec-p1}
 
-
-::: {.absolute top="0" right="-175"}
+::: {.absolute top="0" right="-25"}
 ```{r}
-#| out-width: 16%
+#| out-width: 15%
 #| panel: fill
 #| fig-align: right
 include_graphics(c("media-def/klimamarch2019.jpg"))
@@ -251,7 +253,7 @@ include_graphics(c("media-def/klimamarch2019.jpg"))
 :::
 
 ::: {.columns}
-::: {.column width="95%"}
+::: {.column width="85%"}
 
 ::: {.nonincremental}
 - "Mass media influence on the rapid rise of climate change"
@@ -271,10 +273,11 @@ include_graphics(c("media-def/klimamarch2019.jpg"))
 
 ## Background
 
-- Climate change is a complex issue
-- We need information to form opinions
+<br>
+
 - Climate change became highly publicly salient in 2019
 - What happened?
+- We need information to form opinions
 - Did the mass media play a role?
 - Despite fragmentation of media and audience
 
@@ -307,24 +310,24 @@ include_graphics(c("media-def/klimamarch2019.jpg"))
 ## Climate change's rapid rise in 2019 {background-color="white" #sec-rapidrise}
 
 ::: {.absolute right="-50" top="100"}
-![](media-def/p1-fig1_2){width="72%"}
+![](media-def/p1-fig1_2){width="69%"}
 :::
 
 . . .
 
 
 ::: {.absolute right="-50" top="100"}
-![](media-def/p1-fig1_3){width="72%"}
+![](media-def/p1-fig1_3){width="69%"}
 :::
 
 . . .
 
-::: {.absolute right="-150" top="320" width="35%" .nonincremental}
+::: {.absolute right="-50" top="320" width="30%" .nonincremental}
 - Spotting the connection is hard
 :::
 
-::: {.absolute bottom="-25" right="-175" .medium width="35%"}
-<*@sec-mediacov* shows weekly media coverage,<br>*@sec-decoms* shows decomposed time series>
+::: {.absolute bottom="-20" right="-25" .medium}
+<*@sec-mediacov* shows weekly media coverage, *@sec-decoms* shows decomposed time series>
 :::
 
 ## Statistical results {#sec-p1res}
@@ -334,7 +337,7 @@ include_graphics(c("media-def/klimamarch2019.jpg"))
 - **Yes, the public responds to more media coverage**
 - No sign of reverse causality
 - When climate coverage increases by ~34,<br>public salience grows by 1 %-point
-- 34 articles with low-intensity climate coverage or 1 highly climate-intensive
+- 34 articles with low-intensity climate coverage<br>or 1 highly climate-intensive
 
 ::: {.absolute bottom="-20" right="0" .medium}
 <*@sec-p1model* shows the model output>
@@ -366,9 +369,18 @@ include_graphics(c("media-def/klimamarch2019.jpg"))
 
 ## A quick summary -- {#sec-sum1}
 
+::: {.absolute top="0" right="-25"}
+```{r}
+#| out-width: 15%
+#| panel: fill
+#| fig-align: right
+include_graphics(c("media-def/klimamarch2019.jpg"))
+```
+:::
+
 <br>
 
-::: columns
+::: {.columns}
 ::: {.column width="30%"}
 *Does increased mass media coverage of climate change increase public salience?*
 :::
@@ -376,7 +388,7 @@ include_graphics(c("media-def/klimamarch2019.jpg"))
 ::: {.column width="70%"}
 ::: incremental
 - Yes, mass media coverage of climate change can drive public salience
-- They did so during climate change's rise in 2019 in Denmark/Europe
+- They did so during climate change's rise in 2019 in Denmark
 - Effect concentrated among attentive citizens<br>&rarr; limit of media influence
 - "Real-world events" are driving media coverage
 - Media have major responsibility
@@ -396,10 +408,9 @@ include_graphics(c("media-def/klimamarch2019.jpg"))
 
 ## Article 2: Temperature {#sec-p2}
 
-
-::: {.absolute top="0" right="-175"}
+::: {.absolute top="0" right="-25"}
 ```{r}
-#| out-width: 16%
+#| out-width: 15%
 #| panel: fill
 #| fig-align: right
 include_graphics("media/europeheatmap.jpg")
@@ -407,7 +418,7 @@ include_graphics("media/europeheatmap.jpg")
 :::
 
 ::: {.columns}
-::: {.column width="95%"}
+::: {.column width="85%"}
 
 ::: {.nonincremental}
 - "How weather experiences strengthen climate opinions in Europe"
@@ -428,74 +439,74 @@ include_graphics("media/europeheatmap.jpg")
 
 ## {background-image="media-def/map2.png" background-size="50%" background-color="#F7E2B7" background-position="right"}
 
-<br>
+<br><br>
 
 - 12 European countries
-- Temperatures in past 7 days
 - Climate opinions (index)
-- Estimate how experienced temperatures<br>shape opinions
+- Temperatures* in past 7 days
+- Estimate how recent temperatures<br>affect climate opinions
 
 ## Results {background-color="white"}
 
-::: {.absolute right="0" top="100"}
+::: {.absolute left="0" top="100"}
 ![](media-def/effectplot0.png){width="60%"}
 :::
 
 . . .
 
-::: {.absolute right="0" top="100"}
+::: {.absolute left="0" top="100"}
 ![](media-def/effectplot1.png){width="60%"}
 :::
 
 . . .
 
-::: {.absolute right="0" top="100"}
+::: {.absolute left="0" top="100"}
 ![](media-def/effectplot2.png){width="60%"}
 :::
 
 . . .
 
-::: {.absolute right="0" top="100"}
+::: {.absolute left="0" top="100"}
 ![](media-def/effectplot3.png){width="60%"}
 :::
 
 . . .
 
-::: {.absolute right="0" top="100"}
+::: {.absolute left="0" top="100"}
 ![](media-def/effectplot4.png){width="60%"}
 :::
 
-::: {.absolute right="-120" top="150" width="45%"}
+::: {.absolute right="-50" top="150" width="40%"}
 - Warmer-than-usual temperatures increase climate awareness
-- 5°C temperature shift (2 SDs) strengthens climate opinions by 0.5–1.0
+- 5°C temperature shift<br>(2 SDs) strengthens<br>climate opinions by 0.5–1.0
 :::
 
 ## Effect size {background-color="white"}
 
-::: {.absolute right="0" top="100" .medium}
-![](media-def/temp-meta0.png){width="65%"}
+::: {.absolute right="0" top="70" .medium}
+![](media-def/temp-meta0.png){width="70%"}
 <br>{{< fa copyright >}} [Sugerman et al. (2021). "Local warming is real: A meta-analysis of the effect of recent temperature on climate change beliefs."](https://doi.org/10.1016/j.cobeha.2021.04.015)
 :::
 
 . . .
 
-::: {.absolute right="0" top="100" .small}
-![](media-def/temp-meta1.png){width="65%"}
+::: {.absolute right="0" top="70" .small}
+![](media-def/temp-meta1.png){width="70%"}
 :::
  
 . . .
 
-::: {.absolute right="0" top="100" .small}
-![](media-def/temp-meta2.png){width="65%"}
+::: {.absolute right="0" top="70" .small}
+![](media-def/temp-meta2.png){width="70%"}
 :::
 
-::: {.absolute right="-250" top="250" width="50%"}
+::: {.absolute right="-300" top="250" width="50%"}
 
-- Small effect, but ...
+- Small effects, but ...
 
 :::
 
-## Heterogeneity {background-color="white"}
+## Heterogeneous effects {background-color="white"}
 
 ::: {.absolute right="0" top="150"}
 ![](media-def/figure2_defense0.png)
@@ -513,7 +524,7 @@ include_graphics("media/europeheatmap.jpg")
 ![](media-def/figure2_defense2.png)
 :::
 
-## Heterogeneity {background-color="white"}
+## Heterogeneous effects {background-color="white"}
 
 ::: {.absolute right="0" top="150"}
 ![](media-def/figure3_defense0.png)
@@ -531,11 +542,12 @@ include_graphics("media/europeheatmap.jpg")
 ![](media-def/figure3_defense2.png)
 :::
 
-::: {.absolute right="-75" top="200" width="50%"}
+::: {.absolute right="-25" top="200" width="50%"}
 
-- Suggestive evidence of heterogeneity
-- Not statistically significant
-- Temperatures affect everyone
+- Only suggestive evidence of heterogeneity
+    - News exposure
+    - Not statistically significant
+- Temperatures affect everybody
 
 :::
 
@@ -544,9 +556,18 @@ include_graphics("media/europeheatmap.jpg")
 
 ## A quick summary -- {#sec-sum2}
 
+::: {.absolute top="0" right="-25"}
+```{r}
+#| out-width: 15%
+#| panel: fill
+#| fig-align: right
+include_graphics("media/europeheatmap.jpg")
+```
+:::
+
 <br>
 
-::: columns
+::: {.columns}
 ::: {.column width="30%"}
 *Does warmer weather make us more climate conscious?*
 :::
@@ -573,9 +594,9 @@ include_graphics("media/europeheatmap.jpg")
 
 ## Article 3: Flooding {#sec-p3}
 
-::: {.absolute top="0" right="-175"}
+::: {.absolute top="0" right="-25"}
 ```{r}
-#| out-width: 16%
+#| out-width: 15%
 #| panel: fill
 #| fig-align: right
 include_graphics("media/vikingeskib.jpg")
@@ -583,7 +604,7 @@ include_graphics("media/vikingeskib.jpg")
 :::
 
 ::: {.columns}
-::: {.column width="95%"}
+::: {.column width="85%"}
 
 ::: {.nonincremental}
 - "Pro-climate voting in response to local flooding"
@@ -695,7 +716,7 @@ include_graphics("media/vikingeskib.jpg")
 <*@sec-pt* shows figure with similar trajectories for other treatments>
 :::
 
-## Effect {background-color="white" #sec-floodeffect}
+## Effect estimates {background-color="white" #sec-floodeffect}
 
 ::: {.absolute left="50" top="200"}
 ![](media-def/did_estimates_2x2_empty.png){width="85%"}
@@ -725,39 +746,34 @@ include_graphics("media/vikingeskib.jpg")
 
 ## Part 2 -- pro-climate candidates {background-color="white"}
 
+. . .
+
+::: {.columns}
+::: {.column width="75%"}
 ::: {.nonincremental}
 <br>
 New **candidate dataset** from three ingredients:
 
-1. Local candidate votes
-2. Local flooding cases
+1. Candidate votes
+2. Flooding cases
 3. Polling advice application &rarr;
 
 Does flooding increase support for **pro-climate candidates?**
 :::
+:::
 
-. . .
-
-::: {.absolute right="-300" top="0" .small width="40%"}
-![](media-def/kandidattest1.png){width="65%"}
-![](media-def/kandidattest2.png){width="65%"}
-![](media-def/kandidattest3.png){width="65%"}
+::: {.column width="25%" .small}
+![](media-def/kandidattest1.png)
+![](media-def/kandidattest2.png)
+![](media-def/kandidattest3.png)
 <br>{{< fa copyright >}} Altinget/DR
+:::
 :::
 
 ## Pro-climate candidates {#sec-examples1}
 
 ::: {.absolute left="100" top="200" .large width="75%" .justtext}
-*Green transition. Global warming is a serious threat to our entire future on Earth. Therefore, it is important that we, also locally, take responsibility for changing course, for example through improved recycling, and, in general, by working towards burdening the environment as little as possible*<br><br>- Candidate from Green Left (SF)
-:::
-
-. . .
-
-::: {.absolute}
-<div class="rectangle"></div>
-:::
-::: {.absolute left="100" top="200" .large width="75%" .justtext}
-*Storm surge protection. We are in high risk of flooding during storm surge. We experienced it in January 2017, and we still have citizens living in temporary housing 10 months later. If we don't do something, large parts of the municipality will be flooded*<br><br>- Candidate from the Liberal Party (V)
+*Green transition. Global warming is a serious threat to our entire future on Earth. Therefore, it is important that we, also locally, take responsibility for changing course, for example through improved recycling, and, generally, by working towards burdening the environment as little as possible*<br><br>- Candidate from Green Left (SF)
 :::
 
 . . .
@@ -767,6 +783,15 @@ Does flooding increase support for **pro-climate candidates?**
 :::
 ::: {.absolute left="100" top="200" .large width="75%" .justtext}
 *Climate adaptation. We must work to secure our citizens when changing weather threatens their homes*<br><br>- Candidate from the Social Democrats (S)
+:::
+
+. . .
+
+::: {.absolute}
+<div class="rectangle"></div>
+:::
+::: {.absolute left="100" top="200" .large width="75%" .justtext}
+*Storm surge protection. We are in high risk of flooding during storm surge. We experienced it in January, and we still have citizens living in temporary housing 10 months later. If we don't do something, large parts of the municipality will be flooded*<br><br>- Candidate from the Liberal Party (V)
 :::
 
 . . .
@@ -848,16 +873,25 @@ Does flooding increase support for **pro-climate candidates?**
 - Mostly due to issue salience and candidate communication
 - Not driven by **supply-side:**
     - converted climate candidates (@sec-climatetypes)
-    - mobilization of new candidates
     - party promotion of climate candidates
+    - mobilization of new candidates
 - Nor by overlap with **incumbent candidates**
 - Nor by overlap with **pro-welfare candidates**
 
 ## A quick summary -- {#sec-sum3}
 
+::: {.absolute top="0" right="-25"}
+```{r}
+#| out-width: 15%
+#| panel: fill
+#| fig-align: right
+include_graphics("media/vikingeskib.jpg")
+```
+:::
+
 <br>
 
-::: columns
+::: {.columns}
 ::: {.column width="30%"}
 *Does local flooding experience lead to pro-climate voting?*
 :::
@@ -866,8 +900,8 @@ Does flooding increase support for **pro-climate candidates?**
 ::: incremental
 - Yes -- for parties and candidates
 - ~1-3 %-points higher pro-climate party vote share and candidate election chances
-- Climate-related issues become more salient to voters
-- Party issue ownership and candidate communication are used to translate heightened salience into a pro-climate vote
+- Climate-related issues become more salient
+- Voters use party issue ownership and candidate communication to translate heightened salience into a pro-climate vote
 :::
 :::
 :::
@@ -886,9 +920,9 @@ Does flooding increase support for **pro-climate candidates?**
 
 ## Article 4: Turnout {#sec-p4}
 
-::: {.absolute top="0" right="-175"}
+::: {.absolute top="0" right="-25"}
 ```{r}
-#| out-width: 16%
+#| out-width: 15%
 #| panel: fill
 #| fig-align: right
 include_graphics("media-def/rain-election.jpeg")
@@ -896,48 +930,37 @@ include_graphics("media-def/rain-election.jpeg")
 :::
 
 ::: {.columns}
-::: {.column width="95%"}
-
+::: {.column width="85%"}
 ::: {.nonincremental}
-
-
-::: {.nonincremental}
-- "When the election rains out and how bad weather excludes marginal voters from turning out"
+- "When the election rains out and how bad weather<br>excludes marginal voters from turning out"
 - Published in *Electoral Studies* (2023)
 - Co-authored with Kasper M. Hansen
-:::
 
 > **How does the weather affect electoral turnout?**
+:::
+:::
+:::
 
 ::: {.absolute left="0" bottom="-20" .small}
 {{< fa camera >}} (prev. slide) Edward Linsmier/AFP 
 :::
 
-:::
-::: {.column width="5%"}
-:::
-:::
-
-:::
-
-
-
 ## Rainfall and turnout {background-color="white"}
 
 ::: {.absolute left="-30" top="80"}
-![](media-def/meta0.png){width="80%"}
+![](media-def/meta0.png){width="75%"}
 :::
 
 . . .
 
 ::: {.absolute left="-30" top="80"}
-![](media-def/meta1.png){width="80%"}
+![](media-def/meta1.png){width="75%"}
 :::
 
 . . .
 
 ::: {.absolute left="-30" top="80"}
-![](media-def/meta2.png){width="80%"}
+![](media-def/meta2.png){width="75%"}
 :::
 
 ## Our study {background-image="media-def/weather-stations.png" background-size="80%" background-color="white"}
@@ -948,12 +971,14 @@ include_graphics("media-def/rain-election.jpeg")
 
 ## Election Day weather {background-color="white"}
 
+<br>
+
 - Turnout around 70%<br>(2013: 72%, 2017: 71%)
 - Almost 30% don't vote
 - Thousands vote in one election<br>and abstain in the other (~20%)
 - **What role does the weather play?**
 
-::: {.absolute right="-300" top="-50" width="70%"}
+::: {.absolute right="-80" top="-13" width="50%"}
 ![](media-def/map_weather.jpg)
 :::
 
@@ -969,15 +994,15 @@ include_graphics("media-def/rain-election.jpeg")
 ![](media-def/meta3.png){width="75%"}
 :::
 
+::: {.absolute right="-35" top="250" width="26%"}
+- Rainfall reduces P(voting) by **0.95** %-points per cm
+- Effect size close to the simple, unweighted average (- - -)
+:::
+
 . . .
 
 ::: {.absolute left="-30" top="80"}
 ![](media-def/meta4.png){width="75%"}
-:::
-
-::: {.absolute right="-150" top="320" width="35%"}
-- Rainfall reduces P(voting) by **0.95** %-points per cm
-- Effect size close to the simple, unweighted average (- - -)
 :::
 
 ## Results {background-color="white"}
@@ -992,7 +1017,7 @@ include_graphics("media-def/rain-election.jpeg")
 :::
 
 
-## Heterogeneity {background-color="white"}
+## Heterogeneous effects {background-color="white"}
 
 . . .
 
@@ -1006,8 +1031,7 @@ include_graphics("media-def/rain-election.jpeg")
 ![](media-def/interaction_panel.png){width="55%"}
 :::
 
-::: {.absolute right="-100" top="120" width="50%"}
-- Strong heterogeneity
+::: {.absolute right="-35" top="150" width="36%"}
 - Young voter turnout is strongly influenced by Election Day weather
 - Problematic for democratic representation
 - And ... climate change?
@@ -1016,9 +1040,18 @@ include_graphics("media-def/rain-election.jpeg")
 
 ## A quick summary -- {#sec-sum4}
 
+::: {.absolute top="0" right="-25"}
+```{r}
+#| out-width: 15%
+#| panel: fill
+#| fig-align: right
+include_graphics("media-def/rain-election.jpeg")
+```
+:::
+
 <br>
 
-::: columns
+::: {.columns}
 ::: {.column width="30%"}
 *How does the weather affect electoral turnout?*
 :::
@@ -1038,11 +1071,11 @@ include_graphics("media-def/rain-election.jpeg")
 <**Supplementary material** in *@sec-sup4*>
 :::
 
-# Conclusion {background-transition="slide" transition="slide" #sec-conclusion background-color="#068AAD"}
+# Conclusion {background-transition="slide" #sec-conclusion background-color="#068AAD"}
 
-::: {.absolute top="0" right="-175"}
+::: {.absolute top="0" right="-25"}
 ```{r}
-#| out-width: 16%
+#| out-width: 15%
 #| panel: fill
 #| fig-align: right
 include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "media-def/tikz/8_alt.png", "media/vikingeskib.jpg", "media-def/rain-election.jpeg"))
@@ -1052,7 +1085,7 @@ include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "m
 . . .
 
 ::: {.columns}
-::: {.column width="95%"}
+::: {.column width="85%"}
 
 > Research Question: How are voters’ climate opinions and behavior shaped by media coverage of climate change and personal weather experiences?
 
@@ -1060,43 +1093,28 @@ include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "m
 - Climate change -- a self-correcting problem?
 - Responsibility of political elites
 - "Political Weather"
-- Everyday experiences matter
+- Everyday experiences matter in politics
 
 :::
 ::: {.column width="5%"}
 :::
 :::
 
-## What's next? {background-color="#068AAD"} 
-
-<br><br>
-
-::: {.absolute top="0" right="-175"}
-```{r}
-#| out-width: 16%
-#| panel: fill
-#| fig-align: right
-include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "media-def/tikz/8_alt.png", "media/vikingeskib.jpg", "media-def/rain-election.jpeg"))
-```
-:::
+## What's next? {background-color="#068AAD" .center} 
 
 ::: {.columns}
-::: {.column width="80%"}
-
-1. **Conditions:** When and where does the public respond positively to climate change -- why? 
-2. **Interaction:** How does personal weather experience interact with elite communication? 
+::: {.column width="75%"}
+1. **Conditions:** When and where do citizens respond positively to climate change -- why? 
+2. **Interaction:** How do personal weather experiences interact with elite communication? 
 3. **Psychology:** Learning about climate change or superficial use of heuristics?
-
-:::
-::: {.column width="5%"}
 :::
 :::
 
-## THANK YOU! {.center background-color="#068AAD"}
+# THANK YOU! {.center visibility="uncounted"}
 
 # Overview {visibility="uncounted" #sec-overview}
 
-::: columns
+::: {.columns}
 ::: {.column width="40%"}
 ::: {.nonincremental .medium}
 
@@ -1339,14 +1357,6 @@ $temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal
 include_graphics("media-def/figure1.png")
 ```
 
-## Parliamentary speeches {background-color="white" visibility="uncounted"}
-
-![](media-def/parliament.png){width="80%"}
-
-## Media coverage {background-color="white" visibility="uncounted"}
-
-![](media-def/infomedia_top25.png){width="80%"}
-
 ## Climate issue ownership {background-color="white" visibility="uncounted"}
 
 ![](media-def/issue-ownership.png){width="80%"}
@@ -1372,11 +1382,15 @@ include_graphics("media-def/balance_density.png")
 
 ## Event study plot {background-color="white" visibility="uncounted"}
 
-![](media-def/did_estimates_eventstudy_ipw.png){width="90%"}
+::: {.absolute left="100" top="50"}
+![](media-def/did_estimates_eventstudy_ipw.png){width="48%"}
+:::
 
 ## Full sample and 2007 baseline {background-color="white" visibility="uncounted"}
 
-![](media-def/did_estimates_2x2_fullsample.png){width="90%"}
+<br><br>
+
+![](media-def/did_estimates_2x2_fullsample.png){width="60%"}
 
 ## Parties and climate candidates {background-color="white" visibility="uncounted"}
 
@@ -1386,7 +1400,9 @@ include_graphics("media-def/proclimate_candidates.png")
 
 ## Climate candidate keywords {background-color="white" visibility="uncounted"}
 
-![](media-def/clicankey.png)
+::: {.absolute left="150" top="100"}
+![](media-def/clicankey.png){width="50%"}
+:::
 
 ## Additional pro-climate candidate examples {visibility="uncounted" background-color="white" #sec-examples2}
 
@@ -1413,10 +1429,6 @@ include_graphics("media-def/proclimate_candidates.png")
 :::
 ::: {.absolute left="100" top="200" .large width="75%" .justtext}
 *Climate and environment. Put the planet over profits! My heart beats most for green issues because our future depends on it. Our ambition must be to become a self-sufficient, carbon neutral municipality. We can do that by improving energy efficiency in our buildings and incorporate climate and environment in every relevant proposal*<br><br>- Candidate from the Red-Green Alliance (Ø)
-:::
-
-::: {.absolute bottom="-20" right="0" .medium}
-<*@sec-examples1* shows the primary examples>
 :::
 
 ## Candidate data details {background-color="white" visibility="uncounted"}
@@ -1554,6 +1566,13 @@ $Vote\:share_{itd} = \beta_1 Flooding_{d} + \beta_2 Post_{t} + \beta_3 Climate_{
 <*@sec-p3mechanism* discusses the mechanism>
 :::
 
+## Parliamentary speeches {background-color="white" visibility="uncounted"}
+
+![](media-def/parliament.png){width="80%"}
+
+## Media coverage {background-color="white" visibility="uncounted"}
+
+![](media-def/infomedia_top25.png){width="80%"}
 
 # Supplementary material for Article 4: Turnout {visibility="uncounted" #sec-sup4}
 
@@ -1601,7 +1620,7 @@ $Local\ weather_{vt} = \frac{ \sum^3_i{(Observation_{it}/Distance^2_i)} }{ \sum^
 
 ::: {.nonincremental .medium}
 1. One weather variable at a time
-2. No additional control variables: age, close to coast, local population density, gender, ln(population), non-western immigrant population share, closeness of election
+2. No additional control variables: age, close to coast, local population density, gender, ln(population), <br>non-western immigrant population share, closeness of election
 3. Adding municipality fixed effects
 4. Restricting to non-movers
 4. Restricting to age 40-60
