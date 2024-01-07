@@ -47,30 +47,23 @@ Let's begin with a picture.
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
 
-<!-- ##  {background-image="media-def/GLOBE.png" background-size="87%" background-color="black" background-opacity="0.15"} -->
-
-<!-- <br><br><br> -->
-<!-- This graph shows global warming with incredible accuracy -->
-
-<!-- 1. The global temperature has increased since the industrial revolution -->
-<!-- 2. Especially in the past 8 years -->
-<!-- 3. Climate scientists are able to *predict* and *explain* this development -->
-
-<!-- . . . -->
-
-<!-- <br>**It is hard for ordinary citizens to truly understand the climate crisis from statistical information** -->
-
-##  {background-image="media-def/EUROPE.png" background-size="87%" background-color="black"}
-
-::: {.absolute right="-25" bottom="-40" .small}
-{{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
+::: {.notes}
+1. shows:
+    - global temperatures vary from year to year
+    - increased since industrial revolution, 20th, 21th century, 1°C
+    - 2015 was hottest, then 2016, all 9 years (2023)
+    - **climate scientists can measure, predict**
+2. doesn't show:
+    - **variation** around mean: day to day, **places** (land areas, Europe, North), vulnerability
+3. **doesn't show how global warming will affect our lives --- consequences**
+    - *could show 1,000 graphs with accurate scientific predictions of consequences* (IPCC)
+    - **not sufficient** to understand or create pro-climate opinions
+    - the problem is &rarr;
 :::
 
-##  {background-image="media-def/DENMARK.png" background-size="87%" background-color="black"}
+##  {background-image="media-def/GLOBE.png" background-size="87%" background-color="black" background-opacity="0.2" .center}
 
-::: {.absolute right="-25" bottom="-40" .small}
-{{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
-:::
+### It is hard for ordinary citizens to truly understand the climate crisis from statistical information alone
 
 ## {}
 
@@ -78,7 +71,7 @@ Let's begin with a picture.
 There is another way of learning about climate change
 
 - One that is easier, concrete, immediate, and visceral
-- Personal weather experiences
+- Personal experience
 :::
 
 . . .
@@ -133,6 +126,17 @@ There is another way of learning about climate change
 ![](media-def/weathersim_4.png){width="80%"}
 :::
 
+::: {.notes}
+- probability distribution
+- daily temperatures on x-axis (low-high)
+- probability on y-axis
+- "normal" temperatures most likely
+- extreme cold and heat is unlikely but happens
+- 1% extreme heat
+- shift
+:::
+
+
 ## {}
 
 ![](media-def/strand.webp){.absolute right=-50  top=-35     width="420"}
@@ -151,6 +155,11 @@ There is another way of learning about climate change
 {{< fa camera >}} Anadolu Agency/Ritzau Scanpix, Adrian Dennis/AFP/Getty Images, Jacob Ehrbahn, Tingshu Wang, Oscar Guerrero Ramirez/Getty Images, Remko de Waal/ANP/AFP, Daniel Leal/Agence France-Presse/Getty Images, Go Nakamura/The New York Times, David McNew/Getty Images
 :::
 
+::: {.notes}
+- The climate issue is abstract, complex, distant
+- These experiences make it concrete, tangible
+:::
+
 ## Argument
 
 <br>
@@ -161,7 +170,7 @@ There is another way of learning about climate change
 - Voters increasingly experience climate change
 - Personal experience is easier to understand
 - Weather affects everybody, and the personal relevance is clear
-- Perhaps it can cut through climate denialism<br>and political polarization
+- Perhaps experience can cut through climate denialism<br>and political polarization
 - Will voters respond to climate change experiences with<br>pro-climate opinions and behavior?
 :::
 
@@ -175,7 +184,7 @@ There is another way of learning about climate change
 
 . . .
 
-#### Personal weather experiences and climate media coverage are<br>potential drivers of pro-climate opinions and behavior
+#### Personal weather experiences and climate media coverage are<br>potential drivers of climate opinions and behavior
 
 ## Research question
 
@@ -188,10 +197,13 @@ There is another way of learning about climate change
 <br>
 
 - Empirical focus on voters in **Denmark**
+
+::: {.notes}
+- pro-climate opinion + mild climate = least-likely case
+- well-functioning, low polarization, nonpartisan media = facilitating
+:::
     
 ## {}
-
-<!-- Complex web of climate attitudes and influences -->
 
 ::: {.absolute right="0" top="-20"}
 ![](media-def/tikz/1.png)
@@ -1104,7 +1116,7 @@ include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "m
 
 ::: {.columns}
 ::: {.column width="75%"}
-1. **Conditions:** When and where do citizens respond positively to climate change -- why? 
+1. **Conditions:** When and where do citizens respond constructively to climate experiences -- why? 
 2. **Interaction:** How do personal weather experiences interact with elite communication? 
 3. **Psychology:** Learning about climate change or superficial use of heuristics?
 :::
@@ -1112,7 +1124,7 @@ include_graphics(c("media-def/klimamarch2019.jpg", "media/europeheatmap.jpg", "m
 
 # THANK YOU! {.center visibility="uncounted"}
 
-# Overview {visibility="uncounted" #sec-overview}
+## Overview {visibility="uncounted" #sec-overview}
 
 ::: {.columns}
 ::: {.column width="40%"}
@@ -1312,7 +1324,7 @@ $temperature_{ct} = \frac{1}{7} \sum_{t-7}^{t-1}{mean\ temperature_{ct} - normal
 :::
 :::
 
-## OLS model output {visibility="uncounted" background-color="white"}
+## OLS model {visibility="uncounted" background-color="white"}
 
 <br>
 
@@ -1386,13 +1398,13 @@ include_graphics("media-def/balance_density.png")
 ![](media-def/did_estimates_eventstudy_ipw.png){width="48%"}
 :::
 
-## Full sample and 2007 baseline {background-color="white" visibility="uncounted"}
+## Full sample {background-color="white" visibility="uncounted"}
 
 <br><br>
 
 ![](media-def/did_estimates_2x2_fullsample.png){width="60%"}
 
-## Parties and climate candidates {background-color="white" visibility="uncounted"}
+## Pro-climate parties {background-color="white" visibility="uncounted"}
 
 ```{r}
 include_graphics("media-def/proclimate_candidates.png")
@@ -1446,7 +1458,7 @@ include_graphics("media-def/proclimate_candidates.png")
     - 2,077 (approx. 42%) run in both elections
 :::
 
-## OLS model output {background-color="white" visibility="uncounted" #sec-dididmodel}
+## OLS model {background-color="white" visibility="uncounted" #sec-dididmodel}
 
 <br>
 
@@ -1455,7 +1467,7 @@ include_graphics("media-def/proclimate_candidates.png")
 ![](media-def/dididmodel.png)
 :::
 
-::: {.column width="40%" .small}
+::: {.column width="40%" .medium}
 <br><br>
 $Vote\:share_{itd} = \beta_1 Flooding_{d} + \beta_2 Post_{t} + \beta_3 Climate_{it} + \beta_4 Flooding\times Post_{td} + \beta_5 Flooding\times Climate_{itd} + \beta_6 Climate\times Post_{it} + \beta_7 Flooding\times Post\times Climate_{itd} + \alpha_m + \epsilon_{itd}$
 :::
@@ -1465,15 +1477,17 @@ $Vote\:share_{itd} = \beta_1 Flooding_{d} + \beta_2 Post_{t} + \beta_3 Climate_{
 <*@sec-stat* summarises the results>
 :::
 
-## Post-estimation DIDID plot {background-color="white" visibility="uncounted" #sec-dididpost}
+## DIDID plot {background-color="white" visibility="uncounted" #sec-dididpost}
 
-::: {.absolute left="100" top="100" .medium}
+*Post-estimation*
+
+::: {.absolute left="100" top="150" .medium}
 ![](media-def/didid_plot5_postestim.png){width="90%"}
 <br>*Model 1 (municipality FEs)*
 :::
 
 ::: {.absolute bottom="-20" right="0" .medium}
-<*@sec-dididpre* shows the pre-estimation DIDID>
+<*@sec-dididpre* shows the pre-estimation DIDID plot>
 :::
 
 . . .
@@ -1481,24 +1495,25 @@ $Vote\:share_{itd} = \beta_1 Flooding_{d} + \beta_2 Post_{t} + \beta_3 Climate_{
 ::: {.absolute}
 <div class="whiterectangle"></div>
 :::
-::: {.absolute left="100" top="100" .medium}
+::: {.absolute left="100" top="150" .medium}
 ![](media-def/didid_plot5_postestim_party.png){width="90%"}
 <br>*Model 2 (municipality + party FEs)*
 :::
 
 ::: {.absolute bottom="-20" right="0" .medium}
-<*@sec-dididpre* shows the pre-estimation DIDID>
+<*@sec-dididpre* shows the pre-estimation DIDID plot>
 :::
 
-## Alternative DIDID plot {background-color="white" visibility="uncounted" #sec-dididrerun}
+## DIDID plot {background-color="white" visibility="uncounted" #sec-dididrerun}
 
-::: {.absolute left="100" top="100" .medium}
+*Sample: 2,077 candidates running in both elections*
+
+::: {.absolute left="100" top="150" .medium}
 ![](media-def/didid_plot_rerun.png){width="90%"}
-<br>*Sample: Only candidates running in both elections*
 :::
 
 ::: {.absolute bottom="-20" right="0" .medium}
-<*@sec-dididpre* shows the pre-estimation DIDID for the full sample>
+<*@sec-dididpre* shows the pre-estimation DIDID plot with the full sample>
 :::
 
 ## DIDID coefficient plot {background-color="white" visibility="uncounted"}
@@ -1509,7 +1524,7 @@ $Vote\:share_{itd} = \beta_1 Flooding_{d} + \beta_2 Post_{t} + \beta_3 Climate_{
 
 ## DIDID coefficient plot {background-color="white" visibility="uncounted"}
 
-*Sample: Only candidates running in both elections*
+*Sample: 2,077 candidates running in both elections*
 
 ![](media-def/didid_modelplot_rerunners.png){width="70%"}
 
@@ -1629,4 +1644,22 @@ $Local\ weather_{vt} = \frac{ \sum^3_i{(Observation_{it}/Distance^2_i)} }{ \sum^
 6. Placebo test with weather from 30/60 days before Election Day
 7. A range of alternative standard errors
 8. Logistic regression
+:::
+
+# {background-image="media-def/GLOBE.png" background-size="87%" background-color="black" .center}
+
+::: {.absolute right="-25" bottom="-770" .small}
+{{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
+:::
+
+## {background-image="media-def/EUROPE.png" background-size="87%" background-color="black" .center}
+
+::: {.absolute right="-25" bottom="-770" .small}
+{{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
+:::
+
+##  {background-image="media-def/DENMARK.png" background-size="87%" background-color="black" .center}
+
+::: {.absolute right="-25" bottom="-770" .small}
+{{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
 :::
