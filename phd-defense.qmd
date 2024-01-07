@@ -334,8 +334,9 @@ include_graphics(c("media-def/klimamarch2019.jpg"))
 
 . . .
 
-::: {.absolute right="-50" top="320" width="30%" .nonincremental}
+::: {.absolute right="-50" top="300" width="30%" .nonincremental}
 - Spotting the connection is hard
+- We need statistical analysis
 :::
 
 ::: {.absolute bottom="-20" right="-25" .medium}
