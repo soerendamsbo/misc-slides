@@ -35,11 +35,11 @@ sysfonts::font_add_google("Alegreya Sans", "Alegreya Sans", regular.wt = 300)
 showtext::showtext_auto()
 ```
 
-# {background-color="black" #sec-intro}
+# {background-color="#4D4D4D" #sec-intro}
 
 Let's begin with a picture.
 
-##  {background-image="media-def/GLOBE.png" background-size="87%" background-color="black"}
+##  {background-image="media-def/GLOBE24.png" background-size="87%" background-color="#4D4D4D"}
 
 ::: {.absolute right="-25" bottom="-40" .small}
 {{< fa copyright >}} Professor Ed Hawkins (University of Reading) at [showyourstripes.info](https://showyourstripes.info/)
@@ -53,7 +53,7 @@ Let's begin with a picture.
     - not sufficient
 :::
 
-##  {background-image="media-def/GLOBE.png" background-size="87%" background-color="black" background-opacity="0.2" .center}
+##  {background-image="media-def/GLOBE24.png" background-size="87%" background-color="#4D4D4D" background-opacity="0.2" .center}
 
 ### It is hard for ordinary citizens to truly understand the climate crisis from statistical information alone
 
