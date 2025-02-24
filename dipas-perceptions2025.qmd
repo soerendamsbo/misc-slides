@@ -45,6 +45,13 @@ showtext::showtext_auto()
 2. Test if certain sociopolitical groups evaluate harassment as **more or less serious** <br>(also more or less **justifiable** and personally **harmful**)
 3. Test if learning about harassment causes political disengagement and reduces willingness to run for office
 
+## Motivation
+
+1. People often ask if differences in reported harassment experiences are because of heterogenous sensitivity levels and/or norms
+    - Is it? 
+2. If (learning about) harassment deters people (especially marginal groups) from entering politics, the implications are bad
+    - Does it?
+
 ## Design
 
 ::: {.incremental}
