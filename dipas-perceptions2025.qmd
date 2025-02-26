@@ -47,18 +47,20 @@ showtext::showtext_auto()
 
 ## Motivation
 
-1. Both researchers and others often ask if differences in reported harassment experiences are due to heterogenous sensitivity levels and/or norms
+::: {.incremental}
+1. Researchers and others often ask if differences in reported harassment experiences are due to heterogeneous sensitivity levels and/or norms
     - Is it? 
 2. If (learning about) harassment deters citizens (especially marginal groups) from entering or engaging in politics, the implications are bad
     - Does it?
+:::
 
 ## Design
 
 ::: {.incremental}
 
-- New survey experiment (YouGov)
-- 5,000 respondents (~3,500 so far)
-- Descriptive and causal part
+- New survey experiment (YouGov) w/ 5,000 respondents (~3,500 so far)
+- Descriptive and causal w/ preliminary results
+- Preregistered
 - **Treatment** = read and evaluate 5 random harassment stories 
     - random draw from 55 curated stories
     - **evaluation** of seriousness, justifiableness, harmfulness
@@ -68,8 +70,6 @@ showtext::showtext_auto()
     - likelihood of running for office, engaging in political activities
     - satisfaction with democracy
     - gender and age leadership attitudes
-- Preregistered
-- Preliminary data and results
 
 :::
 
