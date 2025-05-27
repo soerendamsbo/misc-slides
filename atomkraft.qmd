@@ -40,12 +40,11 @@ Sys.setlocale("LC_TIME", "da_DK") # sæt sproget til dansk (dato-labels)
 :::: {.columns}
 ::: {.column width="50%"}
 
-<br>
-
 - **52 %** af danskerne er *bekymrede* over klimaforandringernes konsekvenser<br>(*Megafon 2025*)
     - 60 % i 2022
 - **Klima** oversteg alle andre emner ved både FV19 og FV22\*
     - ca. 50 % nævnte *klima* som et af de vigtigste emner 
+    - ca. 75 % enige i, at *klima* er vor tids største udfordring
 - **Atomkraft** er i 2025 en del af *klimadebatten*
 
 :::
@@ -142,19 +141,19 @@ include_graphics("https://noah.dk/sites/default/files/styles/skaler_960px_bred/p
 :::
 ::::
     
-## Opbakning til atomkraft i 2023
+<!-- ## Opbakning til atomkraft i 2023 -->
 
-> Mener du, at man skal undersøge muligheden for at udvikle A-kraft som energikilde i Danmark? (*Epinion 2023*)
+<!-- > Mener du, at man skal __undersøge muligheden__ for at udvikle A-kraft som energikilde i Danmark? (*Epinion 2023*) -->
 
-. . .
+<!-- . . . -->
 
-::: {.nonincremental}
+<!-- ::: {.nonincremental} -->
 
-- **Ja:** 55 %
-- **Nej:** 26 %
-- Ved ikke: 19 %
+<!-- - **Ja:** 55 % -->
+<!-- - **Nej:** 26 % -->
+<!-- - Ved ikke: 19 % -->
 
-:::
+<!-- ::: -->
  
 ## Opbakning til atomkraft i fem generationer
 
@@ -162,11 +161,8 @@ include_graphics("https://noah.dk/sites/default/files/styles/skaler_960px_bred/p
 
 ::: {.nonincremental}
 
-- **Fem generationer** pba. *fødselsår*:
-
-:::
-
-. . .
+- **Ideologi:** selvplacering på venstre-højre-skala (0-10)
+- **Fem generationer**:
 
 ```{r}
 tribble(~Generation, ~Fødselsår, ~`Alder FV81`, ~`Alder FV22`, 
@@ -178,8 +174,7 @@ tribble(~Generation, ~Fødselsår, ~`Alder FV81`, ~`Alder FV22`,
   kable(align = c("l","c","r", "r"))
 ```
 
-- **Ideologi:** selvplacering på venstre-højre-skala (0-10)
-    - 0-4: *venstreorienteret*, 6-10: *højreorienteret*
+:::
 
 ## Opbakning til atomkraft i fem generationer
 
@@ -235,7 +230,7 @@ include_graphics("media/atomkraft/atomkraft_generationer_22.png")
 
 <!-- ::: -->
 
-## Opbakning til atomkraft og klimaholdninger
+## Opbakning til atomkraft, klimaholdninger
 
 ```{r}
 include_graphics("media/atomkraft/atomkraft_predict1.png")
@@ -247,26 +242,7 @@ include_graphics("media/atomkraft/atomkraft_predict1.png")
 
 :::
 
-## Opbakning til atomkraft og klimaholdninger
-
-```{r}
-include_graphics("media/atomkraft/atomkraft_predict1.png")
-```
-
-::: {.nonincremental}
-
-- MINDST teknooptimistisk & MEST offervillig: **21 %**
-- MEST teknooptimistisk & MINDST offervillig: **66 %**
-
-:::
-
-::: {.notes}
-
-`m <- feols(cc_nuclear2 ~ cc_standard + cc_newtech + age + i(gender) + i(education) + i(pers_income), data = datanal, weights = datanal$weight)` 
-
-:::
-
-## Opbakning til atomkraft og køn
+## Opbakning til atomkraft, klimaholdninger og køn
 
 ```{r}
 include_graphics("media/atomkraft/atomkraft_predict2_mænd.png")
@@ -278,7 +254,7 @@ include_graphics("media/atomkraft/atomkraft_predict2_mænd.png")
 
 :::
 
-## Opbakning til atomkraft og køn
+## Opbakning til atomkraft, klimaholdninger og køn
 
 ```{r}
 include_graphics("media/atomkraft/atomkraft_predict2.png")
@@ -290,36 +266,61 @@ include_graphics("media/atomkraft/atomkraft_predict2.png")
 
 :::
 
-## Opbakning til atomkraft og køn
+## Opbakning til atomkraft, klimaholdninger og køn
 
-```{r}
-include_graphics("media/atomkraft/atomkraft_predict2.png")
-```
+<br><br>
 
+:::: {.columns}
+::: {.column width="65%"}
 ::: {.nonincremental}
 
-- MINDST teknooptimistisk & MEST offervillig *KVINDE*: **16 %**
-- MEST teknooptimistisk & MINDST offervillig *MAND*: **76 %**
+- **MEST teknooptimistisk** & MINDST offervillig: 
+    - **66 %** opbakning
+    - og *mand*: **76 %** opbakning
 
+<br>
+
+- **MEST offervillig** og MINDST teknooptimistisk:
+    - **21 %** opbakning
+    - og *kvinde*: **16 %** opbakning
+    
 :::
 
-::: {.notes}
-
-`m <- feols(cc_nuclear2 ~ gender * cc_standard + gender * cc_newtech + age + gender + i(education) + i(pers_income), data = filter(datanal, gender %in% 1:2), weights = datanal[datanal$gender %in% 1:2, "weight"]$weight)`
-
 :::
+::: {.column width="5%"}
+:::
+::: {.column width="30%"}
+```{r}
+#| out-width: 90%
+include_graphics("https://www.atomkraft-jatak.dk/wp-content/uploads/2020/08/Facebook-thumbnail.png")
+```
+
+<br><br>
+
+```{r}
+#| out-width: 50%
+include_graphics("https://noah.dk/sites/default/files/styles/skaler_960px_bred/public/2017-02/Atomkraft%20nej%20tak.png?itok=hx8-tZj7")
+```
+:::
+::::
+
 
 ## Hvad former vores holdninger til atomkraft?
 
-1. **Socialisering**
+<br>
+
+::: {.nonincremental}
+
+1. **Politisk socialisering**
     - atomkraftulykker, aktivisme
-    - fokusbegivenheder
+    - *fokusbegivenheder*
 2. **Grundlæggende psykologiske træk**
-    - risikovillighed
 3. **Ideologi**
 4. **Partipolitiske signaler**
-    - mainstreaming
+    - *mainstreaming*
 5. **Teknologisk udvikling**
+
+:::
 
 ## Konklusion {background-color="#026B81"}
 
@@ -345,13 +346,13 @@ include_graphics("media/atomkraft/atomkraft_predict2.png")
 knitr::include_graphics("media/daniele-la-rosa-messina-7mS-34gG4vo-unsplash.jpg")
 ```
 
+
+
 :::
 ::::
 
 
 
 . . .
-
-<br>
 
 ### Tak for opmærksomheden! {background-color="#026B81"}
