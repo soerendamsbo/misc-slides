@@ -5,8 +5,8 @@ date: today
 date-format: long
 lang: en
 author: 
-  - Søren Damsbo-Svendsen
-  - <strong>Karina Kosiara-Pedersen</strong>
+  - <strong>Søren Damsbo-Svendsen</strong>
+  - Karina Kosiara-Pedersen
 title-slide-attributes:
   data-background-color: "#026B81"
 format: 
