@@ -1,6 +1,6 @@
 ---
-title: Raising awareness of harassment against politicians
-subtitle: "Experimental evidence on the democratic consequences from four European democracies<br>DIPAS Workshop 2025"
+title: Snowflakes or Tough Cookies? 
+subtitle: "How citizens judge harassment against politicians<br>DIPAS Workshop 2025"
 date: today
 date-format: long
 lang: en
@@ -49,7 +49,7 @@ showtext::showtext_auto()
 - Preregistered **survey:**
     - large sample (n = 8,899) from **4 European countries**
     - 55 **true stories** of (Danish) politicians' experiences with harassment
-    - *outcome: perceived severity* 
+    - **outcome**: perceived severity
     - 43,460 judgments of a diverse set of harassment stories
 
 ## Status
