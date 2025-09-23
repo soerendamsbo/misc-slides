@@ -119,7 +119,7 @@ Repeats five times
 5. Harassment attitude III: **inevitable** ('*harassment is an inevitable part of politics*')
 6. Satisfaction with **democracy**
 7. Willingness to **engage** in six political activities (*additive index*)
-8. Willingness to **run for office** in the future (*main outcome*)
+8. Willingness to **run for office** in the future (*main outcome*, pretest)
 
 # Results {background-color="#026B81"}
 
@@ -202,7 +202,7 @@ knitr::include_graphics("media/main_effects_new_B.png")
 ::: {.column width="33%"}
 
 - No decline in **civic engagement** (7)
-- Instead, 1.8 %-points *increase* (e.g., **contact politician**, **demonstrate**, petition, SoMe post)
+- Instead, 1.8 %-points *increase* (e.g., **contact politician**, demonstrate, sign petition, political SoMe post)
 - Uneven effects &rarr; not very robust
 
 :::
@@ -240,8 +240,8 @@ knitr::include_graphics("media/main_effects_new_B.png")
 - Categorize citizens as **'likely candidates'** using two approaches:
     1. create an additive **index** from<br>(a) political interest, (b) partisanship, (c) internal efficacy, (d) external efficacy
     2. measure willingness to run *pre-treatment*
-- ~16 percent (1/6) categorized as 'likely candidates'
-- Analyze *conditional effects* among these two groups of likely candidates
+- ~16 percent (1/6) categorized as 'likely candidates' with both approaches
+- Analyze *conditional effects* among likely candidates
 
 ## Effect on political engagement of likely candidates
 
@@ -250,7 +250,7 @@ knitr::include_graphics("media/main_effects_new_B.png")
 knitr::include_graphics("media/cates.png")
 ```
 
-- Statistically significant negative **interaction** with conditional effects (CATEs):
+- Statistically significant negative **interaction** (*p* = 0.019) with conditional effects:
     - 2.0 %-points *decrease* for **high index values**
     - 3.9 %-points *decrease* for **high reported pre-tests**
     - Null for the *unlikely* categories
@@ -268,6 +268,6 @@ knitr::include_graphics("media/cates.png")
     - no *average* impact on citizens' **willingness to run for office** (arguably good)
     - but **harassment clearly affects more likely candidates**
     - **modest conditional effect** around -2-4 %-points
-    - but potential candidates on the margin are likely **important for representation**
+    - potential candidates on the margin are likely **important for representation**
 
 # Thank you {background-color="#026B81"}

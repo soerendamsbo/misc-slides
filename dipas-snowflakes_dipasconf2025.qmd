@@ -45,7 +45,7 @@ showtext::showtext_auto()
 - But little **solid empirical evidence**
     - 'solid': large/broad *data collection* and broad *'harassment' concept*
 - __RQ: *How severe is harassment* against politicians to citizens, and what are theoretically and statistically significant *gaps in perceptions* of harassment?__
-    - i.e., are (harassed) politicians perceived as *snowflakes* or *tough cookies*?
+    - i.e., are (harassed) politicians perceived as *snowflakes* or *tough cookies*? By whom?
 - Preregistered **survey:**
     - large sample (n = 8,899) from **4 European countries**
     - 55 **true stories** of (Danish) politicians' experiences with harassment
@@ -54,30 +54,30 @@ showtext::showtext_auto()
 
 ## Status
 
+- First draft
 - Data part of larger project with experiment
 - **Analysis** quite broad/deep and quite far
-    - main results final
-    - possibly need for cuts
-    - possibility for extensions
-    - multidimensional analysis
-    - but **gender and age** weaved into every analysis for coherence
+    - main results 'final'
+    - possibly need for **cuts**, possibility for **extensions**
+    - **gender and age** weaved into every analysis for coherence
 - Framing and especially **theory** quite underdeveloped
     - we'd love to hear some of your takes on our findings
-    - also, what kind/use of theory
 
 ## Design
 
-- New multinational preregistered **survey** (experiment)
+- New multinational preregistered **survey**
 - **n = 8,899 respondents**
     - Denmark: n = 5,008 (YouGov) 
     - Germany: n = 1,519 (Prolific)
     - United Kingdom: n = 1,515
     - France: n = 857
 - **Harassment stories**
+    - respondents read and evaluate **5 harassment stories**
     - real stories about (Danish) politicians' experiences with harassment
     - source: Danish 2021 municipal election candidate survey (n = 3,986) 
-    - respondents read and evaluate **5 harassment stories**
     - *stimulus sampling* design with random draw from **55 curated stories**
+    
+    
 
 ## Examples of harassment stories {background-color="#FCF2CC"}
 
@@ -484,6 +484,8 @@ knitr::include_graphics(img_path)
 
 ## Summary of gaps {background-color="#CCE3F3"}
 
+::: {.nonincremental}
+
 :::: {.columns}
 ::: {.column width="40%"}
 
@@ -517,19 +519,19 @@ knitr::include_graphics(img_path)
 :::
 ::::
 
+:::
+
 ## To do: theory/interpretation/discussion {background-color="#CCE3F3"}
 
 <br>
 
 ::: {.nonincremental}
 
-- *Why* do we find these gaps?
-- How do we *explain* them? What are their *causes*? 
+- *Why* do we find these gaps? How do we *explain* them? What are their *causes*? 
+- What are the*implications*?
 - How (much) do we *discuss*? 
-- What are the gaps' *implications*?
-- *Framing*
-- Paper *structure* (four 'themes' etc.)?
-- Need to throw out parts or parcel into another paper?
+- Best *framing*?
+- Paper *structure* (four 'themes' etc.)? Need to throw out parts or parcel into another paper?
 
 :::
 
@@ -545,6 +547,6 @@ knitr::include_graphics(img_path)
     - some **expected** (e.g., gender, ideology, risk and conflict aversion, physical)
     - others **unexpected** (e.g., age, gender-age affinity, sexual, party colleague)
     - also interesting **gender/age gaps** *in other gaps* (e.g., woman x ideology, age x sexual)
-- Lots of **theorization** to do
+- Causal effects of the stories in separate paper
 
 # Thank you {background-color="#026B81"}
