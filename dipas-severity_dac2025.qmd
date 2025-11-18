@@ -43,7 +43,7 @@ showtext::showtext_auto()
 - Common conception: 
     - **political violence is increasingly accepted** 
     - harassment against politicians no longer perceived as serious problem
-- Limited empirical evidence -- with *broad scope*
+- Limited empirical evidence -- with broad scope
     - e.g., many expressions, not only online, different contexts
 - __RQ: *How severe is harassment of politicians perceived to be by citizens,<br>and who finds it less severe?*__
 - New survey data --- shared with **experimental study:**
@@ -61,11 +61,11 @@ include_graphics('media/cates.png')
 
 ::: {.nonincremental}
 
-- *Second-ish* draft
+- Second-ish draft
     - empirics quite far
     - theory quite undeveloped
 - Updated framing after DIPAS workshop in Sept:
-    - push back against conception that acceptance of violence is high/growing
+    - push back against conception that acceptance of violence is growing/high
     - emphasize groups with higher acceptance
 
 :::
@@ -147,10 +147,12 @@ include_graphics('media/new_treatment-example.png')
 
 # Results {background-color='#026B81'}
 
-## Average perceptions
+## {}
+
+<br>
 
 ```{r}
-#| out-width: 95%
+#| out-width: 90%
 
 img_path <- 'media/severity.png'
 img_path |>
@@ -166,11 +168,11 @@ knitr::include_graphics(img_path)
 
 <br>
 
-**Political harassment is perceived as _less severe_**
+**Political harassment is perceived as _less severe ..._**
 
-- H1: by _men_
+- H1: by men
 
-- H2: by _older people_
+- H2: by older people
 
 
 ## Gender and age
@@ -230,13 +232,13 @@ knitr::include_graphics(img_path)
 
 <br>
 
-**Political harassment is perceived as _less severe_**
+**Political harassment is perceived as _less severe ..._**
 
-- H3: when the targeted *politician is a man*
+- H3: when the targeted politician is a man
 
-- H4: when the targeted *politician is _not_ a young person*
+- H4: when the targeted politician is an older person
 
-- H5: by people who belong to a *different gender-age group* than the targeted politician
+- H5: by people who belong to a different (gender-age) group than the targeted politician
 
 ## Politicians' gender and age
 
@@ -255,50 +257,32 @@ knitr::include_graphics(img_path)
 
 ```
 
-## Politicians' gender and age
-
-<br>
-
-:::: {.columns}
-::: {.column width='48%'}
+## {}
 
 ```{r}
-#| out-width: 80%
+#| out-width: 36%
+#| fig-align: 'center'
 
-img_path <- 'media/genderage_single.png'
-img_path |>
+img_path1 <- 'media/genderage_single.png'
+img_path1 |>
   magick::image_read() |>
   magick::image_trim() |>
-  magick::image_write(img_path)
+  magick::image_write(img_path1)
 
-knitr::include_graphics(img_path)
+img_path2 <- 'media/genderage-affinity_single.png'
+img_path2 |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path2)
+
+knitr::include_graphics(c(img_path1, img_path2))
 
 ```
 
-Fig 2C: Gender-age in full sample
 
-:::
-::: {.column width='2%'}
-:::
-::: {.column width='48%'}
+[Full sample]{.absolute top=180 left=140}
 
-```{r}
-#| out-width: 80%
-
-img_path <- 'media/genderage-affinity_single.png'
-img_path |>
-  magick::image_read() |>
-  magick::image_trim() |>
-  magick::image_write(img_path)
-
-knitr::include_graphics(img_path)
-
-```
-
-Fig 3B: Gender-age in affinity subset
-
-:::
-::::
+[Affinity subset<br>(~25%)]{.absolute top=550 left=150}
 
 ## Politicians' gender and age
 
@@ -327,11 +311,11 @@ knitr::include_graphics(img_path)
 
 ::: {.nonincremental}
 
-- **Women politician:**<br>slightly higher perceptions<br>(*young* women, H3 +)
+- **Women politician:**<br>slightly more severe<br>(*young* women, H3 +)
 - **Young politician:**<br>no gap (H4 -)
 - **Gender-age affinity:**
-    - higher for women (H5 +)
-    - lower for older men (H5 -)
+    - worse for women (H5 +)
+    - less for older men (H5 -)
     - driven by perceptions for<br>women politicians (H3)
 :::
 
@@ -342,13 +326,17 @@ knitr::include_graphics(img_path)
 
 <br>
 
-**Political harassment is perceived as _less severe_**
+**Political harassment is perceived as _less severe ..._**
 
-- H6: by people who identify as ideologically *right-leaning*
+- H6: by people who identify as ideologically right-leaning (27%)
 
-- H7: by people who are generally *more tolerant of harassment* in politics
+- H7: by people who are generally more tolerant of harassment in politics (18%)
 
-- H8: by people who are *dissatisfied with democracy*
+- H8: by people who are dissatisfied with democracy (31%)
+
+    - **viscous cycle:**
+    
+        - *dissatisfaction* &rarr; low severity perceptions &rarr; more harassment &rarr; degraded representation &rarr; *dissatisfaction* 
 
 ## Political ideology
 
@@ -394,9 +382,11 @@ knitr::include_graphics(img_path)
 
 ::: {.nonincremental}
 
-- Lower if leaning **right** (H6 +)
-- Lower if high general **harassment tolerance** (H7 +)
-- Lower if **dissatisfied with democracy** (H8 +)
+Lower perceived severity if the respondent:
+
+- leans right (H6 +)
+- generally tolerates harassment (H7 +)
+- is dissatisfied with democracy (H8 +)
 
 :::
 :::
@@ -408,12 +398,12 @@ knitr::include_graphics(img_path)
 
 ::: {.nonincremental}
 
-- Explorative analysis of **5 harassment types** (vs rest)
-    a) **physical** harassment
-    b) **threats** of violence
-    c) **property** damage
-    d) **sexual** harassment
-    e) **social media** (online arena)
+- Explorative analysis of five harassment types (vs. rest)
+    1. **physical** harassment
+    2. **threats** of violence
+    3. **property** damage
+    4. **sexual** harassment
+    5. **social media** (online arena)
 - Total and by:
     - gender and age
     - left-right placement 
@@ -517,11 +507,11 @@ knitr::include_graphics(img_path)
 ::: {.nonincremental}
 
 - Sexual: **same severity**
-    - polarizing!
-    - higher among **young people** and the **left**
-    - lower among older people and the right
+    - only polarizing issue:
+    - higher among **young** people and on the **left**
+    - lower among older people and on the right
 - SoMe: **much lower severity**
-    - stronger norm for **young men**
+    - stronger norm among<br>**young men**
     - no ideological gap 
 
 :::
