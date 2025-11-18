@@ -1,0 +1,550 @@
+---
+title: Political harassment is perceived as severe, unacceptable behavior by most citizens
+date: 2025-11-19
+date-format: long
+lang: en
+author: 
+  - <strong>Søren Damsbo-Svendsen</strong>
+  - Karina Kosiara-Pedersen
+title-slide-attributes:
+  data-background-color: '#026B81'
+format: 
+  revealjs:
+    theme: white
+    html-math-method: katex
+    incremental: true
+    overview: true
+    slide-number: true
+    preview-links: auto
+    self-contained: true
+    chalkboard: false
+    fragments: true
+    slide-level: 2
+    width: 1200
+    height: 750
+    margin: 0.1
+    jump: true
+    highlight-style: a11y
+    fontsize: 2em
+execute:
+  echo: false
+  cache: true
+---
+
+```{r}
+#| include: false
+pacman::p_load(tidyverse, knitr, lubridate, kableExtra, sysfonts, showtext, magick)
+sysfonts::font_add_google('Alegreya Sans', 'Alegreya Sans', regular.wt = 300)
+showtext::showtext_auto()
+```
+
+## Motivation
+
+- Common conception: 
+    - **political violence is increasingly accepted** 
+    - harassment against politicians no longer perceived as serious problem
+- Limited empirical evidence -- with *broad scope*
+    - e.g., many expressions, not only online, different contexts
+- __RQ: *How severe is harassment of politicians perceived to be by citizens,<br>and who finds it less severe?*__
+- New survey data --- shared with **experimental study:**
+
+## Experiment
+
+> 'Raising awareness of harassment against politicians: Experimental evidence of disengagement among likely future candidates'
+
+```{r}
+#| out-width: 95%
+include_graphics('media/cates.png')
+```
+
+## Status
+
+::: {.nonincremental}
+
+- *Second-ish* draft
+    - empirics quite far
+    - theory quite undeveloped
+- Updated framing after DIPAS workshop in Sept:
+    - push back against conception that acceptance of violence is high/growing
+    - emphasize groups with higher acceptance
+
+:::
+
+## Design
+
+- Large citizen **survey:** n = 8,899
+    - DK: n = 5,008 (YouGov) 
+    - DE = 1,519, UK = 1,515, FR = 857 (Prolific)
+- **Stimuli:** 55 *true stories* of (Danish) politicians' experiences with harassment
+    - source: 2021 municipal election candidate survey (n = 3,986)
+    - hand-selected and edited (~ 24 words each)
+- **Task:** read + judge 5 random harassment stories
+- **Outcome**: perceived severity index
+    - => 43,460 severity judgments of 55 diverse harassment stories
+
+## Harassment story examples
+
+> 'I have experienced coming home to several of the trees in my front yard having been cut down.'
+
+. . .
+
+> 'I have experienced that my politician page on Facebook was shared by a fake profile with an encouragement to comment negatively on all my posts.'
+
+. . .
+
+> 'I have received death threats from unknown senders directed at both my little brothers and my own children.'
+
+. . .
+
+> 'There was a citizen who drove around in a car and measured how high my - and only my - posters were placed from the ground. He then reported me to the police for posters that were placed too low.'
+
+## How the stories are presented
+
+::: {.nonincremental}
+
+:::: {.columns}
+::: {.column width='49%'}
+
+```{r}
+#| out-width: 85%
+include_graphics('media/new_treatment-example.png')
+```
+
+:::
+::: {.column width='1%'}
+:::
+::: {.column width='49%'}
+
+<br>
+
+- 1 of 4 **politician** *gender-age* categories (randomized) 
+
+- <span style='color: #0101FF; font-weight: bold;'>Story</span>
+
+- **Judgment** on three dimensions: 
+    - A Seriousness
+    - B Justifiableness
+    - C Harmfulness
+
+<br>
+
+:::
+::::
+
+:::
+
+## Perceived severity
+
+- **Outcome:** judgments combined into a **perceived severity index**
+    - => effectively, respondents rate each story's severity from 0 to 100
+- **Predictors** -- or 'gaps' of interest: 
+    a) respondent gender and age
+    b) politician gender and age
+    c) gender-age affinity (shared identity)
+    d) political ideology
+    e) harassment type
+- **Main analysis:** OLS regression of (mean) predicted severity by each predictor/group
+
+# Results {background-color='#026B81'}
+
+## Average perceptions
+
+```{r}
+#| out-width: 95%
+
+img_path <- 'media/severity.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+## Gender and age
+
+<br>
+
+**Political harassment is perceived as _less severe_**
+
+- H1: by _men_
+
+- H2: by _older people_
+
+
+## Gender and age
+
+<br>
+
+```{r}
+#| out-width: 95%
+
+img_path <- 'media/genderage_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+## Gender and age
+
+<br>
+
+:::: {.columns}
+::: {.column width='60%'}
+
+```{r}
+#| out-width: 95%
+
+img_path <- 'media/genderage_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+:::
+::: {.column width='2%'}
+:::
+::: {.column width='38%'}
+
+::: {.nonincremental}
+
+- Lower for **men** (H1 +)
+- Lower for **young** people (H2 -)
+- Lowest among **young men**
+
+:::
+
+:::
+::::
+
+## Politicians' gender and age
+
+<br>
+
+**Political harassment is perceived as _less severe_**
+
+- H3: when the targeted *politician is a man*
+
+- H4: when the targeted *politician is _not_ a young person*
+
+- H5: by people who belong to a *different gender-age group* than the targeted politician
+
+## Politicians' gender and age
+
+<br>
+
+```{r}
+#| out-width: 95%
+
+img_path <- 'media/genderage-affinity_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+## Politicians' gender and age
+
+<br>
+
+:::: {.columns}
+::: {.column width='48%'}
+
+```{r}
+#| out-width: 80%
+
+img_path <- 'media/genderage_single.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+Fig 2C: Gender-age in full sample
+
+:::
+::: {.column width='2%'}
+:::
+::: {.column width='48%'}
+
+```{r}
+#| out-width: 80%
+
+img_path <- 'media/genderage-affinity_single.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+Fig 3B: Gender-age in affinity subset
+
+:::
+::::
+
+## Politicians' gender and age
+
+<br>
+
+:::: {.columns}
+::: {.column width='60%'}
+
+```{r}
+#| out-width: 95%
+
+img_path <- 'media/genderage-affinity_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+:::
+::: {.column width='2%'}
+:::
+::: {.column width='38%'}
+
+::: {.nonincremental}
+
+- **Women politician:**<br>slightly higher perceptions<br>(*young* women, H3 +)
+- **Young politician:**<br>no gap (H4 -)
+- **Gender-age affinity:**
+    - higher for women (H5 +)
+    - lower for older men (H5 -)
+    - driven by perceptions for<br>women politicians (H3)
+:::
+
+:::
+::::
+
+## Political ideology
+
+<br>
+
+**Political harassment is perceived as _less severe_**
+
+- H6: by people who identify as ideologically *right-leaning*
+
+- H7: by people who are generally *more tolerant of harassment* in politics
+
+- H8: by people who are *dissatisfied with democracy*
+
+## Political ideology
+
+<br>
+
+```{r}
+#| out-width: 95%
+
+img_path <- 'media/ideology_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+## Political ideology
+
+<br>
+
+:::: {.columns}
+::: {.column width='60%'}
+
+```{r}
+#| out-width: 95%
+
+img_path <- 'media/ideology_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+:::
+::: {.column width='2%'}
+:::
+::: {.column width='38%'}
+
+::: {.nonincremental}
+
+- Lower if leaning **right** (H6 +)
+- Lower if high general **harassment tolerance** (H7 +)
+- Lower if **dissatisfied with democracy** (H8 +)
+
+:::
+:::
+::::
+
+## Harassment type {background-color='#026B81'}
+
+<br>
+
+::: {.nonincremental}
+
+- Explorative analysis of **5 harassment types** (vs rest)
+    a) **physical** harassment
+    b) **threats** of violence
+    c) **property** damage
+    d) **sexual** harassment
+    e) **social media** (online arena)
+- Total and by:
+    - gender and age
+    - left-right placement 
+
+:::
+
+## Harassment type
+
+<br>
+
+```{r}
+#| out-width: 100%
+
+img_path <- 'media/story-mod_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+## Harassment type
+
+<br>
+
+:::: {.columns}
+::: {.column width='60%'}
+
+```{r}
+#| out-width: 100%
+
+img_path <- 'media/story-mod_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+:::
+::: {.column width='2%'}
+:::
+::: {.column width='38%'}
+::: {.nonincremental}
+
+- Physical and threats:<br>**higher severity**
+    - stronger norm for **young men**
+    - no ideological gap 
+- Property damage:<br>**lower severity**
+    - especially the **left** and young women
+
+:::
+:::
+::::
+
+## Harassment type
+
+<br>
+
+```{r}
+#| out-width: 100%
+
+img_path <- 'media/story-mod_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+## Harassment type
+
+<br>
+
+:::: {.columns}
+::: {.column width='60%'}
+
+```{r}
+#| out-width: 100%
+
+img_path <- 'media/story-mod_combined.png'
+img_path |>
+  magick::image_read() |>
+  magick::image_trim() |>
+  magick::image_write(img_path)
+
+knitr::include_graphics(img_path)
+
+```
+
+:::
+::: {.column width='2%'}
+:::
+::: {.column width='38%'}
+::: {.nonincremental}
+
+- Sexual: **same severity**
+    - polarizing!
+    - higher among **young people** and the **left**
+    - lower among older people and the right
+- SoMe: **much lower severity**
+    - stronger norm for **young men**
+    - no ideological gap 
+
+:::
+:::
+::::
+
+# Conclusion {background-color='#026B81'}
+
+- We asked **how citizens perceive the severity of harassment** against politicians
+- To address the **broader question:** Is political violence/harassment becoming more accepted?
+- We designed a large survey with real(istic) stories of harassment
+- **Results:** high severity perceptions overall &rarr; rejection of violence/harassment
+    - important, sometimes large **perception gaps**
+    - some **expected** (e.g., gender, ideology, threats)
+    - others **unexpected** (e.g., age, gender-age affinity, sexual)
+- Should pay attention to **groups with low perceptions**<br>(e.g., young men, the right, democratically dissatisfied)
+
+# Thank you {background-color='#026B81'}
+
+# Extra
+
+## Flowchart
+
+```{r}
+include_graphics("media/flowchart_judgement.png")
+```
