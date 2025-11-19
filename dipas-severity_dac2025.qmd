@@ -16,7 +16,7 @@ format:
     overview: true
     slide-number: true
     preview-links: auto
-    self-contained: true
+    self-contained: false
     chalkboard: false
     fragments: true
     slide-level: 2
@@ -28,7 +28,7 @@ format:
     fontsize: 2em
 execute:
   echo: false
-  cache: true
+  cache: false
 ---
 
 ```{r}
@@ -152,7 +152,7 @@ include_graphics('media/new_treatment-example.png')
 <br>
 
 ```{r}
-#| out-width: 90%
+#| out-width: 85%
 
 img_path <- 'media/severity.png'
 img_path |>
@@ -536,5 +536,7 @@ knitr::include_graphics(img_path)
 ## Flowchart
 
 ```{r}
+#| out-width: 85%
+
 include_graphics("media/flowchart_judgement.png")
 ```
