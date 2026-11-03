@@ -14,7 +14,7 @@ format:
     slide-number: true
     preview-links: auto
     title-slide-attributes: 
-      data-background-image: /media-def/cover.png
+      data-background-image: media-def/cover.png
       data-background-size: 12%
       data-background-position: 97% 8%
     self-contained: false
